@@ -38,7 +38,7 @@ use App\Http\Controllers\FileUploadController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/error', function () {
