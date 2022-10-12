@@ -25,15 +25,6 @@ class Roles extends Migration
                 ],
                 [
                     'role_name' => 'Editor'
-                ],
-                [
-                    'role_name' => 'School Editor'
-                ],
-                [
-                    'role_name' => 'GCC/SS Editor'
-                ],
-                [
-                    'role_name' => 'NLC Editor'
                 ]
             )
         );

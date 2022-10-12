@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('log_slug');
             $table->mediumText('log_desc');
             $table->foreignId('user_id')->constrained();
-            $table->foreignId('department_id')->constrained();
             $table->timestamps();
         });
     }
