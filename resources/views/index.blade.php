@@ -1,4 +1,4 @@
-@extends ( 'layout.layout' )
+@extends ( 'layout.index' )
 
 {{-- @section ( 'content' )
 
