@@ -2,7 +2,6 @@
     <div class="container pt-3 pb-3">
         <div class="row">
             <div class="col-md-4">
-                <!--@todo: replace with company contact details-->
                 <h3 class="text-white text-uppercase font-weight-bold">
                     CMSD<span class="text-primary">82</span>
                 </h3>
@@ -26,15 +25,17 @@
                     </ul>
                 </address>
                 <hr class="my-4 hr-white op-1" />
-                <button type="button" class="mb-1 btn btn-primary">Go to Contact Page</button>
+                <div class="mb-3">
+                    <button type="button" class="mb-1 btn btn-primary">Go to Contact Page</button>
+                </div>
             </div>
 
             <div class="col-md-4">
                 <h4 class="text-uppercase text-white">Social media</h4>
                 <p>Stay up to date with our latest news by following us in our social media!</p>
                 <div class="mt-3 mb-4 mb-lg-0">
-                    <a href="#" class="btn btn-icon btn-primary btn-rounded btn-flat"> <i class="fab fa-twitter"></i> <span class="sr-only">Fa twitter</span> </a>
-                    <a href="#" class="btn btn-icon btn-primary btn-rounded btn-flat"> <i class="fab fa-facebook-f"></i> <span class="sr-only">Fa facebook f</span> </a>
+                    <a href="#" class="btn btn-icon btn-primary btn-rounded btn-flat mr-1"> <i class="fab fa-facebook-f"></i> <span class="sr-only">Fa facebook f</span> </a>
+                    <a href="#" class="btn btn-icon btn-primary btn-rounded btn-flat mr-1"> <i class="fab fa-twitter"></i> <span class="sr-only">Fa twitter</span> </a>
                 </div>
             </div>
         </div>
