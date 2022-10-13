@@ -52,22 +52,50 @@
                             
                             <!-- Homepages -->
                             <li class="nav-item dropdown dropdown-mega-menu">
-                                <a href="#" class="nav-link dropdown-toggle" id="indexs-drop" data-toggle="dropdown">Homepage Samples</a>
+                                <a href="#" class="nav-link dropdown-toggle" id="indexs-drop" data-toggle="dropdown">Megamenu Type 1</a>
                                 <!-- Dropdown Menu - mega menu-->
                                 <div class="dropdown-menu">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Classic Homepages</h4>
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Megamenu Category 2</h4>
                                             <div class="row">
-                                                <div class="col-lg-6"> <a href="intro.html" class="dropdown-item">Intro</a> <a href="index.html" class="dropdown-item active">Homepage (default)</a> <a href="index-static.html" class="dropdown-item">Homepage No Slider</a> <a href="index-boxed.html" class="dropdown-item">Homepage Boxed</a> <a href="index-promo-header.html" class="dropdown-item">Promo Header</a> <a href="index-coming-soon.html" class="dropdown-item">Coming Soon</a> <a href="index-coming-soon-newsletter.html" class="dropdown-item">Coming Soon with newsletter</a> <a href="index-onepager.html" class="dropdown-item">One Pager Slideshow</a> </div>
-                                                <div class="col-lg-6"> <a href="index-onepager-image.html" class="dropdown-item">One Pager Image</a> <a href="index-onepager-image-full-height.html" class="dropdown-item">One Pager Image Full Height</a> <a href="index-onepager-bg-slideshow.html" class="dropdown-item">One Pager Background Slideshow</a> <a href="index-onepager-dotted-menu-left.html" class="dropdown-item">One Pager Dotted Menu Left</a> <a href="index-onepager-dotted-menu-right.html" class="dropdown-item">One Pager Dotted Menu Right</a> <a href="index-onepager-dotted-menu-bottom.html" class="dropdown-item">One Pager Dotted Menu Bottom</a> <a href="index-onepager-submenu.html" class="dropdown-item">One Pager Submenu</a> </div>
+                                                <div class="col-lg-6"> 
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                </div>
+                                                <div class="col-lg-6"> 
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
-                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Industry/Niche Homepages</h4>
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Megamenu Category 2</h4>
                                             <div class="row">
-                                                <div class="col-lg-6"> <a href="demo-travel-blog.html" class="dropdown-item">Travel Blog</a> <a href="index-app-landing.html" class="dropdown-item">App Landing Page</a> <a href="index-music.html" class="dropdown-item">Music Homepage</a> <a href="index-event.html" class="dropdown-item">Event Homepage</a> <a href="index-gym.html" class="dropdown-item">Gym Homepage</a> <a href="index-jobs.html" class="dropdown-item">Jobs Homepage</a> <a href="index-corporate.html" class="dropdown-item">Corporate Homepage</a> <a href="index-restaurant.html" class="dropdown-item">Restaurant Homepage</a> <a href="index-photographer.html" class="dropdown-item">Photographer Homepage</a> <a href="index-freelancer-portfolio.html" class="dropdown-item">Freelancer Homepage</a> </div>
-                                                <div class="col-lg-6"> <a href="index-wedding.html" class="dropdown-item">Wedding Homepage</a> <a href="index-realestate-single.html" class="dropdown-item">Real Estate (Single) Homepage</a> <a href="index-technology.html" class="dropdown-item">Technology Homepage</a> <a href="index-forum.html" class="dropdown-item">Forum Homepage</a> <a href="index-charity.html" class="dropdown-item">Charity Homepage</a> <a href="index-church.html" class="dropdown-item">Church Homepage</a> <a href="index-knowledgebase.html" class="dropdown-item">Knowledgebase</a> <a href="index-magazine.html" class="dropdown-item">Magazine Homepage</a> <a href="shop.html" class="dropdown-item">Shop Homepage</a> </div>
+                                                <div class="col-lg-6"> 
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                </div>
+                                                <div class="col-lg-6"> 
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -79,45 +107,16 @@
                                 <a href="#" class="nav-link dropdown-toggle" id="pages-drop" data-toggle="dropdown">Pages</a>
                                 <!-- Menu -->
                                 <div class="dropdown-menu">
-                                    <div class="dropdown dropdown-submenu">
-                                        <a href="about.html" class="dropdown-item dropdown-toggle" id="about-drop" data-toggle="dropdown" data-close-others="true">About</a>
-                                        <!-- Dropdown Menu -->
-                                        <div class="dropdown-menu" role="menu" aria-labelledby="about-drop"> 
-                                            <a href="about.html" class="dropdown-item">About Us Basic</a> 
-                                            <a href="about-extended.html" class="dropdown-item">About Us Extended</a> 
-                                            <a href="about-me.html" class="dropdown-item">About Me</a> 
-                                            <a href="team.html" class="dropdown-item">Team List</a> <a href="team-grid.html" class="dropdown-item">Team Grid</a> 
-                                            <a href="team-member.html" class="dropdown-item">Team Member</a> 
-                                            <a href="contact.html" class="dropdown-item">Contact</a> <a href="contact.php" class="dropdown-item">Contact (PHP)</a> 
-                                        </div>
-                                    </div>
-                                    <div class="dropdown dropdown-submenu">
-                                        <a href="blog.html" class="dropdown-item dropdown-toggle" id="blog-drop" data-toggle="dropdown" data-close-others="true">Blog</a>
-                                        <!-- Dropdown Menu -->
-                                        <div class="dropdown-menu">
-                                            <a href="blog.html" class="dropdown-item">Blog List Right Sidebar</a> <a href="blog-leftbar.html" class="dropdown-item">Blog List Left Sidebar</a> <a href="blog-timeline.html" class="dropdown-item">Blog List Timeline</a> <a href="blog-grid.html" class="dropdown-item">Blog List Grid</a> <a href="blog-post.html" class="dropdown-item">Blog Post</a> <a href="blog-post-video.html" class="dropdown-item">Blog Post With Video</a> <a href="blog-post-slideshow.html" class="dropdown-item">Blog Post With Slideshow</a> <a href="blog-post-audio.html" class="dropdown-item">Blog Post With Audio Clip</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown dropdown-submenu">
-                                        <a href="pricing.html" class="dropdown-item dropdown-toggle" id="pricing-drop" data-toggle="dropdown" data-close-others="true">Pricing</a>
-                                        <!-- pricing pages -->
-                                        <div class="dropdown-menu">
-                                            <a href="pricing.html" class="dropdown-item">Pricing Plans</a> <a href="pricing-tables.html" class="dropdown-item">Comparison Tables</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown dropdown-submenu">
-                                        <a href="timeline.html" class="dropdown-item dropdown-toggle" id="timeline-drop" data-toggle="dropdown" data-close-others="true">Timeline</a>
-                                        <!-- timelines -->
-                                        <div class="dropdown-menu" role="menu" aria-labelledby="timeline-drop">
-                                            <a href="timeline.html" class="dropdown-item">Timeline Default</a> <a href="timeline-left.html" class="dropdown-item">Timeline Left</a> <a href="timeline-right.html" class="dropdown-item">Timeline Right</a> <a href="timeline-stacked.html" class="dropdown-item">Timeline Stacked</a> 
-                                        </div>
-                                    </div>
-                                    <a href="customers.html" class="dropdown-item">Customers</a> <a href="features.html" class="dropdown-item">Features/Services</a> <a href="login.html" class="dropdown-item">Login</a> <a href="signup.html" class="dropdown-item">Sign Up</a> <a href="starter.html" class="dropdown-item">Starter Snippets</a> <a href="page-404.html" class="dropdown-item">404 Error</a> <a href="page-maintenance.html" class="dropdown-item">Maintenance</a> <a href="page-site-status.html" class="dropdown-item">Site Status</a> <a href="page-titles.html" class="dropdown-item">Page Titles</a>
+                                    <a href="customers.html" class="dropdown-item">Link Item</a>
+                                    <a href="customers.html" class="dropdown-item">Link Item</a>
+                                    <a href="customers.html" class="dropdown-item">Link Item</a>
+                                    <a href="customers.html" class="dropdown-item">Link Item</a>
+                                    <a href="customers.html" class="dropdown-item">Link Item</a>
                                 </div>
                             </li>
 
                             <!-- Mega menu example -->
-                            <li class="nav-item dropdown dropdown-persist dropdown-mega-menu dropdown-mega-menu-50">
+                            <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
                                 <a href="#" class="nav-link dropdown-toggle" id="megamenu-drop" data-toggle="dropdown">Mega Menu</a>
                                 <!-- Dropdown Menu - Mega Menu -->
                                 <div class="dropdown-menu dropdown-menu-right">

@@ -92,6 +92,18 @@
 
 @media (min-width: 992px) {
     /* Large devices (992px and up). Mixin: media-breakpoint-up(lg) */
+    .nav-steps.flex-lg-row.nav-steps-square .nav-link {
+        width: 140px;
+        height: 140px;
+        border-radius: 0%;
+    }
+    .nav-steps.flex-lg-row .nav-link {
+        padding: 0;
+        margin: 0;
+        padding-top: 2rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -157,4 +169,17 @@
 .navbar-layout-navbar-below .header {
     padding-top: 0!important;
     padding-bottom: 0!important;
+}
+
+.nav-steps {
+    padding: 0;
+}
+
+.nav-steps .nav-link {
+    border: none;
+}
+
+.nav-steps .nav-link:hover {
+    background: #55A79A;
+    color: #FFF;
 }
