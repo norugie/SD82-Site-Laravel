@@ -1,32 +1,53 @@
 <head>
-	<meta charset="UTF-8" />
-	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+	<title>CMSD82 | Coast Mountain School District No. 82</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="SD82 Main Website">
+	<meta name="author" content="Rugie Ann Barrameda">
 
-	<!-- Open Graph -->
-	<meta property="og:title" content="Your Page Title Here" />
-	<meta property="og:url" content="http://dev.thememountain.com/faulkner/project-style-one.html" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="http://dev.thememountain.com/faulkner/images/portfolio/projects/project-1-1.jpg" />
-	<meta property="og:description" content="Your Page Description Here" />
+	<!-- Bootstrap v4.5.0 CSS via CDN -->
+	<link href="/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-	<!-- Twitter Theme -->
-	<meta name="twitter:widgets:theme" content="light">
-	
-	<!-- Title &amp; Favicon -->
-	<title>SD82 | Coast Mountain School District No. 82</title>
-	<link rel="shortcut icon" type="image/x-icon" href="/images/theme-mountain-favicon.ico">
+	<!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
 
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CHind+Madurai:400,500&amp;subset=latin-ext" rel="stylesheet">
-	
-	<!-- CSS -->
-	<link rel="stylesheet" href="/css/core.min.css" />
-	<link rel="stylesheet" href="/css/skin.css" />
+	<!-- Theme style -->
+	<link href="/assets/css/theme-style.css" rel="stylesheet">
 
-    @yield('custom-css')
-    
-	<!--[if lt IE 9]>
-    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<!-- Your custom override -->
+	<link href="/assets/css/custom-style.css" rel="stylesheet">
+	@yield('custom-css')
 
+	<!-- Optional: ICON SETS -->
+	<!-- Iconset: Font Awesome 5.12.0 via CDN -->
+	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+	<!-- Iconset: flag icons - http://lipis.github.io/flag-icon-css/ -->
+	<link href="/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+	<!-- Iconset: ionicons - http://ionicons.com/ -->
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+	<!-- Iconset: Linearicons - https://linearicons.com/free -->
+	<link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+	<!-- Iconset: Lineawesome - https://icons8.com/articles/line-awesome -->
+	<link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
+
+
+	<!-- Le fav and touch icons - @todo: fill with your icons or remove, try https://realfavicongenerator.net -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/assets/favicons/manifest.json">
+	<link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+	<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+
+	<!-- Google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Rambla:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,400,700' rel='stylesheet' type='text/css'>
+
+	<!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
 </head>

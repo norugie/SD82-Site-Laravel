@@ -1,5 +1,9 @@
-@extends ( 'layout.index' )
+@extends ( 'layout.layout' )
 
-{{-- @section ( 'content' )
+@section ( 'content' )
+    <div class="container">
+        <div class="row">
 
-@endsection --}}
+        </div>
+    </div>
+@endsection
