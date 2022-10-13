@@ -1,9 +1,5 @@
 @extends ( 'layout.layout' )
 
 @section ( 'content' )
-    <div class="container">
-        <div class="row">
-
-        </div>
-    </div>
+    @include('layout.components.slidebar')
 @endsection

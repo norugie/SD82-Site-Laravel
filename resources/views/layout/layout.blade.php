@@ -13,9 +13,7 @@
         @include('layout.components.navbar')
 
         <!-- ======== @SiteSection: #content Site content ======== -->
-        <div id="content">
-            @yield('content')
-        </div>
+        @yield('content')
 
         <!-- ======== @SiteSection: #footer Footer content and scripts ======== -->
         @include('layout.components.footer')
