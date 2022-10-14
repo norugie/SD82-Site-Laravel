@@ -39,12 +39,13 @@
                     <a href="#search" class="btn btn-icon btn-link header-btn float-right order-11" data-toggle="search-form" data-target=".header-search"><i class="fa fa-search fa-flip-horizontal search-icon"></i></a>
 
                     <!-- mobile collapse menu button - data-toggle="collapse" = default BS menu - data-toggle="off-canvas" = Off-cavnas Menu - data-toggle="overlay" = Overlay Menu -->
-                    <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none" data-toggle="off-canvas" data-target=".navbar-main" data-settings='{"cloneTarget":true, "targetClassExtras": "navbar-offcanvas"}'> <i class="fa fa-bars"></i></a>
+                    <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none" data-toggle="off-canvas" data-target=".navbar-first" data-settings='{"cloneTarget":true, "targetClassExtras": "navbar-offcanvas"}'> <i class="fa fa-bars"></i></a>
+                    <a href="#top" class="btn btn-link btn-icon header-btn float-right d-lg-none" data-toggle="collapse" data-target=".navbar-second" data-settings='{"cloneTarget":true, "targetClassExtras": "navbar-offcanvas"}'> <i class="fa fa-book"></i></a>
                 </div>
 
                 <div class="navbar navbar-expand-md navbar-static-top">
                     <!--everything within this div is collapsed on mobile-->
-                    <div class="navbar-main collapse">
+                    <div class="navbar-main navbar-first collapse">
                         <!--main navigation-->
                         <ul class="nav navbar-nav navbar-nav-stretch float-lg-right dropdown-effect-fade">
 
@@ -52,7 +53,7 @@
                             
                             <!-- Homepages -->
                             <li class="nav-item dropdown dropdown-mega-menu">
-                                <a href="#" class="nav-link dropdown-toggle" id="indexs-drop" data-toggle="dropdown">Megamenu Type 1</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Megamenu Type 1</a>
                                 <!-- Dropdown Menu - mega menu-->
                                 <div class="dropdown-menu">
                                     <div class="row">
@@ -104,9 +105,9 @@
 
                             <!-- Pages -->
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" id="pages-drop" data-toggle="dropdown">Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                 <!-- Menu -->
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu dropdown-menu-right">
                                     <a href="customers.html" class="dropdown-item">Link Item</a>
                                     <a href="customers.html" class="dropdown-item">Link Item</a>
                                     <a href="customers.html" class="dropdown-item">Link Item</a>
@@ -117,7 +118,7 @@
 
                             <!-- Mega menu example -->
                             <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
-                                <a href="#" class="nav-link dropdown-toggle" id="megamenu-drop" data-toggle="dropdown">Mega Menu</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mega Menu</a>
                                 <!-- Dropdown Menu - Mega Menu -->
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <!-- Nav tabs -->
@@ -189,12 +190,19 @@
 
         <div class="navbar navbar-expand-md">
             <!--everything within this div is collapsed on mobile-->
-            <div class="navbar-main collapse bg-dark navbar-dark">
+            <div class="navbar-main navbar-second collapse bg-dark navbar-dark">
                 <!--main navigation-->
                 <ul class="nav navbar-nav container dropdown-effect-fade">
 
                 <li class="nav-item">
-                    <a href="/" class="nav-link">Test Link 1</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Test Link 1</a>
+                    <div class="dropdown-menu">
+                        <a href="customers.html" class="dropdown-item">Link Item</a>
+                        <a href="customers.html" class="dropdown-item">Link Item</a>
+                        <a href="customers.html" class="dropdown-item">Link Item</a>
+                        <a href="customers.html" class="dropdown-item">Link Item</a>
+                        <a href="customers.html" class="dropdown-item">Link Item</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a href="/" class="nav-link">Test Link 2</a>

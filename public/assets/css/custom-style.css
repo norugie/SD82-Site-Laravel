@@ -123,6 +123,9 @@
 
 @media (max-width: 991.98px) {
     /* Large devices (992px and down). Mixin: media-breakpoint-down(md) */
+    .navbar-expand-md .navbar-main .navbar-nav>.nav-item>.nav-link:hover {
+        background: #343a40;
+    }
 }
 
 @media (max-width: 1199.98px) {
@@ -182,4 +185,13 @@
 .nav-steps .nav-link:hover {
     background: #55A79A;
     color: #FFF;
+}
+
+.navbar-offcanvas .navbar-main,
+.navbar-offcanvas .navbar-main.collapse {
+    background: #343a40;
+}
+
+.collapse .dropdown-menu .dropdown-item {
+    background: #343a40;
 }
