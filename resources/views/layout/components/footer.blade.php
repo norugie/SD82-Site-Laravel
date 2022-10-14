@@ -71,6 +71,6 @@
 <script src="/assets/js/custom-script.js"></script>
 
 <!--AppStrap scripts mainly used to trigger libraries/plugins -->
-<script src="/assets/js/script.min.js"></script>
+<script src="/assets/js/script.js"></script>
 
 @yield('custom-js')
