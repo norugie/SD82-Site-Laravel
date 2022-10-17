@@ -169,6 +169,11 @@
  *--------------------------------------------------
  */
 
+.header-upper {
+    background: #292B2C;
+    border-bottom: 2px solid #55A79A;
+}
+
 .navbar-layout-navbar-below .header {
     padding-top: 0!important;
     padding-bottom: 0!important;
