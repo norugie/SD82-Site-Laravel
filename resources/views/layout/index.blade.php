@@ -12,22 +12,8 @@
         <!-- ======== @SiteSection: #header Navbar ======== -->
         @include('layout.components.navbar')
 
-        <div id="content">
-            <div class="container">
-                <h2 class="title-divider">
-                    <span>District News</span>
-                </h2>
-                <div class="row">
-                    
-                    <!-- ======== @SiteSection: #content Site content ======== -->
-                    @yield('content')
-
-                    <!-- ======== @SiteSection: #content Site sidebar ======== -->
-                    @include('layout.components.sidebar')
-
-                </div>
-            </div>
-        </div>
+        <!-- ======== @SiteSection: #content Site content ======== -->
+        @yield('content')
 
         <!-- ======== @SiteSection: #footer Footer content and scripts ======== -->
         @include('layout.components.footer')

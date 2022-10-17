@@ -41,6 +41,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/posts', function () {
+    return view('posts');
+});
+
 Route::get('/error', function () {
     return view('error');
 });
