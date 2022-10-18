@@ -56,13 +56,13 @@
 </footer>
 
 <!-- Jquery Core Js -->
-<script src="/plugins/jquery/jquery.min.js"></script>
+<script src="/assets/plugins/jquery/jquery.min.js"></script>
 
 <!-- Popper Plugin Js -->
-<script src="/plugins/popper/popper.js"></script>
+<script src="/assets/plugins/popper/popper.js"></script>
 
 <!-- Bootstrap v4.5.0 JS via CDN -->
-<script src="/plugins/bootstrap/js/bootstrap.js"></script>
+<script src="/assets/plugins/bootstrap/js/bootstrap.js"></script>
 
 
 <!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 To disable this and load plugin assets manually simple add data-plugins-manual=true to the body tag -->

@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Dasboard | SD92 - Nisga'a</title>
+        <meta name="description" content="SD82 Main Website">
+        <meta name="author" content="Rugie Ann Barrameda">
+        <title>CMSD82 | Coast Mountain School District No. 82</title>
         <!-- Favicon-->
         <link rel="icon" href="/nisgaa-icon.png" type="image/x-icon">
     
@@ -12,30 +14,30 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
-        <!-- Bootstrap Core Css -->
-        <link href="/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href="/assets/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-        <!-- Bootstrap Select Css -->
-        <link href="/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+        <!-- Bootstrap Select CSS -->
+        <link href="/assets/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
-        <!-- JQuery DataTable Css -->
-        <link href="/plugins/jquery-datatables/css/dataTables.bootstrap4.css" rel="stylesheet">
-        <link href="/plugins/jquery-datatables/css/responsive.bootstrap4.css" rel="stylesheet">
+        <!-- JQuery DataTable CSS -->
+        <link href="/assets/plugins/jquery-datatables/css/dataTables.bootstrap4.css" rel="stylesheet">
+        <link href="/assets/plugins/jquery-datatables/css/responsive.bootstrap4.css" rel="stylesheet">
 
-        <!-- Custom Css -->
+        <!-- Custom CSS -->
         <link href="/cms/css/style.css" rel="stylesheet">
         <link href="/cms/css/themes/theme-blue-grey.css" rel="stylesheet" />
         <link href="/cms/css/custom-backend.css" rel="stylesheet">
         @yield('custom-css')
 
-        <!-- Jquery Core Js -->
-        <script src="/plugins/jquery/jquery.min.js"></script>
+        <!-- Jquery Core JS -->
+        <script src="/assets/plugins/jquery/jquery.min.js"></script>
 
-        <!-- Popper Plugin Js -->
-        <script src="/plugins/popper/popper.js"></script>
+        <!-- Popper Plugin JS -->
+        <script src="/assets/plugins/popper/popper.js"></script>
 
-        <!-- Jquery Validation Plugin Css -->
-        <script src="/plugins/jquery-validation/jquery.validate.js"></script>
+        <!-- Jquery Validation Plugin CSS -->
+        <script src="/assets/plugins/jquery-validation/jquery.validate.js"></script>
     </head>
     <body class="theme-blue-grey">
         <!-- CMS Content -->
@@ -316,26 +318,26 @@
         <!-- Page Footer -->
         
         <!-- Bootstrap Core Js -->
-        <script src="/plugins/bootstrap/js/bootstrap.js"></script>
+        <script src="/assets/plugins/bootstrap/js/bootstrap.js"></script>
 
         <!-- Slimscroll Plugin Js -->
-        <script src="/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+        <script src="/assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
         <!-- Jquery DataTable Plugin Js -->
-        <script src="/plugins/jquery-datatables/js/jquery.dataTables.js"></script>
-        <script src="/plugins/jquery-datatables/js/dataTables.bootstrap4.js"></script>
-        <script src="/plugins/jquery-datatables/js/dataTables.responsive.js"></script>
-        <script src="/plugins/jquery-datatables/js/responsive.bootstrap4.js"></script>
+        <script src="/assets/plugins/jquery-datatables/js/jquery.dataTables.js"></script>
+        <script src="/assets/plugins/jquery-datatables/js/dataTables.bootstrap4.js"></script>
+        <script src="/assets/plugins/jquery-datatables/js/dataTables.responsive.js"></script>
+        <script src="/assets/plugins/jquery-datatables/js/responsive.bootstrap4.js"></script>
 
         {{-- JQuery DataTable Plugin Extras --}}
-        <script src="/plugins/jquery-datatables/extensions/dataTables.buttons.min.js"></script>
-        <script src="/plugins/jquery-datatables/extensions/buttons.html5.min.js"></script>
+        <script src="/assets/plugins/jquery-datatables/extensions/dataTables.buttons.min.js"></script>
+        <script src="/assets/plugins/jquery-datatables/extensions/buttons.html5.min.js"></script>
 
         <!-- Select Plugin Js -->
-        <script src="/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+        <script src="/assets/plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
         <!-- Validation Plugin Js -->
-        <script src="/plugins/jquery-validation/jquery.validate.js"></script>
+        <script src="/assets/plugins/jquery-validation/jquery.validate.js"></script>
 
         <!-- Custom Js -->
         <script src="/cms/js/admin.js"></script>
