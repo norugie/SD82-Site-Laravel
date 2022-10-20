@@ -48,138 +48,77 @@
                     <div class="navbar-main navbar-first collapse">
                         <!--main navigation-->
                         <ul class="nav navbar-nav navbar-nav-stretch float-lg-right dropdown-effect-fade">
-
+                            <!-- Homepage -->
                             <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
                             
-                            <!-- Homepages -->
+                            <!-- District-related links -->
                             <li class="nav-item dropdown dropdown-mega-menu">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Megamenu Type 1</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our District</a>
                                 <!-- Dropdown Menu - mega menu-->
                                 <div class="dropdown-menu">
                                     <div class="row">
-                                        <div class="col-lg-6">
-                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Megamenu Category 2</h4>
-                                            <div class="row">
-                                                <div class="col-lg-6"> 
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                </div>
-                                                <div class="col-lg-6"> 
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                </div>
-                                            </div>
+                                        <div class="col-lg-4"> 
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">District Information</h4>
+                                            <a href="index.html" class="dropdown-item">About the District</a>
+                                            <a href="index.html" class="dropdown-item">District Administration and Staff</a>
+                                            <a href="index.html" class="dropdown-item">Contact us</a>
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Curriculum</h4>
+                                            <a href="index.html" class="dropdown-item">Inclusive Education - Learner Support</a>
+                                            <a href="index.html" class="dropdown-item">Indigenous Enhancement Agreement</a>
+                                            <a href="index.html" class="dropdown-item">StrongStart Program</a>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Megamenu Category 2</h4>
-                                            <div class="row">
-                                                <div class="col-lg-6"> 
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                </div>
-                                                <div class="col-lg-6"> 
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                    <a href="index.html" class="dropdown-item">Sample Link</a>
-                                                </div>
-                                            </div>
+                                        <div class="col-lg-4"> 
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Departments</h4>
+                                            <a href="index.html" class="dropdown-item">Superintendent's Office</a>
+                                            <a href="index.html" class="dropdown-item">Secretary Treasurer and Finance</a>
+                                            <a href="index.html" class="dropdown-item">Human Resources</a>
+                                            <a href="index.html" class="dropdown-item">Facilities Department</a>
+                                            <a href="index.html" class="dropdown-item">Information Technology Department</a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Governance</h4>
+                                            <a href="index.html" class="dropdown-item">School Trustees</a>
+                                            <a href="index.html" class="dropdown-item">Board of Education Strategic Plan</a>
+                                            <a href="index.html" class="dropdown-item">Board Meetings, Agendas, and Minutes</a>
+                                            <a href="index.html" class="dropdown-item">Policies and Bylaws</a>
+                                            <a href="index.html" class="dropdown-item">Administrative Procedures</a>
+                                            <a href="index.html" class="dropdown-item">Sample Link</a>
                                         </div>
                                     </div>
                                 </div>
                             </li>
 
-                            <!-- Pages -->
+                            <!-- School-related links -->
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Schools</a>
                                 <!-- Menu -->
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="customers.html" class="dropdown-item">Link Item</a>
-                                    <a href="customers.html" class="dropdown-item">Link Item</a>
-                                    <a href="customers.html" class="dropdown-item">Link Item</a>
-                                    <a href="customers.html" class="dropdown-item">Link Item</a>
-                                    <a href="customers.html" class="dropdown-item">Link Item</a>
+                                    <a href="index.html" class="dropdown-item">School Administration</a>
+                                    <a href="index.html" class="dropdown-item">All Schools</a>
+                                    <a href="index.html" class="dropdown-item">School Growth Plans</a>
                                 </div>
                             </li>
 
-                            <!-- Mega menu example -->
-                            <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mega Menu</a>
-                                <!-- Dropdown Menu - Mega Menu -->
+                            <!-- Resources -->
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
+                                <!-- Menu -->
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <!-- Nav tabs -->
-                                    <ul class="nav nav-pills nav-pills-border-bottom-inside flex-column flex-lg-row" role="tablist">
-                                        <li class="nav-item"> <a class="nav-link p-3 active text-center font-weight-bold text-uppercase" data-toggle="tab" data-target=".menu-tab-1" role="tab">Mega Menu Tab 1</a> </li>
-                                        <li class="nav-item"> <a class="nav-link p-3 text-center font-weight-bold text-uppercase" data-toggle="tab" data-target=".menu-tab-2" role="tab">Mega Menu Tab 2</a> </li>
-                                    </ul>
-                                    <!-- Tab panes -->
-                                    <div class="tab-content py-3">
-                                        <div class="tab-pane active show menu-tab-1" role="tabpanel">
-                                            <div class="row text-center">
-                                                <div class="col-lg-4 py-2">
-                                                    <i class="fa fa-tachometer-alt icon-3x op-6"></i>
-                                                    <h5 class="mt-2">
-                                                        Fully Optimized
-                                                    </h5>
-                                                    <p class="text-sm mb-0">Molior os tum. Eros ideo imputo loquor pertineo torqueo validus.</p>
-                                                    </div>
-                                                    <div class="col-lg-4 py-2">
-                                                    <i class="fa fa-wrench icon-3x op-6"></i>
-                                                    <h5 class="mt-2">
-                                                        Free Support
-                                                    </h5>
-                                                    <p class="text-sm mb-0">Conventio modo secundum tego tum.</p>
-                                                </div>
-                                                <div class="col-lg-4 py-2">
-                                                    <i class="fa fa-rocket icon-3x op-6"></i>
-                                                    <h5 class="mt-2">
-                                                        Free Upgrades
-                                                    </h5>
-                                                    <p class="text-sm mb-0">Aliquip haero nostrud praemitto quidne singularis sit.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane menu-tab-2" role="tabpanel">
-                                            <div class="row text-center">
-                                                <div class="col-lg-4 py-2">
-                                                    <i class="fa fa-chart-line icon-3x op-6"></i>
-                                                    <h5 class="mt-2">
-                                                        99.9% Uptime
-                                                    </h5>
-                                                    <p class="text-sm mb-0">Eros euismod loquor pneum quadrum scisco valde vindico.</p>
-                                                </div>
-                                                <div class="col-lg-4 py-2">
-                                                    <i class="fa fa-users icon-3x op-6"></i>
-                                                    <h5 class="mt-2">
-                                                        Multiuser
-                                                    </h5>
-                                                    <p class="text-sm mb-0">Abdo et ludus neo ulciscor volutpat.</p>
-                                                </div>
-                                                <div class="col-lg-4 py-2">
-                                                    <i class="fa fa-plug icon-3x op-6"></i>
-                                                    <h5 class="mt-2">
-                                                        Plug n play
-                                                    </h5>
-                                                    <p class="text-sm mb-0">At fere haero humo sit te ulciscor vel velit vulpes.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="index.html" class="dropdown-item">District and School Calendar</a>
+                                    <a href="index.html" class="dropdown-item">District-wide Bell Schedule</a>
+                                    <a href="index.html" class="dropdown-item">Bus Schedule and Routes</a>
+                                    <a href="index.html" class="dropdown-item">Online Resources</a>
                                 </div>
+                            </li>
+
+                            <!-- District updates -->
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link">District Updates</a>
+                            </li>
+
+                            <!-- Careers -->
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link">Careers</a>
                             </li>
                         </ul>
                     </div>
