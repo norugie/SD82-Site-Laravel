@@ -200,3 +200,36 @@
 .collapse .dropdown-menu .dropdown-item {
     background: #343a40;
 }
+
+.owl-stage-outer {
+    max-height: 650px;
+}
+
+.owl-carousel .owl-item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 58, 64, 0.30);
+}
+
+.owl-dots {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -35px;
+    z-index: 99;
+}
+
+.owl-carousel div h2,
+.owl-carousel div .textoverlay {
+    position: absolute;
+    color: #FFF;
+    font-size: 12px;
+    display: block;
+}
