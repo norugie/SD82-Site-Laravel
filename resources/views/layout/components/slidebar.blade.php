@@ -10,21 +10,21 @@
             </div>
         </div>
         <div class="item">
-            <img src="/assets/img/backgrounds/index-corporate-banner.jpg" alt="Project 1" class="img-fluid" />
+            <img src="/assets/img/backgrounds/index-corporate-banner.jpg" alt="Project 2" class="img-fluid" />
             <div class="bg-light p-3">
                 <h4 class="my-0">
-                    Project 1
+                    Project 2
                 </h4>
-                <p class="mb-0">Project 1 description text.</p>
+                <p class="mb-0">Project 2 description text.</p>
             </div>
         </div>
         <div class="item">
-            <img src="/assets/img/backgrounds/keyboard-coffee.jpg" alt="Project 1" class="img-fluid" />
+            <img src="/assets/img/backgrounds/keyboard-coffee.jpg" alt="Project 3" class="img-fluid" />
             <div class="bg-light p-3">
                 <h4 class="my-0">
-                    Project 1
+                    Project 3
                 </h4>
-                <p class="mb-0">Project 1 description text.</p>
+                <p class="mb-0">Project 3 description text.</p>
             </div>
         </div>
     </div>
