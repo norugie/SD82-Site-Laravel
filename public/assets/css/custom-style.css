@@ -145,6 +145,9 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     /* Large devices (desktops, between 992px and 1199px). Mixin: media-breakpoint-only(lg) */
+    .container {
+        max-width: calc(100% - 20px);
+    }
 }
 
 @media (min-width: 1200px) {
@@ -175,8 +178,8 @@
 }
 
 .navbar-layout-navbar-below .header {
-    padding-top: 0!important;
-    padding-bottom: 0!important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .nav-steps {
@@ -201,18 +204,22 @@
     background: #343a40;
 }
 
-.owl-stage-outer {
-    max-height: 650px;
+.owl-carousel .item img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    max-height: 500px;
+    margin: 0 auto;
 }
 
-.owl-carousel .owl-item:after {
+.owl-carousel .item .item-image:after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(52, 58, 64, 0.30);
+    background: rgba(52, 58, 64, 0.35);
 }
 
 .owl-dots {
@@ -226,10 +233,14 @@
     z-index: 99;
 }
 
-.owl-carousel div h2,
-.owl-carousel div .textoverlay {
+.owl-dots span {
+    background: #FFF !important;
+}
+
+.item-content {
     position: absolute;
-    color: #FFF;
-    font-size: 12px;
-    display: block;
+    left: 0;
+    right: 0;
+    margin-top: -200px;
+    z-index: 99;
 }
