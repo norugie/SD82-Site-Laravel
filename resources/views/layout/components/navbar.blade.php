@@ -27,7 +27,7 @@
                 <div class="header-brand">
                     <a class="header-brand-text" href="index.html" title="Home">
                         <h1 class="h2">
-                            <span class="header-brand-text-alt">CMSD</span>82<span class="header-brand-text-alt"></span>
+                            <span class="header-brand-text-alt">CMSD</span>82
                         </h1>
                     </a>
                     <div class="header-divider d-none d-lg-block"></div>
@@ -111,9 +111,9 @@
                                 </div>
                             </li>
 
-                            <!-- District updates -->
+                            <!-- District news -->
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link">District Updates</a>
+                                <a href="#" class="nav-link">District News</a>
                             </li>
 
                             <!-- Careers -->
