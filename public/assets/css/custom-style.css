@@ -104,6 +104,10 @@
         padding-left: 0.8rem;
         padding-right: 0.8rem;
     }
+    .navbar-expand-md .navbar-main .dropdown-mega-menu .dropdown-menu {
+        max-width: 80%;
+        margin: auto;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -219,7 +223,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(52, 58, 64, 0.35);
+    background: rgba(52, 58, 64, 0.30);
 }
 
 .owl-dots {
