@@ -76,13 +76,13 @@
                                             <a href="index.html" class="dropdown-item">Information Technology Department</a>
                                         </div>
                                         <div class="col-lg-4">
-                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Governance</h4>
-                                            <a href="index.html" class="dropdown-item">School Trustees</a>
-                                            <a href="index.html" class="dropdown-item">Board of Education Strategic Plan</a>
-                                            <a href="index.html" class="dropdown-item">Board Meetings, Agendas, and Minutes</a>
-                                            <a href="index.html" class="dropdown-item">Policies and Bylaws</a>
-                                            <a href="index.html" class="dropdown-item">Administrative Procedures</a>
-                                            <a href="index.html" class="dropdown-item">Sample Link</a>
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Miscellaneous</h4>
+                                            <a href="index.html" class="dropdown-item">District and School Calendar</a>
+                                            <a href="index.html" class="dropdown-item">District-wide Bell Schedule</a>
+                                            <a href="index.html" class="dropdown-item">Bus Schedule and Routes</a>
+                                            <a href="index.html" class="dropdown-item">District Files</a>
+                                            <a href="index.html" class="dropdown-item">Tech Help</a>
+                                            <a href="index.html" class="dropdown-item">Questions and Concerns</a>
                                         </div>
                                     </div>
                                 </div>
@@ -104,9 +104,6 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
                                 <!-- Menu -->
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="index.html" class="dropdown-item">District and School Calendar</a>
-                                    <a href="index.html" class="dropdown-item">District-wide Bell Schedule</a>
-                                    <a href="index.html" class="dropdown-item">Bus Schedule and Routes</a>
                                     <a href="index.html" class="dropdown-item">Online Resources</a>
                                 </div>
                             </li>
@@ -134,14 +131,40 @@
                 <ul class="nav navbar-nav container dropdown-effect-fade">
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Test Link 1</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">I want to: </a>
                     <div class="dropdown-menu">
-                        <a href="customers.html" class="dropdown-item">Link Item</a>
-                        <a href="customers.html" class="dropdown-item">Link Item</a>
-                        <a href="customers.html" class="dropdown-item">Link Item</a>
-                        <a href="customers.html" class="dropdown-item">Link Item</a>
-                        <a href="customers.html" class="dropdown-item">Link Item</a>
-                    </div>
+                        <a href="customers.html" class="dropdown-item">Apply for a Job</a>
+                        <a href="customers.html" class="dropdown-item">Know Which School to Attend</a>
+                        <a href="customers.html" class="dropdown-item">Request a Transcript</a>
+                        <a href="customers.html" class="dropdown-item">See Scholarships and Contests</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Board</a>
+                    <div class="dropdown-menu">
+                        <a href="customers.html" class="dropdown-item">School Trustees</a>
+                        <div class="dropdown dropdown-submenu dropdown-men-right">
+                            <a href="headers.html" class="dropdown-item dropdown-toggle" id="election-trustees" data-toggle="dropdown" data-hover="dropdown">General Local Elections for School Trustees</a>
+                            <div class="dropdown-menu" role="menu" aria-labelledby="election-trustees"> 
+                                <a href="footer-light.html" class="dropdown-item">Mail Ballot Voting</a> 
+                                <a href="footer-compact.html" class="dropdown-item">Declaration of Candidates</a> 
+                                <a href="footer-menus.html" class="dropdown-item">Election by Voting</a>
+                                <a href="footer-menus.html" class="dropdown-item">Election by Acclamation</a>
+                                <a href="footer-compact-light.html" class="dropdown-item">Candidate Withdrawal</a>
+                            </div>
+                        </div>
+                        <a href="customers.html" class="dropdown-item">Strategic Plan</a>
+                        <a href="customers.html" class="dropdown-item">Meetings, Agendas, and Minutes</a>
+                        <div class="dropdown dropdown-submenu dropdown-men-right">
+                            <a href="headers.html" class="dropdown-item dropdown-toggle" id="policies-bylaws" data-toggle="dropdown" data-hover="dropdown">Policies and Bylaws</a>
+                            <div class="dropdown-menu" role="menu" aria-labelledby="policies-bylaws"> 
+                                <a href="footer-light.html" class="dropdown-item">1000 Students and Programs</a> 
+                                <a href="footer-compact.html" class="dropdown-item">2000 Personnel</a> 
+                                <a href="footer-menus.html" class="dropdown-item">3000 Finances</a>
+                                <a href="footer-compact-light.html" class="dropdown-item">4000 Facilities, Grounds, and Equipment</a>    
+                                <a href="footer-menus-light.html" class="dropdown-item">5000 Governance</a> 
+                            </div>
+                        </div>
+                        <a href="customers.html" class="dropdown-item">Administrative Procedures and Regulations</a>
                 </li>
                 <li class="nav-item">
                     <a href="/" class="nav-link">Test Link 2</a>
