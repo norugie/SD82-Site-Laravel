@@ -142,8 +142,8 @@
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Board</a>
                     <div class="dropdown-menu">
                         <a href="customers.html" class="dropdown-item">School Trustees</a>
-                        <div class="dropdown dropdown-submenu dropdown-men-right">
-                            <a href="headers.html" class="dropdown-item dropdown-toggle" id="election-trustees" data-toggle="dropdown" data-hover="dropdown">General Local Elections for School Trustees</a>
+                        <div class="dropdown dropdown-submenu dropdown-menu-right">
+                            <a href="headers.html" class="dropdown-item dropdown-toggle dropdown" id="election-trustees" data-toggle="dropdown">General Local Elections for School Trustees</a>
                             <div class="dropdown-menu" role="menu" aria-labelledby="election-trustees"> 
                                 <a href="footer-light.html" class="dropdown-item">Mail Ballot Voting</a> 
                                 <a href="footer-compact.html" class="dropdown-item">Declaration of Candidates</a> 
@@ -154,8 +154,8 @@
                         </div>
                         <a href="customers.html" class="dropdown-item">Strategic Plan</a>
                         <a href="customers.html" class="dropdown-item">Meetings, Agendas, and Minutes</a>
-                        <div class="dropdown dropdown-submenu dropdown-men-right">
-                            <a href="headers.html" class="dropdown-item dropdown-toggle" id="policies-bylaws" data-toggle="dropdown" data-hover="dropdown">Policies and Bylaws</a>
+                        <div class="dropdown dropdown-submenu dropdown-menu-right">
+                            <a href="headers.html" class="dropdown-item dropdown-toggle dropdown" id="policies-bylaws" data-toggle="dropdown">Policies and Bylaws</a>
                             <div class="dropdown-menu" role="menu" aria-labelledby="policies-bylaws"> 
                                 <a href="footer-light.html" class="dropdown-item">1000 Students and Programs</a> 
                                 <a href="footer-compact.html" class="dropdown-item">2000 Personnel</a> 
