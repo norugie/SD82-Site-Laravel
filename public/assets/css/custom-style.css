@@ -107,6 +107,10 @@
     .navbar-expand-md .navbar-main .dropdown-mega-menu .dropdown-menu {
         max-width: 80%;
         margin: auto;
+        font-size: 14px;
+    }
+    .navbar-expand-md .navbar-main.collapse .dropdown-menu .dropdown-item {
+        font-size: 14px;
     }
 }
 
@@ -247,4 +251,13 @@
     right: 0;
     margin-top: -200px;
     z-index: 99;
+}
+
+.link-container {
+    column-count: 2;
+}
+
+.link-list {
+    /* margin-bottom: 1rem; */
+    break-inside: avoid-column;
 }

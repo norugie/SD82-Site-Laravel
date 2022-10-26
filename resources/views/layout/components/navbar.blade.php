@@ -104,7 +104,9 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
                                 <!-- Menu -->
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="index.html" class="dropdown-item">Online Resources</a>
+                                    <a href="index.html" class="dropdown-item">Teacher and Staff Resources</a>
+                                    <a href="index.html" class="dropdown-item">Student Resources</a>
+                                    <a href="index.html" class="dropdown-item">Parent Resources</a>
                                 </div>
                             </li>
 
@@ -129,55 +131,139 @@
             <div class="navbar-main navbar-second collapse bg-dark navbar-dark">
                 <!--main navigation-->
                 <ul class="nav navbar-nav container dropdown-effect-fade">
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">I want to: </a>
-                    <div class="dropdown-menu">
-                        <a href="customers.html" class="dropdown-item">Apply for a Job</a>
-                        <a href="customers.html" class="dropdown-item">Know Which School to Attend</a>
-                        <a href="customers.html" class="dropdown-item">Request a Transcript</a>
-                        <a href="customers.html" class="dropdown-item">See Scholarships and Contests</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Board</a>
-                    <div class="dropdown-menu">
-                        <a href="customers.html" class="dropdown-item">School Trustees</a>
-                        <div class="dropdown dropdown-submenu dropdown-menu-right">
-                            <a href="headers.html" class="dropdown-item dropdown-toggle dropdown" id="election-trustees" data-toggle="dropdown">General Local Elections for School Trustees</a>
-                            <div class="dropdown-menu" role="menu" aria-labelledby="election-trustees"> 
-                                <a href="footer-light.html" class="dropdown-item">Mail Ballot Voting</a> 
-                                <a href="footer-compact.html" class="dropdown-item">Declaration of Candidates</a> 
-                                <a href="footer-menus.html" class="dropdown-item">Election by Voting</a>
-                                <a href="footer-menus.html" class="dropdown-item">Election by Acclamation</a>
-                                <a href="footer-compact-light.html" class="dropdown-item">Candidate Withdrawal</a>
+                    <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
+                        <a href="#" class="nav-link dropdown-toggle" id="quick-links" data-toggle="dropdown" data-hover="dropdown">Quick Links</a>
+                        <!-- Dropdown Menu - Mega Menu -->
+                        <div class="dropdown-menu">
+                            <div class="row">
+                                <div class="col-12 col-lg-12">
+                                    <div class="link-container">
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <a href="customers.html" class="dropdown-item">Strategic Plan</a>
-                        <a href="customers.html" class="dropdown-item">Meetings, Agendas, and Minutes</a>
-                        <div class="dropdown dropdown-submenu dropdown-menu-right">
-                            <a href="headers.html" class="dropdown-item dropdown-toggle dropdown" id="policies-bylaws" data-toggle="dropdown">Policies and Bylaws</a>
-                            <div class="dropdown-menu" role="menu" aria-labelledby="policies-bylaws"> 
-                                <a href="footer-light.html" class="dropdown-item">1000 Students and Programs</a> 
-                                <a href="footer-compact.html" class="dropdown-item">2000 Personnel</a> 
-                                <a href="footer-menus.html" class="dropdown-item">3000 Finances</a>
-                                <a href="footer-compact-light.html" class="dropdown-item">4000 Facilities, Grounds, and Equipment</a>    
-                                <a href="footer-menus-light.html" class="dropdown-item">5000 Governance</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">I want to: </a>
+                        <div class="dropdown-menu">
+                            <a href="customers.html" class="dropdown-item">Apply for a Job</a>
+                            <a href="customers.html" class="dropdown-item">Know Which School to Attend</a>
+                            <a href="customers.html" class="dropdown-item">Request a Transcript</a>
+                            <a href="customers.html" class="dropdown-item">See Scholarships and Contests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Board</a>
+                        <div class="dropdown-menu">
+                            <a href="customers.html" class="dropdown-item">School Trustees</a>
+                            <div class="dropdown dropdown-submenu dropdown-menu-right">
+                                <a href="headers.html" class="dropdown-item dropdown-toggle dropdown" id="election-trustees" data-toggle="dropdown">General Local Elections for School Trustees</a>
+                                <div class="dropdown-menu" role="menu" aria-labelledby="election-trustees"> 
+                                    <a href="footer-light.html" class="dropdown-item">Mail Ballot Voting</a> 
+                                    <a href="footer-compact.html" class="dropdown-item">Declaration of Candidates</a> 
+                                    <a href="footer-menus.html" class="dropdown-item">Election by Voting</a>
+                                    <a href="footer-menus.html" class="dropdown-item">Election by Acclamation</a>
+                                    <a href="footer-compact-light.html" class="dropdown-item">Candidate Withdrawal</a>
+                                </div>
+                            </div>
+                            <a href="customers.html" class="dropdown-item">Strategic Plan</a>
+                            <a href="customers.html" class="dropdown-item">Meetings, Agendas, and Minutes</a>
+                            <div class="dropdown dropdown-submenu dropdown-menu-right">
+                                <a href="headers.html" class="dropdown-item dropdown-toggle dropdown" id="policies-bylaws" data-toggle="dropdown">Policies and Bylaws</a>
+                                <div class="dropdown-menu" role="menu" aria-labelledby="policies-bylaws"> 
+                                    <a href="footer-light.html" class="dropdown-item">1000 Students and Programs</a> 
+                                    <a href="footer-compact.html" class="dropdown-item">2000 Personnel</a> 
+                                    <a href="footer-menus.html" class="dropdown-item">3000 Finances</a>
+                                    <a href="footer-compact-light.html" class="dropdown-item">4000 Facilities, Grounds, and Equipment</a>    
+                                    <a href="footer-menus-light.html" class="dropdown-item">5000 Governance</a> 
+                                </div>
+                            </div>
+                            <a href="customers.html" class="dropdown-item">Administrative Procedures and Regulations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">District Logins</a>
+                        <div class="dropdown-menu">
+                            <a href="customers.html" class="dropdown-item">District Email</a>
+                            <a href="customers.html" class="dropdown-item">District SharePoint</a>
+                            <a href="customers.html" class="dropdown-item">SmartFind Express</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
+                        <a href="#" class="nav-link dropdown-toggle" id="covid-links" data-toggle="dropdown" data-hover="dropdown">COVID-19 Resources</a>
+                        <!-- Dropdown Menu - Mega Menu -->
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="row">
+                                <div class="col-12 col-lg-12">
+                                    <div class="link-container">
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <a href="customers.html" class="dropdown-item">Administrative Procedures and Regulations</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Test Link 2</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Test Link 3</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Test Link 4</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Test Link 5</a>
-                </li>
+                    </li>
                 </ul>
             </div>
             <!--/.navbar-collapse -->
