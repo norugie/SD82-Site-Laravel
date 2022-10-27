@@ -109,10 +109,10 @@
         margin: auto;
         font-size: 14px;
     }
-    .navbar-expand-md .navbar-main.collapse .dropdown-menu-custom,
+    .navbar-expand-md .navbar-main.collapse .dropdown-menu-fluid,
     .navbar-expand-md .navbar-main.collapse .dropdown-menu .dropdown-item {
         font-size: 14px;
-        max-width: 400px!important;
+        max-width: 500px!important;
     }
 }
 
