@@ -248,7 +248,7 @@
                                 <div class="col-12 col-lg-12">
                                     <div class="link-container">
                                         <div class="link-list">
-                                            <a href="#" class="dropdown-item">COVID-19 Communicable Disease Prevention Plan/a>
+                                            <a href="#" class="dropdown-item">COVID-19 Communicable Disease Prevention Plan</a>
                                         </div>
                                         <div class="link-list">
                                             <a href="#" class="dropdown-item">Pandemic Response Plan</a>
