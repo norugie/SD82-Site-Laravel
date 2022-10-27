@@ -1,5 +1,10 @@
 <div id="header">
-
+    <!--Header upper region-->
+    <div class="header-upper bg-primary header-upper-notice py-1">
+        <div class="container">
+            <div class="text-xs text-uppercase text-center font-weight-bold" >This site is still in development</div>
+        </div>
+    </div>
     <!--Header upper region-->
     <div class="header-upper py-1">
         <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
@@ -26,7 +31,7 @@
             <div class="header-inner container">
                 <!--branding/logo -->
                 <div class="header-brand">
-                    <a class="header-brand-text" href="index.html" title="Home">
+                    <a class="header-brand-text" href="/" title="Home">
                         <h1 class="h2">
                             <span class="header-brand-text-alt">CMSD</span>82
                         </h1>
@@ -60,30 +65,30 @@
                                     <div class="row">
                                         <div class="col-lg-4"> 
                                             <h4 class="dropdown-header d-none d-lg-block mt-0">District Information</h4>
-                                            <a href="index.html" class="dropdown-item">About the District</a>
-                                            <a href="index.html" class="dropdown-item">District Administration and Staff</a>
-                                            <a href="index.html" class="dropdown-item">Contact us</a>
+                                            <a href="#" class="dropdown-item">About the District</a>
+                                            <a href="#" class="dropdown-item">District Administration and Staff</a>
+                                            <a href="#" class="dropdown-item">Contact us</a>
                                             <h4 class="dropdown-header d-none d-lg-block mt-0">Curriculum</h4>
-                                            <a href="index.html" class="dropdown-item">Inclusive Education - Learner Support</a>
-                                            <a href="index.html" class="dropdown-item">Indigenous Enhancement Agreement</a>
-                                            <a href="index.html" class="dropdown-item">StrongStart Program</a>
+                                            <a href="#" class="dropdown-item">Inclusive Education - Learner Support</a>
+                                            <a href="#" class="dropdown-item">Indigenous Enhancement Agreement</a>
+                                            <a href="#" class="dropdown-item">StrongStart Program</a>
                                         </div>
                                         <div class="col-lg-4"> 
                                             <h4 class="dropdown-header d-none d-lg-block mt-0">Departments</h4>
-                                            <a href="index.html" class="dropdown-item">Superintendent's Office</a>
-                                            <a href="index.html" class="dropdown-item">Secretary Treasurer and Finance</a>
-                                            <a href="index.html" class="dropdown-item">Human Resources</a>
-                                            <a href="index.html" class="dropdown-item">Facilities Department</a>
-                                            <a href="index.html" class="dropdown-item">Information Technology Department</a>
+                                            <a href="#" class="dropdown-item">Superintendent's Office</a>
+                                            <a href="#" class="dropdown-item">Secretary Treasurer and Finance</a>
+                                            <a href="#" class="dropdown-item">Human Resources</a>
+                                            <a href="#" class="dropdown-item">Facilities Department</a>
+                                            <a href="#" class="dropdown-item">Information Technology Department</a>
                                         </div>
                                         <div class="col-lg-4">
                                             <h4 class="dropdown-header d-none d-lg-block mt-0">Miscellaneous</h4>
-                                            <a href="index.html" class="dropdown-item">District and School Calendar</a>
-                                            <a href="index.html" class="dropdown-item">District-wide Bell Schedule</a>
-                                            <a href="index.html" class="dropdown-item">Bus Schedule and Routes</a>
-                                            <a href="index.html" class="dropdown-item">District Files</a>
-                                            <a href="index.html" class="dropdown-item">Tech Help</a>
-                                            <a href="index.html" class="dropdown-item">Questions and Concerns</a>
+                                            <a href="#" class="dropdown-item">District and School Calendar</a>
+                                            <a href="#" class="dropdown-item">District-wide Bell Schedule</a>
+                                            <a href="#" class="dropdown-item">Bus Schedule and Routes</a>
+                                            <a href="#" class="dropdown-item">District Files</a>
+                                            <a href="#" class="dropdown-item">Tech Help</a>
+                                            <a href="#" class="dropdown-item">Questions and Concerns</a>
                                         </div>
                                     </div>
                                 </div>
@@ -94,46 +99,9 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Schools</a>
                                 <!-- Menu -->
                                 <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
-                                    <a href="index.html" class="dropdown-item">School Administration</a>
-                                    <a href="index.html" class="dropdown-item">All Schools</a>
-                                    <a href="index.html" class="dropdown-item">School Growth Plans</a>
-                                </div>
-                            </li>
-
-                            <!-- Resources -->
-                            <li class="nav-item dropdown dropdown-mega-menu ">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our District</a>
-                                <!-- Dropdown Menu - mega menu-->
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <div class="row">
-                                        <div class="col-lg-4"> 
-                                            <h4 class="dropdown-header d-none d-lg-block mt-0">District Information</h4>
-                                            <a href="index.html" class="dropdown-item">About the District</a>
-                                            <a href="index.html" class="dropdown-item">District Administration and Staff</a>
-                                            <a href="index.html" class="dropdown-item">Contact us</a>
-                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Curriculum</h4>
-                                            <a href="index.html" class="dropdown-item">Inclusive Education - Learner Support</a>
-                                            <a href="index.html" class="dropdown-item">Indigenous Enhancement Agreement</a>
-                                            <a href="index.html" class="dropdown-item">StrongStart Program</a>
-                                        </div>
-                                        <div class="col-lg-4"> 
-                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Departments</h4>
-                                            <a href="index.html" class="dropdown-item">Superintendent's Office</a>
-                                            <a href="index.html" class="dropdown-item">Secretary Treasurer and Finance</a>
-                                            <a href="index.html" class="dropdown-item">Human Resources</a>
-                                            <a href="index.html" class="dropdown-item">Facilities Department</a>
-                                            <a href="index.html" class="dropdown-item">Information Technology Department</a>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Miscellaneous</h4>
-                                            <a href="index.html" class="dropdown-item">District and School Calendar</a>
-                                            <a href="index.html" class="dropdown-item">District-wide Bell Schedule</a>
-                                            <a href="index.html" class="dropdown-item">Bus Schedule and Routes</a>
-                                            <a href="index.html" class="dropdown-item">District Files</a>
-                                            <a href="index.html" class="dropdown-item">Tech Help</a>
-                                            <a href="index.html" class="dropdown-item">Questions and Concerns</a>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="dropdown-item">School Administration</a>
+                                    <a href="#" class="dropdown-item">All Schools</a>
+                                    <a href="#" class="dropdown-item">School Growth Plans</a>
                                 </div>
                             </li>
 
@@ -147,9 +115,9 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
                                 <!-- Menu -->
                                 <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
-                                    <a href="index.html" class="dropdown-item">Teacher (CMTF) Job Postings</a>
-                                    <a href="index.html" class="dropdown-item">Support Staff (CUPE) Job Postings</a>
-                                    <a href="index.html" class="dropdown-item">Administrative and Exempt Staff Job Postings</a>
+                                    <a href="#" class="dropdown-item">Teacher (CMTF) Job Postings</a>
+                                    <a href="#" class="dropdown-item">Support Staff (CUPE) Job Postings</a>
+                                    <a href="#" class="dropdown-item">Administrative and Exempt Staff Job Postings</a>
                                 </div>
                             </li>
                         </ul>
@@ -172,31 +140,31 @@
                                 <div class="col-12 col-lg-12">
                                     <div class="link-container">
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">District Video Gallery</a>
+                                            <a href="#" class="dropdown-item">District Video Gallery</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">erase = Expect Respect & a Safe Education</a>
+                                            <a href="#" class="dropdown-item">erase = Expect Respect & a Safe Education</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">erase Report It Tool</a>
+                                            <a href="#" class="dropdown-item">erase Report It Tool</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Healthy Schools Network & Newsletters</a>
+                                            <a href="#" class="dropdown-item">Healthy Schools Network & Newsletters</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">LearnNow BC</a>
+                                            <a href="#" class="dropdown-item">LearnNow BC</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Ministry of Education - Parent Web</a>
+                                            <a href="#" class="dropdown-item">Ministry of Education - Parent Web</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Ministry of Education - Student Web</a>
+                                            <a href="#" class="dropdown-item">Ministry of Education - Student Web</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Student Learning Survey (2021-2022)</a>
+                                            <a href="#" class="dropdown-item">Student Learning Survey (2021-2022)</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Superintendent's Monthly Report to the Board</a>
+                                            <a href="#" class="dropdown-item">Superintendent's Monthly Report to the Board</a>
                                         </div>
                                     </div>
                                 </div>
@@ -238,6 +206,7 @@
                                 </div>
                             </div>
                             <a href="customers.html" class="dropdown-item">Administrative Procedures and Regulations</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">District Logins</a>
@@ -251,6 +220,26 @@
                             <a href="customers.html" class="dropdown-item">Password Utility</a>
                             <a href="customers.html" class="dropdown-item">SmartFind Express</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
+                        <!-- Menu -->
+                        <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
+                            <a href="#" class="dropdown-item">District Resources</a>
+                            <a href="#" class="dropdown-item">Student Resources</a>
+                            <div class="dropdown dropdown-submenu">
+                                <a href="headers.html" class="dropdown-item dropdown-toggle dropdown" id="election-trustees" data-toggle="dropdown">Parent and Guardian Resources</a>
+                                <div class="dropdown-menu dropdown-menu-fluid" role="menu" aria-labelledby="election-trustees"> 
+                                    <a href="footer-light.html" class="dropdown-item">VTRA Fair Notice Protocol</a> 
+                                    <a href="footer-compact.html" class="dropdown-item">Student Suspension Procedure</a> 
+                                    <a href="footer-menus.html" class="dropdown-item">Student Transportation Regulation</a>
+                                    <a href="footer-menus.html" class="dropdown-item">School Newsletters</a>
+                                    <a href="footer-compact-light.html" class="dropdown-item">Student Registration</a>
+                                    <a href="footer-compact-light.html" class="dropdown-item">Cross Boundary Application</a>
+                                    <a href="footer-compact-light.html" class="dropdown-item">Learning Resources for Families</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
                         <a href="#" class="nav-link dropdown-toggle" id="covid-links" data-toggle="dropdown" data-hover="dropdown">COVID-19 Resources</a>
                         <!-- Dropdown Menu - Mega Menu -->
@@ -259,37 +248,37 @@
                                 <div class="col-12 col-lg-12">
                                     <div class="link-container">
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">COVID-19 Communicable Disease Prevention Plan/a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">Pandemic Response Plan</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">School Ventilation</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">K12-Schools and COVID-19 Website</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">Communications to Families</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">PHO COVID-19 Province-wide Orders and Guidelines</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">Provincial Health Updates and Resources</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">Minitries of Education and Health Information</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">COVID-19 Website Links and Resources</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">Managing Stress During COVID-19</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="#" class="dropdown-item">Tips for Talking to Kids About COVID-19</a>
                                         </div>
                                     </div>
                                 </div>
