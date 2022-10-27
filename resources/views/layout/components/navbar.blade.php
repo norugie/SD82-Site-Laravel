@@ -208,7 +208,7 @@
                             <a href="customers.html" class="dropdown-item">Administrative Procedures and Regulations</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">District Logins</a>
                         <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
                             <a href="customers.html" class="dropdown-item">District Email</a>
@@ -219,10 +219,10 @@
                             <a href="customers.html" class="dropdown-item">MyEducation BC</a>
                             <a href="customers.html" class="dropdown-item">Password Utility</a>
                             <a href="customers.html" class="dropdown-item">SmartFind Express</a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
-                        <!-- Menu -->
                         <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
                             <a href="#" class="dropdown-item">District Resources</a>
                             <a href="#" class="dropdown-item">Student Resources</a>
