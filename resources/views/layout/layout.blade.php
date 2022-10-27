@@ -18,13 +18,15 @@
                     <span>{{ strtoupper($page) }} PAGE</span>
                 </h2>
                 <div class="row">
-                    
-                    <!-- ======== @SiteSection: #content Site content ======== -->
-                    @yield('content')
+                    <div class="col-md-9">
+                        <!-- ======== @SiteSection: #content Site content ======== -->
+                        @yield('content')
+                    </div>
 
-                    <!-- ======== @SiteSection: #content Site sidebar ======== -->
-                    @include('layout.components.sidebar')
-
+                    <div class="col-md-3 sidebar-right">
+                        <!-- ======== @SiteSection: #content Site sidebar ======== -->
+                        @include('layout.components.sidebar')
+                    </div>
                 </div>
             </div>
         </div>
