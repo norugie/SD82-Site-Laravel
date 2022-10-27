@@ -43,12 +43,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/{page}', function (String $page) {
-    return view($page, ['page' => $page]);
-});
-
-// ***-- Backend Routes --*** //
-
 Route::get('/error', function () {
     return view('error');
 });
@@ -56,6 +50,12 @@ Route::get('/error', function () {
 Route::get('/signin', [AuthController::class, 'signin']);
 Route::get('/callback', [AuthController::class, 'callback']);
 Route::get('/signout', [AuthController::class, 'signout']);
+
+Route::get('/{page}', function (String $page) {
+    return view($page, ['page' => $page]);
+});
+
+// ***-- Backend Routes --*** //
 
 Route::group(['middleware' => 'authAD', 'prefix' => 'cms'], function(){
     Route::get('/dashboard', [DashboardController::class, 'index']);
