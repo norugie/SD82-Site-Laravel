@@ -37,13 +37,17 @@ use App\Http\Controllers\FileUploadController;
 |
 */
 
+// ***-- Site Routes --*** //
+
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/posts', function () {
-    return view('posts');
+Route::get('/{page}', function (String $page) {
+    return view($page, ['page' => $page]);
 });
+
+// ***-- Backend Routes --*** //
 
 Route::get('/error', function () {
     return view('error');

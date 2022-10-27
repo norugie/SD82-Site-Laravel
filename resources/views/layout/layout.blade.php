@@ -15,7 +15,7 @@
         <div id="content">
             <div class="container">
                 <h2 class="title-divider">
-                    <span>District News</span>
+                    <span>{{ strtoupper($page) }} PAGE</span>
                 </h2>
                 <div class="row">
                     

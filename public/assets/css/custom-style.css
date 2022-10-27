@@ -104,13 +104,15 @@
         padding-left: 0.8rem;
         padding-right: 0.8rem;
     }
-    .navbar-expand-md .navbar-main .dropdown-mega-menu .dropdown-menu {
-        max-width: 80%;
+    .navbar-expand-md .navbar-main.collapse .dropdown-menu .navbar-expand-md .navbar-main .dropdown-mega-menu .dropdown-menu {
+        max-width: 100%;
         margin: auto;
         font-size: 14px;
     }
+    .navbar-expand-md .navbar-main.collapse .dropdown-menu-custom,
     .navbar-expand-md .navbar-main.collapse .dropdown-menu .dropdown-item {
         font-size: 14px;
+        max-width: 400px!important;
     }
 }
 

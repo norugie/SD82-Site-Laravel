@@ -92,7 +92,7 @@
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Schools</a>
                                 <!-- Menu -->
-                                <div class="dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-menu dropdown-menu-custom dropdown-menu-right">
                                     <a href="index.html" class="dropdown-item">School Administration</a>
                                     <a href="index.html" class="dropdown-item">All Schools</a>
                                     <a href="index.html" class="dropdown-item">School Growth Plans</a>
@@ -103,7 +103,7 @@
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
                                 <!-- Menu -->
-                                <div class="dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-menu dropdown-menu-custom dropdown-menu-right">
                                     <a href="index.html" class="dropdown-item">Teacher and Staff Resources</a>
                                     <a href="index.html" class="dropdown-item">Student Resources</a>
                                     <a href="index.html" class="dropdown-item">Parent Resources</a>
@@ -117,7 +117,13 @@
 
                             <!-- Careers -->
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link">Careers</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
+                                <!-- Menu -->
+                                <div class="dropdown-menu dropdown-menu-custom dropdown-menu-right">
+                                    <a href="index.html" class="dropdown-item">Teacher (CMTF) Job Postings</a>
+                                    <a href="index.html" class="dropdown-item">Support Staff (CUPE) Job Postings</a>
+                                    <a href="index.html" class="dropdown-item">Administrative and Exempt Staff Job Postings</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -178,7 +184,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">I want to: </a>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu dropdown-menu-custom">
                             <a href="customers.html" class="dropdown-item">Apply for a Job</a>
                             <a href="customers.html" class="dropdown-item">Know Which School to Attend</a>
                             <a href="customers.html" class="dropdown-item">Request a Transcript</a>
@@ -186,11 +192,11 @@
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Board</a>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu dropdown-menu-custom">
                             <a href="customers.html" class="dropdown-item">School Trustees</a>
                             <div class="dropdown dropdown-submenu dropdown-menu-right">
                                 <a href="headers.html" class="dropdown-item dropdown-toggle dropdown" id="election-trustees" data-toggle="dropdown">General Local Elections for School Trustees</a>
-                                <div class="dropdown-menu" role="menu" aria-labelledby="election-trustees"> 
+                                <div class="dropdown-menu dropdown-menu-custom" role="menu" aria-labelledby="election-trustees"> 
                                     <a href="footer-light.html" class="dropdown-item">Mail Ballot Voting</a> 
                                     <a href="footer-compact.html" class="dropdown-item">Declaration of Candidates</a> 
                                     <a href="footer-menus.html" class="dropdown-item">Election by Voting</a>
@@ -202,7 +208,7 @@
                             <a href="customers.html" class="dropdown-item">Meetings, Agendas, and Minutes</a>
                             <div class="dropdown dropdown-submenu dropdown-menu-right">
                                 <a href="headers.html" class="dropdown-item dropdown-toggle dropdown" id="policies-bylaws" data-toggle="dropdown">Policies and Bylaws</a>
-                                <div class="dropdown-menu" role="menu" aria-labelledby="policies-bylaws"> 
+                                <div class="dropdown-menu dropdown-menu-custom" role="menu" aria-labelledby="policies-bylaws"> 
                                     <a href="footer-light.html" class="dropdown-item">1000 Students and Programs</a> 
                                     <a href="footer-compact.html" class="dropdown-item">2000 Personnel</a> 
                                     <a href="footer-menus.html" class="dropdown-item">3000 Finances</a>
@@ -214,7 +220,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">District Logins</a>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu dropdown-menu-custom">
                             <a href="customers.html" class="dropdown-item">District Email</a>
                             <a href="customers.html" class="dropdown-item">District SharePoint</a>
                             <a href="customers.html" class="dropdown-item">SmartFind Express</a>
