@@ -1,7 +1,7 @@
 @extends ( 'layout.layout' )
 
 @section ( 'content' )
-    <!-- Blog post -->
+    <!-- News post -->
     <div class="row blog-post">
         <div class="col-md-12">
             <div class="media-body">

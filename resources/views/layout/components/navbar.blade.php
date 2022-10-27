@@ -101,13 +101,39 @@
                             </li>
 
                             <!-- Resources -->
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
-                                <!-- Menu -->
-                                <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
-                                    <a href="index.html" class="dropdown-item">Teacher and Staff Resources</a>
-                                    <a href="index.html" class="dropdown-item">Student Resources</a>
-                                    <a href="index.html" class="dropdown-item">Parent Resources</a>
+                            <li class="nav-item dropdown dropdown-mega-menu ">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our District</a>
+                                <!-- Dropdown Menu - mega menu-->
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <div class="row">
+                                        <div class="col-lg-4"> 
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">District Information</h4>
+                                            <a href="index.html" class="dropdown-item">About the District</a>
+                                            <a href="index.html" class="dropdown-item">District Administration and Staff</a>
+                                            <a href="index.html" class="dropdown-item">Contact us</a>
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Curriculum</h4>
+                                            <a href="index.html" class="dropdown-item">Inclusive Education - Learner Support</a>
+                                            <a href="index.html" class="dropdown-item">Indigenous Enhancement Agreement</a>
+                                            <a href="index.html" class="dropdown-item">StrongStart Program</a>
+                                        </div>
+                                        <div class="col-lg-4"> 
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Departments</h4>
+                                            <a href="index.html" class="dropdown-item">Superintendent's Office</a>
+                                            <a href="index.html" class="dropdown-item">Secretary Treasurer and Finance</a>
+                                            <a href="index.html" class="dropdown-item">Human Resources</a>
+                                            <a href="index.html" class="dropdown-item">Facilities Department</a>
+                                            <a href="index.html" class="dropdown-item">Information Technology Department</a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <h4 class="dropdown-header d-none d-lg-block mt-0">Miscellaneous</h4>
+                                            <a href="index.html" class="dropdown-item">District and School Calendar</a>
+                                            <a href="index.html" class="dropdown-item">District-wide Bell Schedule</a>
+                                            <a href="index.html" class="dropdown-item">Bus Schedule and Routes</a>
+                                            <a href="index.html" class="dropdown-item">District Files</a>
+                                            <a href="index.html" class="dropdown-item">Tech Help</a>
+                                            <a href="index.html" class="dropdown-item">Questions and Concerns</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
 
@@ -146,37 +172,31 @@
                                 <div class="col-12 col-lg-12">
                                     <div class="link-container">
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="index.html" class="dropdown-item">District Video Gallery</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="index.html" class="dropdown-item">erase = Expect Respect & a Safe Education</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="index.html" class="dropdown-item">erase Report It Tool</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="index.html" class="dropdown-item">Healthy Schools Network & Newsletters</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="index.html" class="dropdown-item">LearnNow BC</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="index.html" class="dropdown-item">Ministry of Education - Parent Web</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="index.html" class="dropdown-item">Ministry of Education - Student Web</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="index.html" class="dropdown-item">Student Learning Survey (2021-2022)</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="index.html" class="dropdown-item">Link Sample</a>
+                                            <a href="index.html" class="dropdown-item">Superintendent's Monthly Report to the Board</a>
                                         </div>
                                     </div>
                                 </div>
@@ -224,6 +244,11 @@
                         <div class="dropdown-menu dropdown-menu-fluid">
                             <a href="customers.html" class="dropdown-item">District Email</a>
                             <a href="customers.html" class="dropdown-item">District SharePoint</a>
+                            <a href="customers.html" class="dropdown-item">District Zoom</a>
+                            <a href="customers.html" class="dropdown-item">eServe</a>
+                            <a href="customers.html" class="dropdown-item">FreshGrade</a>
+                            <a href="customers.html" class="dropdown-item">MyEducation BC</a>
+                            <a href="customers.html" class="dropdown-item">Password Utility</a>
                             <a href="customers.html" class="dropdown-item">SmartFind Express</a>
                     </li>
                     <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">

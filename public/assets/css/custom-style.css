@@ -268,3 +268,8 @@
 .header-search form input {
     font-size: 25px;
 }
+
+.img-thumbnail {
+    height: 200px;
+    border-radius: 50%;
+}
