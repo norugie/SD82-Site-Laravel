@@ -210,7 +210,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">District Logins</a>
-                        <div class="dropdown-menu dropdown-menu-fluid">
+                        <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
                             <a href="customers.html" class="dropdown-item">District Email</a>
                             <a href="customers.html" class="dropdown-item">District SharePoint</a>
                             <a href="customers.html" class="dropdown-item">District Zoom</a>
