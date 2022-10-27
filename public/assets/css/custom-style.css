@@ -263,3 +263,8 @@
     /* margin-bottom: 1rem; */
     break-inside: avoid-column;
 }
+
+.header-search form .btn,
+.header-search form input {
+    font-size: 25px;
+}
