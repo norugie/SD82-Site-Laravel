@@ -93,38 +93,41 @@
                 <!--main navigation-->
                 <ul class="nav navbar-nav container dropdown-effect-fade">
                     <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
-                        <a href="#" class="nav-link dropdown-toggle" id="quick-links" data-toggle="dropdown" data-hover="dropdown">Learners</a>
+                        <a href="#" class="nav-link dropdown-toggle" id="quick-links" data-toggle="dropdown" data-hover="dropdown">Learner Resources</a>
                         <!-- Dropdown Menu - Mega Menu -->
                         <div class="dropdown-menu">
                             <div class="row">
                                 <div class="col-12 col-lg-12">
                                     <div class="link-container">
                                         <div class="link-list">
-                                            <a href="#" class="dropdown-item">District Video Gallery</a>
+                                            <a href="#" class="dropdown-item">Link Sample</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="#" class="dropdown-item">erase = Expect Respect & a Safe Education</a>
+                                            <a href="#" class="dropdown-item">Link Sample</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="#" class="dropdown-item">erase Report It Tool</a>
+                                            <a href="#" class="dropdown-item">Link Sample</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="#" class="dropdown-item">Healthy Schools Network & Newsletters</a>
+                                            <a href="#" class="dropdown-item">Link Sample</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="#" class="dropdown-item">LearnNow BC</a>
+                                            <a href="#" class="dropdown-item">Link Sample</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="#" class="dropdown-item">Ministry of Education - Parent Web</a>
+                                            <a href="#" class="dropdown-item">Link Sample</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="#" class="dropdown-item">Ministry of Education - Student Web</a>
+                                            <a href="#" class="dropdown-item">Link Sample</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="#" class="dropdown-item">Student Learning Survey (2021-2022)</a>
+                                            <a href="#" class="dropdown-item">Link Sample</a>
                                         </div>
                                         <div class="link-list">
-                                            <a href="#" class="dropdown-item">Superintendent's Monthly Report to the Board</a>
+                                            <a href="#" class="dropdown-item">Link Sample</a>
+                                        </div>
+                                        <div class="link-list">
+                                            <a href="#" class="dropdown-item">Link Sample</a>
                                         </div>
                                     </div>
                                 </div>
@@ -194,7 +197,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Board</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Board of Education</a>
                         <!-- Menu -->
                         <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
                             <a href="customers.html" class="dropdown-item">School Trustees</a>

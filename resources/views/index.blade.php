@@ -9,10 +9,10 @@
                 <a href="/" class="nav-link"> <i class="fas fa-school icon-2x mb-05"></i> <span class="font-weight-bold d-block">Schools & Registration</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"> <i class="fas fa-heartbeat icon-2x mb-05"></i> <span class="font-weight-bold d-block">Health & Security</span> </a>
+                <a href="#" class="nav-link"> <i class="fas fa-heartbeat icon-2x mb-05"></i> <span class="font-weight-bold d-block">Health & Wellness</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"> <i class="fas fa-book icon-2x mb-05"></i> <span class="font-weight-bold d-block">Programs & Support</span> </a>
+                <a href="#" class="nav-link"> <i class="fas fa-book icon-2x mb-05"></i> <span class="font-weight-bold d-block">Learner Programs</span> </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link"> <i class="fas fa-book-reader icon-2x mb-05"></i> <span class="font-weight-bold d-block">Indigenous Education</span> </a>
@@ -24,10 +24,7 @@
                 <a href="#" class="nav-link"> <i class="fas fa-file-signature icon-2x mb-05"></i> <span class="font-weight-bold d-block">Strategic Plans</span> </a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link"> <i class="fas fa-chart-line icon-2x mb-05"></i> <span class="font-weight-bold d-block">District Growth</span> </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link"> <i class="fas fa-calendar icon-2x mb-05"></i> <span class="font-weight-bold d-block">District Calendar</span> </a>
+                <a href="/" class="nav-link"> <i class="fas fa-utensils icon-2x mb-05"></i> <span class="font-weight-bold d-block">Food & Nutrition</span> </a>
             </li>
         </ul>
     </div>
