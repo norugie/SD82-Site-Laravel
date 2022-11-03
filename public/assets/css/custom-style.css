@@ -273,3 +273,13 @@
     height: 200px;
     border-radius: 50%;
 }
+
+.header-inner .header-divider:after {
+    width: 3px;
+    background: #55A79A;
+}
+
+.collapse .dropdown-menu .dropdown-menu-caret-left>.dropdown-item:after {
+    border-width: 0 10px 10px 0!important;
+    right: 97%!important;
+}

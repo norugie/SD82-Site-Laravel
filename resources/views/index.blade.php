@@ -37,11 +37,49 @@
             <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
-                    <h2 class="text-white text-center text-uppercase font-weight-bold my-0">
-                        District News
-                    </h2>
+                    <h3 class="text-white text-center text-uppercase font-weight-bold my-0">
+                        Socials and Stories of Impact
+                    </h3>
+                    <h5 class="text-white text-center font-weight-light mt-2 mb-0 text-muted">
+                        Stay connected!
+                    </h5>
+                    <hr class="mb-5 w-50 mx-auto" />
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12 mb-3">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="nav">
+                                            <a href="#card-pills-twitter" data-toggle="tab" class="nav-link bg-brand-twitter text-white text-center py-4 flex-ew active"> <i class="fab fa-twitter icon-1x"></i> <span class="sr-only">Twitter</span></a>
+                                            <a href="#card-pills-facebook" data-toggle="tab" class="nav-link bg-brand-facebook text-white text-center py-4 flex-ew"> <i class="fab fa-facebook-f icon-1x"></i> <span class="sr-only">Facebook</span></a>
+                                            <a href="#card-pills-youtube" data-toggle="tab" class="nav-link bg-brand-youtube text-white text-center py-4 flex-ew"> <i class="fab fa-youtube icon-1x"></i> <span class="sr-only">YouTube</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="tab-content">
+                                            <div class="tab-pane active show" id="card-pills-twitter" role="tabpanel">
+                                                <a class="twitter-timeline" data-height="600" href="https://twitter.com/CoastMtnSD?ref_src=twsrc%5Etfw">Tweets by CoastMtnSD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                            </div>
+                                            <div class="tab-pane" id="card-pills-facebook" role="tabpanel">
+                                                <h4 class="card-title">Facebook</h4>
+                                            </div>
+                                            <div class="tab-pane" id="card-pills-youtube" role="tabpanel">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IRC7zFCf6EU" title="CMSD82 Recruitment Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
+                    <h3 class="text-white text-center text-uppercase font-weight-bold my-0">
+                        Our News Feed
+                    </h3>
                     <h5 class="text-white text-center font-weight-light mt-2 mb-0">
-                        See what's new in the distric!
+                        Stay current!
                     </h5>
                     <hr class="mb-5 w-50 mx-auto" />
                     <div class="row blog-post">
@@ -138,11 +176,11 @@
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
-                    <h2 class="text-white text-center text-uppercase font-weight-bold my-0">
-                        District Events
-                    </h2>
+                    <h3 class="text-white text-center text-uppercase font-weight-bold my-0">
+                        Events
+                    </h3>
                     <h5 class="text-white text-center font-weight-light mt-2 mb-0 text-muted">
-                        Upcoming district events.
+                        See what's upcoming!
                     </h5>
                     <hr class="mb-5 w-50 mx-auto" />
                     <div class="container-fluid">
@@ -165,44 +203,6 @@
                                         <p class="my-0 flex-fw text-sm text-white op-8">Cras orci mi, porttitor quis condimentum sed, ullamcorper dapibus elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque finibus nulla felis.</p>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
-                    <h2 class="text-white text-center text-uppercase font-weight-bold my-0">
-                        District Socials
-                    </h2>
-                    <h5 class="text-white text-center font-weight-light mt-2 mb-0 text-muted">
-                        Stay connected!
-                    </h5>
-                    <hr class="mb-5 w-50 mx-auto" />
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-12 mb-3">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <div class="nav">
-                                            <a href="#card-pills-twitter" data-toggle="tab" class="nav-link bg-brand-twitter text-white text-center py-4 flex-ew active"> <i class="fab fa-twitter icon-1x"></i> <span class="sr-only">Twitter</span></a>
-                                            <a href="#card-pills-facebook" data-toggle="tab" class="nav-link bg-brand-facebook text-white text-center py-4 flex-ew"> <i class="fab fa-facebook-f icon-1x"></i> <span class="sr-only">Facebook</span></a>
-                                            <a href="#card-pills-youtube" data-toggle="tab" class="nav-link bg-brand-youtube text-white text-center py-4 flex-ew"> <i class="fab fa-youtube icon-1x"></i> <span class="sr-only">YouTube</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="tab-content">
-                                            <div class="tab-pane active show" id="card-pills-twitter" role="tabpanel">
-                                                <a class="twitter-timeline" data-height="600" href="https://twitter.com/CoastMtnSD?ref_src=twsrc%5Etfw">Tweets by CoastMtnSD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                            </div>
-                                            <div class="tab-pane" id="card-pills-facebook" role="tabpanel">
-                                                <h4 class="card-title">Facebook</h4>
-                                            </div>
-                                            <div class="tab-pane" id="card-pills-youtube" role="tabpanel">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/IRC7zFCf6EU" title="CMSD82 Recruitment Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
