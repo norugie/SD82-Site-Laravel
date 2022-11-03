@@ -1,5 +1,5 @@
 <div id="highlighted">
-    <div class="mt-0 owl-nav-over owl-nav-over-lg owl-nav-over-hover" data-toggle="owl-carousel" data-owl-carousel-settings='{"items":1, "center":true, "autoplay":true, "autoplayTimeout":10000, "loop":true, "dots":true, "nav":true, "animateOut":"fadeOut"}'>
+    <div class="mt-0 owl-nav-over owl-nav-over-lg owl-nav-over-hover" data-toggle="owl-carousel" data-owl-carousel-settings='{"items":1, "center":true, "autoplay":true, "autoplayTimeout":7000, "loop":true, "dots":true, "nav":true, "animateOut":"fadeOut"}'>
         <div class="item">
             <div class="item-image">
                 <img src="/assets/img/backgrounds/matbanner1.png" alt="Project 1" class="img-fluid" />
