@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Auth and Base Controllers
+// Auth Controller
+use App\Http\Controllers\AuthController;
+
+// Base Controllers
 use App\Http\Controllers\General\DashboardController;
-use App\Http\Controllers\General\AuthController;
 
 // ***-- Posts Controllers --*** //
 // Posts
@@ -29,7 +31,7 @@ use App\Http\Controllers\General\FileUploadController;
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Web routes for the SD82 District Website(s). These
+| Web routes for the SD92 District Website(s). These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group.
 | Please refrain from rearranging the order of the routes as it
@@ -37,7 +39,11 @@ use App\Http\Controllers\General\FileUploadController;
 |
 */
 
-// ***-- Site Routes --*** //
+Route::controller('AuthController')->group(function(){
+    Route::get('/signin', 'signin');
+    Route::get('/callback', 'callback');
+    Route::get('/signout', 'signout');    
+});
 
 Route::group(['middleware' => ['navbar', 'siteinfo']], function(){
     Route::controller('Site\SiteController')->group(function(){
@@ -47,17 +53,8 @@ Route::group(['middleware' => ['navbar', 'siteinfo']], function(){
     });
 });
 
-Route::controller('General\AuthController')->group(function(){
-    Route::get('/signin', 'signin');
-    Route::get('/callback', 'callback');
-    Route::get('/signout', 'signout');    
-});
-
-// ***-- Backend Routes --*** //
-
 Route::group(['middleware' => 'authAD', 'prefix' => 'cms'], function(){
-
-    Route::get('/dashboard', [App\Http\Controllers\General\DashboardController::class, 'index']);
+    Route::get('/dashboard', [DashboardController::class, 'index']);
 
     Route::group(['prefix' => 'posts'], function(){
         Route::controller('Posts\PostController')->group(function(){
@@ -81,7 +78,7 @@ Route::group(['middleware' => 'authAD', 'prefix' => 'cms'], function(){
         });
     });
 
-    Route::controller('General\FileUploadController')->group(function(){
+    Route::controller('FileUploadController')->group(function(){
         Route::post('/upload/{type}', 'uploadImage');
         Route::post('/delete/{type}', 'deleteImage');
     });

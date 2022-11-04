@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\General;
+namespace App\Http\Controllers;
 
 use App\TokenStore\TokenCache;
 use Microsoft\Graph\Graph;
@@ -89,41 +89,10 @@ class AuthController extends Controller
 
                 if (in_array('WebAccess', $gs) ? $redirect = '/cms/dashboard' : $redirect = '/restricted');
 
-                // if (in_array('appadmins', $gs)) // Assign user as site admin
-                //     $role = 1;
-                // else if (in_array('gccmanager', $gs)) // Assign user as GCC/SS Editor
-                //     $role = 4;
-                // else if (in_array('nlcmanager', $gs)) // Assign user as NLC Editor
-                //     $role = 5;
-                // else if (!in_array('appadmins', $gs) && ($user->getDepartment() === 'SDO' || $user->getDepartment() === 'TechOffice')) // Assign user as Editor
-                //     $role = 2;
-                // else 
-                //     $role = 3; // Assign user as School Editor
-
-                // // Assign user department
-                // if ($user->getDepartment() === "TechOffice")
-                //     $department = 1;
-                // else if ($user->getDepartment() === "AAMES")
-                //     $department = 3;
-                // else if ($user->getDepartment() === "GES")
-                //     $department = 4;
-                // else if ($user->getDepartment() === "NBES")
-                //     $department = 5;
-                // else if ($user->getDepartment() === "NESS")
-                //     $department = 6;
-                // else {
-                //     if (in_array('gccmanager', $gs))
-                //         $department = 11;
-                //     else if (in_array('nlcmanager', $gs))
-                //         $department = 13;
-                //     else
-                //         $department = 2;
-                // }
-
                 // Upsert user into the users table
                 User::upsert(
                     [
-                        'username' => str_replace("@nisgaa.bc.ca", "", $user->getMail()),
+                        'username' => str_replace("@cmsd.bc.ca", "", $user->getMail()),
                         'firstname' => $user->getGivenname(),
                         'lastname' => $user->getSurname(),
                         'email' => $user->getMail()

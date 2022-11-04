@@ -60,6 +60,41 @@ return new class extends Migration
                     'placement'   => 'Primary',
                     'content'  => '/staff',
                     'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Learner Resources',
+                    'type'   => 'Megamenu',
+                    'placement'   => 'Secondary',
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Parents and Caregivers',
+                    'type'   => 'Dropdown',
+                    'placement'   => 'Secondary',
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Schools',
+                    'type'   => 'Dropdown',
+                    'placement'   => 'Secondary',
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Programs and Services',
+                    'type'   => 'Dropdown',
+                    'placement'   => 'Secondary',
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Board of Education',
+                    'type'   => 'Dropdown',
+                    'placement'   => 'Secondary',
+                    'content'  => NULL,
+                    'status'  => 'Active'
                 ]
             )
         );

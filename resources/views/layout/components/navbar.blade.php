@@ -58,28 +58,42 @@
                     <div class="navbar-main navbar-first collapse">
                         <!--main navigation-->
                         <ul class="nav navbar-nav navbar-nav-stretch float-lg-right dropdown-effect-fade">
-                            <!-- Homepage -->
-                            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-
-                            <!-- Homepage -->
-                            <li class="nav-item"><a href="/events/calendar" class="nav-link">Calendar</a></li>
-
-                            <!-- Homepage -->
-                            <li class="nav-item"><a href="/news" class="nav-link">News</a></li>
-
-                            <!-- Careers -->
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Work with us</a>
-                                <!-- Menu -->
-                                <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
-                                    <a href="/careers/teacher" class="dropdown-item">Teacher (CMTF) Job Postings</a>
-                                    <a href="/careers/staff" class="dropdown-item">Support Staff (CUPE) Job Postings</a>
-                                    <a href="/careers/admin" class="dropdown-item">Administrative and Exempt Staff Job Postings</a>
-                                </div>
-                            </li>
-
-                            <!-- Homepage -->
-                            <li class="nav-item"><a href="/events/calendar" class="nav-link">Staff</a></li>
+                            
+                            @foreach ($navbardata->primary as $navbar)
+                                @if($navbar->type === 'Dropdown')
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ $navbar->title }}</a>
+                                        <!-- Menu -->
+                                        <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
+                                            @foreach($navbar->submenu as $navbarsub)
+                                                <a href="/careers/teacher" class="dropdown-item">{{ $navbarsub->title }}</a>
+                                            @endforeach
+                                        </div>
+                                    </li>
+                                @elseif($navbar->type === 'Megamenu')
+                                <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
+                                    <a href="#" class="nav-link dropdown-toggle" id="quick-links" data-toggle="dropdown" data-hover="dropdown">{{ $navbar->title }}</a>
+                                    <!-- Dropdown Menu - Mega Menu -->
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-12">
+                                                <div class="link-container">
+                                                    @foreach($navbar->submenu as $navbarsub)
+                                                        <div class="link-list">
+                                                            <a href="#" class="dropdown-item">{{ $navbarsub->title }}</a>
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                @else
+                                    <li class="nav-item">
+                                        <a href="/" class="nav-link">{{ $navbar->title }}</a>
+                                    </li>
+                                @endif
+                            @endforeach
                         </ul>
                     </div>
                     <!--/.navbar-collapse -->
@@ -92,7 +106,42 @@
             <div class="navbar-main navbar-second collapse bg-dark navbar-dark">
                 <!--main navigation-->
                 <ul class="nav navbar-nav container dropdown-effect-fade">
-                    <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
+                    @foreach ($navbardata->secondary as $navbar)
+                        @if($navbar->type === 'Dropdown')
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ $navbar->title }}</a>
+                                <!-- Menu -->
+                                <div class="dropdown-menu dropdown-menu-fluid @if($navbar->id > 8) dropdown-menu-right @endif">
+                                    @foreach($navbar->submenu as $navbarsub)
+                                        <a href="/careers/teacher" class="dropdown-item">{{ $navbarsub->title }}</a>
+                                    @endforeach
+                                </div>
+                            </li>
+                        @elseif($navbar->type === 'Megamenu')
+                        <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
+                            <a href="#" class="nav-link dropdown-toggle" id="quick-links" data-toggle="dropdown" data-hover="dropdown">{{ $navbar->title }}</a>
+                            <!-- Dropdown Menu - Mega Menu -->
+                            <div class="dropdown-menu @if($navbar->id > 8) dropdown-menu-right @endif">
+                                <div class="row">
+                                    <div class="col-12 col-lg-12">
+                                        <div class="link-container">
+                                            @foreach($navbar->submenu as $navbarsub)
+                                                <div class="link-list">
+                                                    <a href="#" class="dropdown-item">{{ $navbarsub->title }}</a>
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        @else
+                            <li class="nav-item">
+                                <a href="/" class="nav-link">{{ $navbar->title }}</a>
+                            </li>
+                        @endif
+                    @endforeach
+                    {{-- <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
                         <a href="#" class="nav-link dropdown-toggle" id="quick-links" data-toggle="dropdown" data-hover="dropdown">Learner Resources</a>
                         <!-- Dropdown Menu - Mega Menu -->
                         <div class="dropdown-menu">
@@ -260,7 +309,7 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
             <!--/.navbar-collapse -->

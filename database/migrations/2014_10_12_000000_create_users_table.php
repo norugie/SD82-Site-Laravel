@@ -15,10 +15,10 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('user_username');
-            $table->string('user_firstname');
-            $table->string('user_lastname');
-            $table->string('user_email')->unique();
+            $table->string('username');
+            $table->string('firstname');
+            $table->string('lastname');
+            $table->string('email')->unique();
             // $table->foreignId('role_id')->constrained();
             // $table->foreignId('department_id')->constrained();
             $table->enum('user_status', ['Active', 'Archived']);

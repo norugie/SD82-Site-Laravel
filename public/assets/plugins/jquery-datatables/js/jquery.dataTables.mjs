@@ -1,8 +1,12 @@
-/*! DataTables 1.12.1
+/*! DataTables 1.13.0
  * ©2008-2022 SpryMedia Ltd - datatables.net/license
  */
 
-import $ from 'jquery';
+import jQuery from 'jquery';
+
+// DataTables code uses $ internally, but we want to be able to
+// reassign $ with the `use` method below, so it is a regular var.
+let $ = jQuery;
 
 
 var DataTable = function ( selector, options )
@@ -1095,6 +1099,10 @@ var DataTable = function ( selector, options )
 		
 			$( rowOne[0] ).children('th, td').each( function (i, cell) {
 				var col = oSettings.aoColumns[i];
+		
+				if (! col) {
+					_fnLog( oSettings, 0, 'Incorrect column count', 18 );
+				}
 		
 				if ( col.mData === i ) {
 					var sort = a( cell, 'sort' ) || a( cell, 'order' );
@@ -3100,6 +3108,11 @@ function _fnCreateTr ( oSettings, iRow, nTrIn, anTds )
 			create = nTrIn ? false : true;
 
 			nTd = create ? document.createElement( oCol.sCellType ) : anTds[i];
+
+			if (! nTd) {
+				_fnLog( oSettings, 0, 'Incorrect column count', 18 );
+			}
+
 			nTd._DT_CellIndex = {
 				row: iRow,
 				column: i
@@ -3250,10 +3263,16 @@ function _fnBuildHead( oSettings )
 
 		for ( i=0, ien=cells.length ; i<ien ; i++ ) {
 			column = columns[i];
-			column.nTf = cells[i].cell;
 
-			if ( column.sClass ) {
-				$(column.nTf).addClass( column.sClass );
+			if (column) {
+				column.nTf = cells[i].cell;
+	
+				if ( column.sClass ) {
+					$(column.nTf).addClass( column.sClass );
+				}
+			}
+			else {
+				_fnLog( oSettings, 0, 'Incorrect column count', 18 );
 			}
 		}
 	}
@@ -9616,7 +9635,7 @@ _api_register( 'i18n()', function ( token, def, plural ) {
  *  @type string
  *  @default Version number
  */
-DataTable.version = "1.12.1";
+DataTable.version = "1.13.0";
 
 /**
  * Private data store, containing all of the settings objects that are
@@ -14678,7 +14697,7 @@ $.extend( true, DataTable.ext.renderer, {
 			var classes = settings.oClasses;
 			var lang = settings.oLanguage.oPaginate;
 			var aria = settings.oLanguage.oAria.paginate || {};
-			var btnDisplay, btnClass, counter=0;
+			var btnDisplay, btnClass;
 
 			var attach = function( container, buttons ) {
 				var i, ien, node, button, tabIndex;
@@ -14753,7 +14772,7 @@ $.extend( true, DataTable.ext.renderer, {
 									'class': classes.sPageButton+' '+btnClass,
 									'aria-controls': settings.sTableId,
 									'aria-label': aria[ button ],
-									'data-dt-idx': counter,
+									'data-dt-idx': button,
 									'tabindex': tabIndex,
 									'id': idx === 0 && typeof button === 'string' ?
 										settings.sTableId +'_'+ button :
@@ -14765,8 +14784,6 @@ $.extend( true, DataTable.ext.renderer, {
 							_fnBindAction(
 								node, {action: button}, clickHandler
 							);
-
-							counter++;
 						}
 					}
 				}

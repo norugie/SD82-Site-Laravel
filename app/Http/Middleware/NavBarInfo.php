@@ -18,7 +18,14 @@ class NavBarInfo
      */
     public function handle(Request $request, Closure $next)
     {
-        $navbar = Menu::with('submenu')->get();
+        $navbardata = [];
+        $navbarprimary = Menu::where('placement', 'Primary')->with('submenu')->get();
+        $navbarsecondary = Menu::where('placement', 'Secondary')->with('submenu')->get();
+
+        $navbardata['primary'] = $navbarprimary;
+        $navbardata['secondary'] = $navbarsecondary;
+
+        $navbar = json_decode(json_encode($navbardata), FALSE);
 
         View::share('navbardata', $navbar);
 

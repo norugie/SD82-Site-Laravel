@@ -6,7 +6,7 @@
                     CMSD<span class="text-primary">82</span>
                 </h3>
                 <address>
-                    <p>3211 Kenney St.<br>Terrace<br>British Columbia<br>Canada V8G 3E9</p>
+                    <p>{!! str_replace(',', '<br>', $sitedata->address) !!}</p>
                 </address>
             </div>
 
@@ -16,11 +16,11 @@
                     <ul class="list-unstyled">
                         <li>
                             <abbr title="Phone"><i class="fa fa-phone fa-fw"></i></abbr>
-                            +1 (250) XXX-XXXX
+                            {{ $sitedata->phone }}
                         </li>
                         <li>
                             <abbr title="Email"><i class="fa fa-envelope fa-fw"></i></abbr>
-                            sd82@cmsd.bc.ca
+                            {{ $sitedata->email }}
                         </li>
                     </ul>
                 </address>
