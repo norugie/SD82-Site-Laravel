@@ -42,6 +42,150 @@ return new class extends Migration
                     'menu_id'   => 4,
                     'content'   => '/careers/exempt',
                     'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 6,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 6,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 6,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 6,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 6,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 7,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 7,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 7,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 7,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 8,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 8,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 8,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 9,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 9,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 9,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 9,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 9,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 9,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 10,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 10,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 10,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 10,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 10,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Link Sample',
+                    'menu_id'   => 10,
+                    'content'   => '/careers/exempt',
+                    'status'  => 'Active'
                 ]
             )
         );
