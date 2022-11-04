@@ -12,7 +12,7 @@
             <!--user menu-->
             <div class="header-block-flex order-1 mr-auto">
                 <nav class="nav nav-sm header-block-flex">
-                    <div class="text-xs text-uppercase d-none d-md-block d-lg-block">Contact us at +1 (250) XXX-XXXX or at sd82@cmsd.bc.ca</div>
+                    <div class="text-xs text-uppercase d-none d-md-block d-lg-block">Contact us at {{ $sitedata->phone }} or at {{ $sitedata->email }}</div>
                 </nav>
             </div>
             <!--site panel and social media icons-->

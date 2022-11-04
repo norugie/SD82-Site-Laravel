@@ -15,9 +15,9 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string('cat_slug');
-            $table->string('cat_name');
-            $table->enum('cat_status', ['Active', 'Archived']);
+            $table->string('slug');
+            $table->string('name');
+            $table->enum('status', ['Active', 'Archived']);
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });

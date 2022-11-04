@@ -15,14 +15,14 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('post_slug');
-            $table->string('post_title');
-            $table->enum('post_type', ['Post', 'Media'])->default('Post');
+            $table->string('slug');
+            $table->string('title');
+            $table->enum('type', ['Post', 'Media'])->default('Post');
             $table->foreignId('user_id')->constrained();
-            $table->string('post_thumbnail')->default('post_thumbnail.jpg');
-            $table->mediumText('post_desc')->nullable();
-            $table->longText('post_content')->nullable();
-            $table->enum('post_status', ['Active', 'Archived']);
+            $table->string('thumbnail')->default('thumbnail.jpg');
+            $table->mediumText('desc')->nullable();
+            $table->longText('content')->nullable();
+            $table->enum('status', ['Active', 'Archived']);
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });

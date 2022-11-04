@@ -15,10 +15,11 @@ return new class extends Migration
     {
         Schema::create('logs', function (Blueprint $table) {
             $table->id();
-            $table->string('log_slug');
-            $table->mediumText('log_desc');
+            $table->string('slug');
+            $table->mediumText('desc');
             $table->foreignId('user_id')->constrained();
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 

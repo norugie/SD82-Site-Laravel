@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\General;
 
 use App\TokenStore\TokenCache;
 use Microsoft\Graph\Graph;
