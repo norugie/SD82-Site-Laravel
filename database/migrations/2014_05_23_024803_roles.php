@@ -15,16 +15,18 @@ class Roles extends Migration
     {
         Schema::create('roles', function (Blueprint $table) {
             $table->id();
-            $table->string('role_name');
+            $table->string('name');
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
 
         DB::table('roles')->insert(
             array(
                 [
-                    'role_name' => 'Administrator'
+                    'name' => 'Administrator'
                 ],
                 [
-                    'role_name' => 'Editor'
+                    'name' => 'Editor'
                 ]
             )
         );

@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 // Auth and Base Controllers
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\General\DashboardController;
+use App\Http\Controllers\General\AuthController;
 
 // ***-- Posts Controllers --*** //
 // Posts
@@ -21,7 +21,7 @@ use App\Http\Controllers\Posts\CategoryController;
 // ***-- Sections Controllers --*** //
 
 // Miscellaneous Controllers
-use App\Http\Controllers\FileUploadController;
+use App\Http\Controllers\General\FileUploadController;
 
 
 /*
@@ -29,7 +29,7 @@ use App\Http\Controllers\FileUploadController;
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Web routes for the SD92 District Website(s). These
+| Web routes for the SD82 District Website(s). These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group.
 | Please refrain from rearranging the order of the routes as it
@@ -39,26 +39,25 @@ use App\Http\Controllers\FileUploadController;
 
 // ***-- Site Routes --*** //
 
-Route::get('/', function () {
-    return view('index');
+Route::group(['middleware' => ['navbar', 'siteinfo']], function(){
+    Route::controller('Site\SiteController')->group(function(){
+        Route::get('/', 'indexView');
+        Route::get('/error', 'errorView');
+        Route::get('/{page}', 'pageRouterView');
+    });
 });
 
-Route::get('/error', function () {
-    return view('error');
-});
-
-Route::get('/signin', [AuthController::class, 'signin']);
-Route::get('/callback', [AuthController::class, 'callback']);
-Route::get('/signout', [AuthController::class, 'signout']);
-
-Route::get('/{page}', function (String $page) {
-    return view($page, ['page' => $page]);
+Route::controller('General\AuthController')->group(function(){
+    Route::get('/signin', 'signin');
+    Route::get('/callback', 'callback');
+    Route::get('/signout', 'signout');    
 });
 
 // ***-- Backend Routes --*** //
 
 Route::group(['middleware' => 'authAD', 'prefix' => 'cms'], function(){
-    Route::get('/dashboard', [DashboardController::class, 'index']);
+
+    Route::get('/dashboard', [App\Http\Controllers\General\DashboardController::class, 'index']);
 
     Route::group(['prefix' => 'posts'], function(){
         Route::controller('Posts\PostController')->group(function(){
@@ -82,7 +81,7 @@ Route::group(['middleware' => 'authAD', 'prefix' => 'cms'], function(){
         });
     });
 
-    Route::controller('FileUploadController')->group(function(){
+    Route::controller('General\FileUploadController')->group(function(){
         Route::post('/upload/{type}', 'uploadImage');
         Route::post('/delete/{type}', 'deleteImage');
     });

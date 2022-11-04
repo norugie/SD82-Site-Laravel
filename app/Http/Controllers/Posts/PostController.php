@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Posts;
 
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\FileUploadController;
+use App\Http\Controllers\General\FileUploadController;
 use App\Models\Post;
 use App\Models\Category;
 use App\Models\Media;
