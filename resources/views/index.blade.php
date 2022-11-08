@@ -207,4 +207,21 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 overlay overlay-gradient overlay-op-6 d-none d-lg-block" data-bg-img="assets/img/backgrounds/computer-screens.jpg"></div>
+            <div class="col-lg-6 p-5 p-lg-7">
+                <hr class="hr-lg mt-0 mb-3 w-10 ml-0 hr-primary" />
+                <h2 class="display-4 text-grey-dark text-uppercase font-weight-bold mt-0 mb-4">
+                About CMSD<span class="text-primary font-weight-bold">82</span>
+                </h2>
+                <h4 class="font-weight-bold text-justify text-dark text-uppercase mb-4 mt-4">
+                    All Students Realizing their Full Potential<br>Honouring and Respecting Culture and Diversity<br>Well-Being within the Educational Community
+                </h4>
+                <p class="text-grey-dark text-justify mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet erat augue. Aenean neque turpis, placerat at erat non, lacinia interdum odio. Aliquam eros nulla, rhoncus rutrum varius eu, malesuada et turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec in dui vitae diam consequat accumsan et quis lacus. Morbi auctor tortor erat, non gravida magna dapibus et. Proin viverra, arcu vitae maximus elementum, odio purus ullamcorper lorem, id maximus leo libero a nulla.</p>
+                <p class="text-grey-dark text-justify mb-4">Caecus facilisi facilisis refero rusticus saluto tincidunt validus. Abdo ea gilvus. Ibidem in nunc paratus.</p>
+            </div>
+        </div>
+    </div>
 @endsection
