@@ -7,11 +7,11 @@
             <div class="item-text container">
                 <div class="item-content">
                     <div class="row">
-                        <div class="col-lg-3 bg-light p-3">
+                        <div class="col-lg-3 bg-light p-3 mx-4">
                             <div class="header">
                                 <div class="header-brand">
                                     <div class="header-brand-text">
-                                        <h1 class="h3">
+                                        <h1 class="h4">
                                             <span class="header-brand-text-alt">The Mountains Are Calling...</span>
                                         </h1>
                                     </div>
@@ -30,11 +30,11 @@
             <div class="item-text container">
                 <div class="item-content">
                     <div class="row">
-                        <div class="col-lg-3 bg-light p-3">
+                        <div class="col-lg-3 bg-light p-3 mx-4">
                             <div class="header">
                                 <div class="header-brand">
                                     <div class="header-brand-text">
-                                        <h1 class="h3">
+                                        <h1 class="h4">
                                             <span class="header-brand-text-alt">Territory</span> <a href="#">Acknowledgment</a>
                                         </h1>
                                     </div>
@@ -53,11 +53,11 @@
             <div class="item-text container">
                 <div class="item-content">
                     <div class="row">
-                        <div class="col-lg-3 bg-light p-3">
+                        <div class="col-lg-3 bg-light p-3 mx-4">
                             <div class="header">
                                 <div class="header-brand">
                                     <div class="header-brand-text">
-                                        <h1 class="h3">
+                                        <h1 class="h4">
                                             <span class="header-brand-text-alt">Truth & Reconciliation</span>
                                         </h1>
                                     </div>
@@ -76,11 +76,11 @@
             <div class="item-text container">
                 <div class="item-content">
                     <div class="row">
-                        <div class="col-lg-3 bg-light p-3">
+                        <div class="col-lg-3 bg-light p-3 mx-4">
                             <div class="header">
                                 <div class="header-brand">
                                     <div class="header-brand-text">
-                                        <h1 class="h3">
+                                        <h1 class="h4">
                                             <span class="header-brand-text-alt">Engage, Ignite, Empower!</span>
                                         </h1>
                                     </div>
@@ -99,11 +99,11 @@
             <div class="item-text container">
                 <div class="item-content">
                     <div class="row">
-                        <div class="col-lg-3 bg-light p-3">
+                        <div class="col-lg-3 bg-light p-3 mx-4">
                             <div class="header">
                                 <div class="header-brand">
                                     <div class="header-brand-text">
-                                        <h1 class="h3">
+                                        <h1 class="h4">
                                             <span class="header-brand-text-alt">Monthly Theme Goes Here</span>
                                         </h1>
                                     </div>

@@ -29,10 +29,10 @@
         </ul>
     </div>
 
-    <div class="container-fluid p-3 py-lg-5 bg-dark">
+    <div class="container-fluid p-3 py-5 bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-12">
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
                     <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
                     <h3 class="text-white text-center text-uppercase font-weight-bold my-0">
                         Socials and Stories of Impact
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-lg-4 col-md-7 col-sm-12 col-xs-12">
                     <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
                     <h3 class="text-white text-center text-uppercase font-weight-bold my-0">
                         Our News Feed
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
                     <h3 class="text-white text-center text-uppercase font-weight-bold my-0">
                         Events
@@ -210,7 +210,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 overlay overlay-gradient overlay-op-6 d-none d-lg-block" data-bg-img="assets/img/backgrounds/computer-screens.jpg"></div>
+            <div class="col-lg-6 overlay overlay-gradient overlay-op-6 d-none d-lg-block" data-bg-img="assets/img/backgrounds/matbanner6.png"></div>
             <div class="col-lg-6 p-5 p-lg-7">
                 <hr class="hr-lg mt-0 mb-3 w-10 ml-0 hr-primary" />
                 <h2 class="display-4 text-grey-dark text-uppercase font-weight-bold mt-0 mb-4">

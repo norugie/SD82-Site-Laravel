@@ -66,7 +66,7 @@
                                         <!-- Menu -->
                                         <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
                                             @foreach($navbar->submenu as $navbarsub)
-                                                <a href="/careers/teacher" class="dropdown-item">{{ $navbarsub->title }}</a>
+                                                <a href="@if($navbarsub->content) {{ $navbarsub->content }} @else # @endif" class="dropdown-item">{{ $navbarsub->title }}</a>
                                             @endforeach
                                         </div>
                                     </li>
@@ -80,7 +80,7 @@
                                                 <div class="link-container">
                                                     @foreach($navbar->submenu as $navbarsub)
                                                         <div class="link-list">
-                                                            <a href="#" class="dropdown-item">{{ $navbarsub->title }}</a>
+                                                            <a href="@if($navbarsub->content) {{ $navbarsub->content }} @else # @endif" class="dropdown-item">{{ $navbarsub->title }}</a>
                                                         </div>
                                                     @endforeach
                                                 </div>
@@ -90,7 +90,7 @@
                                 </li>
                                 @else
                                     <li class="nav-item">
-                                        <a href="/" class="nav-link">{{ $navbar->title }}</a>
+                                        <a href="@if($navbar->content) {{ $navbar->content }} @else # @endif" class="nav-link">{{ $navbar->title }}</a>
                                     </li>
                                 @endif
                             @endforeach
@@ -113,7 +113,7 @@
                                 <!-- Menu -->
                                 <div class="dropdown-menu dropdown-menu-fluid @if($navbar->id > 8) dropdown-menu-right @endif">
                                     @foreach($navbar->submenu as $navbarsub)
-                                        <a href="/careers/teacher" class="dropdown-item">{{ $navbarsub->title }}</a>
+                                        <a href="@if($navbarsub->content) {{ $navbarsub->content }} @else # @endif" class="dropdown-item">{{ $navbarsub->title }}</a>
                                     @endforeach
                                 </div>
                             </li>
@@ -127,7 +127,7 @@
                                         <div class="link-container">
                                             @foreach($navbar->submenu as $navbarsub)
                                                 <div class="link-list">
-                                                    <a href="#" class="dropdown-item">{{ $navbarsub->title }}</a>
+                                                    <a href="@if($navbarsub->content) {{ $navbarsub->content }} @else # @endif" class="dropdown-item">{{ $navbarsub->title }}</a>
                                                 </div>
                                             @endforeach
                                         </div>
@@ -137,179 +137,10 @@
                         </li>
                         @else
                             <li class="nav-item">
-                                <a href="/" class="nav-link">{{ $navbar->title }}</a>
+                                <a href="@if($navbar->content) {{ $navbar->content }} @else # @endif" class="nav-link">{{ $navbar->title }}</a>
                             </li>
                         @endif
                     @endforeach
-                    {{-- <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
-                        <a href="#" class="nav-link dropdown-toggle" id="quick-links" data-toggle="dropdown" data-hover="dropdown">Learner Resources</a>
-                        <!-- Dropdown Menu - Mega Menu -->
-                        <div class="dropdown-menu">
-                            <div class="row">
-                                <div class="col-12 col-lg-12">
-                                    <div class="link-container">
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Parents and Caregivers</a>
-                        <div class="dropdown-menu dropdown-menu-fluid">
-                            <a href="footer-light.html" class="dropdown-item">VTRA Fair Notice Protocol</a> 
-                            <a href="footer-compact.html" class="dropdown-item">Student Suspension Procedure</a> 
-                            <a href="footer-menus.html" class="dropdown-item">Student Transportation Regulation</a>
-                            <a href="footer-menus.html" class="dropdown-item">School Newsletters</a>
-                            <a href="footer-compact-light.html" class="dropdown-item">Student Registration</a>
-                            <a href="footer-compact-light.html" class="dropdown-item">Cross Boundary Application</a>
-                            <a href="footer-compact-light.html" class="dropdown-item">Learning Resources for Families</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Schools</a>
-                        <div class="dropdown-menu dropdown-menu-fluid">
-                            <a href="customers.html" class="dropdown-item">School Administration</a>
-                            <a href="customers.html" class="dropdown-item">All Schools</a>
-                            <a href="customers.html" class="dropdown-item">School Growth Plans</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
-                        <a href="#" class="nav-link dropdown-toggle" id="quick-links" data-toggle="dropdown" data-hover="dropdown">Programs and Services</a>
-                        <!-- Dropdown Menu - Mega Menu -->
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <div class="row">
-                                <div class="col-12 col-lg-12">
-                                    <div class="link-container">
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Link Sample</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Board of Education</a>
-                        <!-- Menu -->
-                        <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right">
-                            <a href="customers.html" class="dropdown-item">School Trustees</a>
-                            <a href="customers.html" class="dropdown-item">Strategic Plan</a>
-                            <a href="customers.html" class="dropdown-item">Meetings, Agendas, and Minutes</a>
-                            <div class="dropdown dropdown-submenu dropdown-menu-left dropdown-menu-caret-left">
-                                <a href="headers.html" class="dropdown-item dropdown-toggle dropdown" id="policies-bylaws" data-toggle="dropdown">Policies and Bylaws</a>
-                                <div class="dropdown-menu dropdown-menu-fluid dropdown-menu-right" role="menu" aria-labelledby="policies-bylaws"> 
-                                    <a href="footer-light.html" class="dropdown-item">1000 Students and Programs</a> 
-                                    <a href="footer-compact.html" class="dropdown-item">2000 Personnel</a> 
-                                    <a href="footer-menus.html" class="dropdown-item">3000 Finances</a>
-                                    <a href="footer-compact-light.html" class="dropdown-item">4000 Facilities, Grounds, and Equipment</a>    
-                                    <a href="footer-menus-light.html" class="dropdown-item">5000 Governance</a> 
-                                </div>
-                            </div>
-                            <a href="customers.html" class="dropdown-item">Administrative Procedures and Regulations</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
-                        <a href="#" class="nav-link dropdown-toggle" id="quick-links" data-toggle="dropdown" data-hover="dropdown">COVID-19 Resources</a>
-                        <!-- Dropdown Menu - Mega Menu -->
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <div class="row">
-                                <div class="col-12 col-lg-12">
-                                    <div class="link-container">
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">COVID-19 Communicable Disease Prevention Plan</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Pandemic Response Plan</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">School Ventilation</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">K12-Schools and COVID-19 Website</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Communications to Families</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">PHO COVID-19 Province-wide Orders and Guidelines</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Provincial Health Updates and Resources</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Minitries of Education and Health Information</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">COVID-19 Website Links and Resources</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Managing Stress During COVID-19</a>
-                                        </div>
-                                        <div class="link-list">
-                                            <a href="#" class="dropdown-item">Tips for Talking to Kids About COVID-19</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li> --}}
                 </ul>
             </div>
             <!--/.navbar-collapse -->
