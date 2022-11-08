@@ -31,12 +31,12 @@
             <div class="header-inner container">
                 <!--branding/logo -->
                 <div class="header-brand">
-                    <a class="header-brand-text d-none d-lg-block" href="/" title="Home">
+                    <a class="header-brand-text d-none d-lg-block d-md-block" href="/" title="Home">
                         <h1 class="h4 text-center">
                             <span class="header-brand-text-alt">Coast Mountains<br>Schools</span>
                         </h1>
                     </a>
-                    <div class="header-divider d-none d-lg-block"></div>
+                    <div class="header-divider d-none d-lg-block d-md-block"></div>
                     <a class="header-brand-text" href="/" title="Home">
                         <h1 class="h2 text-center d-block">
                             <span class="h3 header-brand-text-alt d-sm-none">CMSD</span>82
