@@ -106,12 +106,12 @@
             <div class="navbar-main navbar-second collapse bg-dark navbar-dark">
                 <!--main navigation-->
                 <ul class="nav navbar-nav container dropdown-effect-fade">
-                    @foreach ($navbardata->secondary as $navbar)
+                    @foreach ($navbardata->secondary as $navkey => $navbar)
                         @if($navbar->type === 'Dropdown')
                             <li class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">{{ $navbar->title }}</a>
                                 <!-- Menu -->
-                                <div class="dropdown-menu dropdown-menu-fluid @if($navbar->id > 8) dropdown-menu-right @endif">
+                                <div class="dropdown-menu dropdown-menu-fluid @if($navkey > 2) dropdown-menu-right @endif">
                                     @foreach($navbar->submenu as $navbarsub)
                                         <a href="@if($navbarsub->content) {{ $navbarsub->content }} @else # @endif" class="dropdown-item">{{ $navbarsub->title }}</a>
                                     @endforeach
@@ -121,7 +121,7 @@
                         <li class="nav-item dropdown dropdown-mega-menu dropdown-mega-menu-50">
                             <a href="#" class="nav-link dropdown-toggle" id="quick-links" data-toggle="dropdown" data-hover="dropdown">{{ $navbar->title }}</a>
                             <!-- Dropdown Menu - Mega Menu -->
-                            <div class="dropdown-menu @if($navbar->id > 8) dropdown-menu-right @endif">
+                            <div class="dropdown-menu @if($navkey > 2) dropdown-menu-right @endif">
                                 <div class="row">
                                     <div class="col-12 col-lg-12">
                                         <div class="link-container">

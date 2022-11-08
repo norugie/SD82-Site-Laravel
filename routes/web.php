@@ -48,7 +48,6 @@ Route::controller('AuthController')->group(function(){
 Route::group(['middleware' => ['navbar', 'siteinfo']], function(){
     Route::controller('Site\SiteController')->group(function(){
         Route::get('/', 'indexView');
-        Route::get('/error', 'errorView');
         Route::get('/{page}', 'pageRouterView');
     });
 });
