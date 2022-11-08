@@ -7,7 +7,7 @@
             <div class="item-text container">
                 <div class="item-content">
                     <div class="row">
-                        <div class="col-lg-3 bg-light p-3 mx-4">
+                        <div class="col-lg-4 bg-light p-3 mx-4">
                             <div class="header">
                                 <div class="header-brand">
                                     <div class="header-brand-text">
@@ -30,7 +30,7 @@
             <div class="item-text container">
                 <div class="item-content">
                     <div class="row">
-                        <div class="col-lg-3 bg-light p-3 mx-4">
+                        <div class="col-lg-4 bg-light p-3 mx-4">
                             <div class="header">
                                 <div class="header-brand">
                                     <div class="header-brand-text">
@@ -53,7 +53,7 @@
             <div class="item-text container">
                 <div class="item-content">
                     <div class="row">
-                        <div class="col-lg-3 bg-light p-3 mx-4">
+                        <div class="col-lg-4 bg-light p-3 mx-4">
                             <div class="header">
                                 <div class="header-brand">
                                     <div class="header-brand-text">
@@ -76,7 +76,7 @@
             <div class="item-text container">
                 <div class="item-content">
                     <div class="row">
-                        <div class="col-lg-3 bg-light p-3 mx-4">
+                        <div class="col-lg-4 bg-light p-3 mx-4">
                             <div class="header">
                                 <div class="header-brand">
                                     <div class="header-brand-text">
@@ -99,7 +99,7 @@
             <div class="item-text container">
                 <div class="item-content">
                     <div class="row">
-                        <div class="col-lg-3 bg-light p-3 mx-4">
+                        <div class="col-lg-4 bg-light p-3 mx-4">
                             <div class="header">
                                 <div class="header-brand">
                                     <div class="header-brand-text">

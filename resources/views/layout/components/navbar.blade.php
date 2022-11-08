@@ -39,7 +39,7 @@
                     <div class="header-divider d-none d-lg-block d-md-block"></div>
                     <a class="header-brand-text" href="/" title="Home">
                         <h1 class="h2 text-center d-block">
-                            <span class="h3 header-brand-text-alt d-sm-none">CMSD</span>82
+                            <span class="h3 header-brand-text-alt d-md-none">CMSD</span>82
                         </h1>
                     </a>
                 </div>
