@@ -128,15 +128,12 @@
 
 @media (max-width: 575.98px) {
     /* Small devices (575px and down). Mixin: media-breakpoint-down(xs) */
-    .owl-carousel .item img {
-        height: 250px;
-    }
 }
 
 @media (max-width: 767.98px) {
     /* Medium devices (767px and down). Mixin: media-breakpoint-down(sm) */
     .owl-carousel .item img {
-        height: 300px;
+        height: 250px!important;
     }
 }
 
@@ -149,9 +146,6 @@
 
 @media (max-width: 1199.98px) {
     /* X-Large devices (1200px and down). Mixin: media-breakpoint-down(lg) */
-    .owl-carousel .item img {
-        height: 500px;
-    }
 }
 
 
@@ -163,12 +157,18 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     /* Medium devices (tablets, between 768px and 991px). Mixin: media-breakpoint-only(md) */
+    .owl-carousel .item img {
+        height: 350px!important;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
     /* Large devices (desktops, between 992px and 1199px). Mixin: media-breakpoint-only(lg) */
     .container {
         max-width: calc(100% - 20px);
+    }
+    .owl-carousel .item img {
+        height: 500px;
     }
 }
 
