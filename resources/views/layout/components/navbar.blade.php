@@ -8,18 +8,47 @@
     <!--Header upper region-->
     <div class="header-upper py-1">
         <!-- all direct children of the .header-inner element will be vertically aligned with each other you can override all the behaviours using the flexbox utilities (flexbox.htm) All elements with .header-brand & .header-block-flex wrappers will automatically be aligned inline & vertically using flexbox, this can be overridden using the flexbox utilities (flexbox.htm) Use .header-block to stack elements within on small screen & "float" on larger screens use .order-first or/and .order-last classes to make an element show first or last within .header-inner or .headr-block elements -->
-        <div class="header-inner container">
-            <!--user menu-->
-            <div class="header-block-flex order-1 mr-auto">
-                <nav class="nav nav-sm header-block-flex">
-                    <div class="text-xs text-uppercase d-none d-md-block d-lg-block">Contact us at {{ $sitedata->phone }} or at {{ $sitedata->email }}</div>
-                </nav>
+        {{-- <div class="header-inner container">
+
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <!--user menu-->
+                    <div class="header-block-flex order-1 mr-auto">
+                        <nav class="nav nav-sm header-block-flex">
+                            <div class="text-xs text-uppercase d-none d-md-block d-lg-block">Contact us at {{ $sitedata->phone }} or at {{ $sitedata->email }}</div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <!--site panel and social media icons-->
+                    <div class="nav nav-icons header-block order-12">
+                        <a href="/signin" class="text-sm text-uppercase mr-2" style="color:#fff;"><i class="fas fa-sign-in-alt"></i> Site Panel</a>
+                        <a href="#" class="nav-link mx-1 btn btn-sm btn-primary btn-icon btn-rounded mr-1"> <i class="fab fa-facebook-f"></i> <span class="sr-only">Facebook</span> </a>
+                        <a href="#" class="nav-link mx-1 btn btn-sm btn-primary btn-icon btn-rounded mr-1"> <i class="fab fa-twitter"></i> <span class="sr-only">Twitter</span> </a>
+                    </div>
+                </div>
             </div>
-            <!--site panel and social media icons-->
-            <div class="nav nav-icons header-block order-12">
-                <a href="/signin" class="text-sm text-uppercase mr-2" style="color:#fff;"><i class="fas fa-sign-in-alt"></i> Site Panel</a>
-                <a href="#" class="nav-link mx-1 btn btn-sm btn-primary btn-icon btn-rounded mr-1"> <i class="fab fa-facebook-f"></i> <span class="sr-only">Facebook</span> </a>
-                <a href="#" class="nav-link mx-1 btn btn-sm btn-primary btn-icon btn-rounded mr-1"> <i class="fab fa-twitter"></i> <span class="sr-only">Twitter</span> </a>
+        </div> --}}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <!--user menu-->
+                    <div class="header-block-flex order-1 mr-auto">
+                        <nav class="nav nav-sm header-block-flex">
+                            <div class="text-xs text-uppercase d-none d-md-block d-lg-block">Contact us at {{ $sitedata->phone }} or at {{ $sitedata->email }}</div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <!--site panel and social media icons-->
+                    <div class="nav nav-icons header-block order-12 float-right">
+                        <span class="float-xs-left">
+                            <a href="/signin" class="text-sm text-uppercase mr-2" style="color:#fff;"><i class="fas fa-sign-in-alt"></i> Site Panel</a>
+                        </span>
+                        <a href="#" class="nav-link mx-1 btn btn-sm btn-primary btn-icon btn-rounded mr-1"> <i class="fab fa-facebook-f"></i> <span class="sr-only">Facebook</span> </a>
+                        <a href="#" class="nav-link mx-1 btn btn-sm btn-primary btn-icon btn-rounded mr-1"> <i class="fab fa-twitter"></i> <span class="sr-only">Twitter</span> </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
