@@ -210,7 +210,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 overlay overlay-gradient overlay-op-6 d-none d-lg-block" data-bg-img="assets/img/backgrounds/matbanner6.png"></div>
+            <div class="col-lg-6 overlay overlay-gradient overlay-op-6 d-none d-lg-block" data-bg-img="assets/img/banners/matbanner6.png"></div>
             <div class="col-lg-6 p-5 p-lg-7">
                 <hr class="hr-lg mt-0 mb-3 w-10 ml-0 hr-primary" />
                 <h2 class="display-4 text-grey-dark text-uppercase font-weight-bold mt-0 mb-4">{{ $about->title }}</h2>
