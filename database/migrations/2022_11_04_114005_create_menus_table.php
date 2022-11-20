@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('menus', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->enum('type', ['Link', 'Dropdown', 'Megamenu']);
+            $table->enum('type', ['Dropdown', 'Link', 'Megamenu']);
             $table->enum('placement', ['Primary', 'Secondary']);
             $table->string('content')->nullable();
             $table->enum('status', ['Active', 'Archived']);

@@ -98,19 +98,19 @@ return new class extends Migration
                     'status'  => 'Active'
                 ],
                 [
-                    'title'   => 'Link Sample',
+                    'title'   => 'School Administration',
                     'menu_id'   => 8,
                     'content'   => '/careers/exempt',
                     'status'  => 'Active'
                 ],
                 [
-                    'title'   => 'Link Sample',
+                    'title'   => 'All Schools',
                     'menu_id'   => 8,
                     'content'   => '/careers/exempt',
                     'status'  => 'Active'
                 ],
                 [
-                    'title'   => 'Link Sample',
+                    'title'   => 'School Growth Plan',
                     'menu_id'   => 8,
                     'content'   => '/careers/exempt',
                     'status'  => 'Active'

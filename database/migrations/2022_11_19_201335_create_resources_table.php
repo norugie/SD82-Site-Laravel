@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostsTable extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,11 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('resources', function (Blueprint $table) {
             $table->id();
-            $table->string('slug');
             $table->string('title');
-            $table->enum('type', ['Media', 'Post'])->default('Post');
-            $table->foreignId('user_id')->constrained();
-            $table->string('thumbnail')->default('thumbnail.jpg');
-            $table->mediumText('desc')->nullable();
-            $table->longText('content')->nullable();
+            $table->enum('type', ['Link', 'File']);
+            $table->string('content');
             $table->enum('status', ['Active', 'Archived']);
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
@@ -35,6 +31,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('resources');
     }
-}
+};

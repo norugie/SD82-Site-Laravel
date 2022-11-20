@@ -2,7 +2,7 @@
     <div class="mt-0 owl-nav-over owl-nav-over-lg owl-nav-over-hover" data-toggle="owl-carousel" data-owl-carousel-settings='{"items":1, "center":true, "autoplay":true, "autoplayTimeout":7000, "loop":true, "dots":true, "nav":true, "animateOut":"fadeOut"}'>
         <div class="item">
             <div class="item-image">
-                <img src="/assets/img/backgrounds/matbanner1.png" alt="Project 1" class="img-fluid" />
+                <img src="/assets/img/banners/matbanner1.png" alt="Project 1" class="img-fluid" />
             </div>
             <div class="item-text container">
                 <div class="item-content">
@@ -25,7 +25,7 @@
         </div>
         <div class="item">
             <div class="item-image">
-                <img src="/assets/img/backgrounds/matbanner2.png" alt="Project 1" class="img-fluid" />
+                <img src="/assets/img/banners/matbanner2.png" alt="Project 1" class="img-fluid" />
             </div>
             <div class="item-text container">
                 <div class="item-content">
@@ -48,7 +48,7 @@
         </div>
         <div class="item">
             <div class="item-image">
-                <img src="/assets/img/backgrounds/matbanner3.png" alt="Project 1" class="img-fluid" />
+                <img src="/assets/img/banners/matbanner3.png" alt="Project 1" class="img-fluid" />
             </div>
             <div class="item-text container">
                 <div class="item-content">
@@ -71,7 +71,7 @@
         </div>
         <div class="item">
             <div class="item-image">
-                <img src="/assets/img/backgrounds/matbanner4.png" alt="Project 1" class="img-fluid" />
+                <img src="/assets/img/banners/matbanner4.png" alt="Project 1" class="img-fluid" />
             </div>
             <div class="item-text container">
                 <div class="item-content">
@@ -94,7 +94,7 @@
         </div>
         <div class="item">
             <div class="item-image">
-                <img src="/assets/img/backgrounds/matbanner5.png" alt="Project 1" class="img-fluid" />
+                <img src="/assets/img/banners/matbanner5.png" alt="Project 1" class="img-fluid" />
             </div>
             <div class="item-text container">
                 <div class="item-content">
