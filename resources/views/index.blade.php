@@ -79,97 +79,39 @@
                         Stay current!
                     </h5>
                     <hr class="mb-5 w-50 mx-auto" />
-                    <div class="row blog-post">
-                        <div class="col-md-12">
-                            <div class="container-fluid">
-                                <h4 class="title media-heading">
-                                    <a href="#">Aliquam Immitto Importunus Pala Suscipere</a>
-                                </h4>
-                                <!-- Meta details mobile -->
-                                <ul class="list-inline text-white">
-                                    <li class="list-inline-item"><i class="fa fa-calendar"></i> Tue 13 Oct 2022</li>
-                                    <li class="list-inline-item"><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
-                                </ul>
-                                <div class="row">
-                                    <div class="col-md-3 push-md-9">
-                                        <div class="blog-media">
-                                            <a href="#">
-                                                <img src="assets/img/blog/frog.jpg" alt="Picture of frog by Ben Fredericson" class="img-fluid" />
-                                            </a>
+                    @foreach($news as $post):
+                        <div class="row blog-post">
+                            <div class="col-md-12">
+                                <div class="container-fluid">
+                                    <h4 class="title media-heading">
+                                        <a href="#">{{ $post->title }}</a>
+                                    </h4>
+                                    <!-- Meta details mobile -->
+                                    <ul class="list-inline text-white">
+                                        <li class="list-inline-item"><i class="fa fa-calendar"></i> {{ $post->created_at->format( 'M d, Y' ) }}</li>
+                                        <li class="list-inline-item"><i class="fa fa-user"></i> {{ $post->user->firstname }} {{ $post->user->lastname }}</li>
+                                    </ul>
+                                    <div class="row">
+                                        <div class="col-md-3 push-md-9">
+                                            <div class="blog-media">
+                                                <a href="#">
+                                                    <img src="/assets/img/thumbnails/{{ $post->thumbnail }}" alt="Picture of frog by Ben Fredericson" class="img-fluid" />
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-9 pull-md-3">
-                                        <p class="text-white text-justify">Consectetuer diam dignissim et loquor velit voco. Mos paulatim similis suscipere ulciscor utinam validus virtus.</p>
-                                        <ul class="list-inline links">
-                                            <li class="list-inline-item">
-                                                <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
-                                            </li>
-                                        </ul>
+                                        <div class="col-md-9 pull-md-3">
+                                            <p class="text-white text-justify">{{ $post->desc }}</p>
+                                            <ul class="list-inline links">
+                                                <li class="list-inline-item">
+                                                    <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row blog-post">
-                        <div class="col-md-12">
-                            <div class="container-fluid">
-                                <h4 class="title media-heading">
-                                    <a href="#">Cras pretium venenatis turpis eget posuere</a>
-                                </h4>
-                                <ul class="list-inline text-white">
-                                    <li class="list-inline-item"><i class="fa fa-calendar"></i> Tue 10 Oct 2022</li>
-                                    <li class="list-inline-item"><i class="fa fa-user"></i> <a href="#">John Smith</a></li>
-                                </ul>
-                                <div class="row">
-                                    <div class="col-md-3 push-md-9">
-                                        <div class="blog-media">
-                                            <a href="#">
-                                                <img src="assets/img/blog/water-pump.jpg" alt="Picture of frog by Ben Fredericson" class="img-fluid" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-9 pull-md-3">
-                                        <p class="text-white text-justify">Suspendisse potenti. Mauris molestie eros in orci pellentesque aliquet. Curabitur a metus at nisl tincidunt cursus. Donec bibendum leo in tortor posuere posuere.</p>
-                                        <ul class="list-inline links">
-                                            <li class="list-inline-item">
-                                                <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row blog-post">
-                        <div class="col-md-12">
-                            <div class="container-fluid">
-                                <h4 class="title media-heading">
-                                    <a href="#">Phasellus egestas maximus mi, vitae congue nulla</a>
-                                </h4>
-                                <ul class="list-inline text-white">
-                                    <li class="list-inline-item"><i class="fa fa-calendar"></i> 7 Oct 2022</li>
-                                    <li class="list-inline-item"><i class="fa fa-user"></i> <a href="#">Mary Sue</a></li>
-                                </ul>
-                                <div class="row">
-                                    <div class="col-md-3 push-md-9">
-                                        <div class="blog-media">
-                                            <a href="#">
-                                                <img src="assets/img/blog/bee.jpg" alt="Picture of frog by Ben Fredericson" class="img-fluid" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-9 pull-md-3">
-                                        <p class="text-white text-justify">Vestibulum eget rhoncus sem, nec vulputate diam. Sed mattis lacus sodales, aliquam nunc sit amet, interdum quam.</p>
-                                        <ul class="list-inline links">
-                                            <li class="list-inline-item">
-                                                <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />

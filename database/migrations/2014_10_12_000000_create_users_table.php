@@ -21,10 +21,29 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             // $table->foreignId('role_id')->constrained();
             // $table->foreignId('department_id')->constrained();
-            $table->enum('user_status', ['Active', 'Archived']);
+            $table->enum('status', ['Active', 'Archived']);
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
+
+        DB::table('users')->insert(
+            array(
+                [
+                    'username'   => 'Tess.Ture',
+                    'firstname'   => 'Tess',
+                    'lastname'   => 'Ture',
+                    'email'  => 'Tess.Ture@cmsd.bc.ca',
+                    'status'  => 'Active'
+                ],
+                [
+                    'username'   => 'Sute.Erst',
+                    'firstname'   => 'Sute',
+                    'lastname'   => 'Erst',
+                    'email'  => 'Sute.Erst@cmsd.bc.ca',
+                    'status'  => 'Active'
+                ]
+            )
+        );
     }
 
     /**
