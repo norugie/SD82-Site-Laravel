@@ -19,7 +19,7 @@
 
 // Config
 var Config = {
-    PLUGINS_LOCALPATH: "./assets/plugins/"
+    PLUGINS_LOCALPATH: "/assets/plugins/"
 };
 
 // Extend using $.extend(true, Config, { PLUGINS_LOCALPATH: 'new/path/setting' });

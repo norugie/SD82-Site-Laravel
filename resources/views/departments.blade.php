@@ -23,7 +23,7 @@
                     <!--Team Member-->
                     <div class="col-6 col-sm-4 col-md-3 grid-item">
                         <div class="team-member">
-                            <img src="assets/img/team/person-1.jpg" class="img-thumbnail" alt="Kate" />
+                            <img src="/assets/img/team/person-1.jpg" class="img-thumbnail" alt="Kate" />
                             <h5 class="name">
                             <a href="team-member.html" title="View Kate's profile">John Smith</a>
                             </h5>
@@ -34,7 +34,7 @@
                     <!--Team Member-->
                     <div class="col-6 col-sm-4 col-md-3 grid-item">
                         <div class="team-member">
-                            <img src="assets/img/team/person-2.jpg" class="img-thumbnail" alt="Kate" />
+                            <img src="/assets/img/team/person-2.jpg" class="img-thumbnail" alt="Kate" />
                             <h5 class="name">
                             <a href="team-member.html" title="View Kate's profile">John Doe</a>
                             </h5>
@@ -45,7 +45,7 @@
                     <!--Team Member-->
                     <div class="col-6 col-sm-4 col-md-3 grid-item">
                         <div class="team-member">
-                            <img src="assets/img/team/person-3.jpeg" class="img-thumbnail" alt="Kate" />
+                            <img src="/assets/img/team/person-3.jpeg" class="img-thumbnail" alt="Kate" />
                             <h5 class="name">
                             <a href="team-member.html" title="View Kate's profile">Eva Calvert</a>
                             </h5>
@@ -56,7 +56,7 @@
                     <!--Team Member-->
                     <div class="col-6 col-sm-4 col-md-3 grid-item">
                         <div class="team-member">
-                            <img src="assets/img/team/person-5.jpg" class="img-thumbnail" alt="Kate" />
+                            <img src="/assets/img/team/person-5.jpg" class="img-thumbnail" alt="Kate" />
                             <h5 class="name">
                             <a href="team-member.html" title="View Kate's profile">Sam Johnson</a>
                             </h5>

@@ -79,12 +79,12 @@
                         Stay current!
                     </h5>
                     <hr class="mb-5 w-50 mx-auto" />
-                    @foreach($news as $post):
+                    @foreach($news as $post)
                         <div class="row blog-post">
                             <div class="col-md-12">
                                 <div class="container-fluid">
                                     <h4 class="title media-heading">
-                                        <a href="#">{{ $post->title }}</a>
+                                    <a href="/news/{{ $post->slug }}">{{ $post->title }}</a>
                                     </h4>
                                     <!-- Meta details mobile -->
                                     <ul class="list-inline text-white">
@@ -94,7 +94,7 @@
                                     <div class="row">
                                         <div class="col-md-3 push-md-9">
                                             <div class="blog-media">
-                                                <a href="#">
+                                                <a href="/news/{{ $post->slug }}">
                                                     <img src="/assets/img/thumbnails/{{ $post->thumbnail }}" alt="Picture of frog by Ben Fredericson" class="img-fluid" />
                                                 </a>
                                             </div>
@@ -103,7 +103,7 @@
                                             <p class="text-white text-justify">{{ $post->desc }}</p>
                                             <ul class="list-inline links">
                                                 <li class="list-inline-item">
-                                                    <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
+                                                    <a href="/news/{{ $post->slug }}" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
                                                 </li>
                                             </ul>
                                         </div>

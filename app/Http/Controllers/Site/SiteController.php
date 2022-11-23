@@ -24,17 +24,93 @@ class SiteController extends Controller
         ]);
     }
 
-    public function newsView (String $page)
+    public function newsView ()
     {
-        echo $page;
-        // return view ('news');
+        // return Post::where('status', 'Active')->latest()->with('user')->take(3)->get();
+        return view('news', [
+            'page' => 'news',
+        ]);
     }
 
-    public function pageRouterView (String $page)
+    public function newsViewContent (String $slug)
+    {
+        // return "future specific content here";
+        return view('news-read', [
+            'page' => 'news',
+        ]);
+    }
+
+    public function careersView (String $category)
+    {
+        
+    }
+
+    public function careersViewContent (String $slug)
+    {
+
+    }
+
+    public function eventsView ()
+    {
+
+    }
+
+    public function eventsViewContent (String $slug)
+    {
+
+    }
+
+    public function pageView ()
+    {
+
+    }
+
+    public function pageViewContent (String $slug)
+    {
+
+    }
+
+    public function mainContentPageRouterView (String $page)
     {
         if (\View::exists($page)) {
             $function = $page . 'View';
-            $this->$function($page);
+            $content = $this->$function();
+            // dd($pageobject);
+            return view($page, [
+                'page' => $page,
+                'content' => $content
+            ]);
+        } else return view ('404');
+    }
+
+    public function subContentPageRouterView (String $page, String $slug)
+    {
+        if (\View::exists($page)) {
+            if($page === 'careers') $function = $page . 'View';
+            else {
+                $function = $page . 'ViewContent';
+                $pagefile = $page . '-read';
+            }
+
+            $content = $this->$function($slug);
+            dd($content);
+            return view($pagefile, [
+                'page' => $page,
+                'content' => $content
+            ]);
+        } else return view ('404');
+    }
+
+    public function subContentInCategoryPageRouterView (String $page, String $category, String $slug)
+    {
+        if (\View::exists($page)) {
+            $function = $page . 'ViewContent';
+            $content = $this->$function($slug);
+
+            return view($page . '-read', [
+                'page' => $page,
+                'content' => $content
+            ]);
         } else return view ('404');
     }
 }
