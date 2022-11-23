@@ -24,10 +24,17 @@ class SiteController extends Controller
         ]);
     }
 
+    public function newsView (String $page)
+    {
+        echo $page;
+        // return view ('news');
+    }
+
     public function pageRouterView (String $page)
     {
         if (\View::exists($page)) {
-            return view ($page);
+            $function = $page . 'View';
+            $this->$function($page);
         } else return view ('404');
     }
 }
