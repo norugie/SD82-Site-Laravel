@@ -6,7 +6,7 @@
     <ul class="list-unstyled">
         @foreach($sitedata->posts as $post)
             <li>
-                <a href="/news/{{ $post->slug }}}" class="d-flex align-items-center py-1 text-hover-no-underline">{{ $post->title }}</a>
+                <a href="/news/{{ $post->slug }}" class="d-flex align-items-center py-1 text-hover-no-underline">{{ $post->title }}</a>
             </li>
         @endforeach
     </ul>
