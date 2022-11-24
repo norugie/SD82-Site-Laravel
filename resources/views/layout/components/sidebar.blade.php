@@ -1,17 +1,15 @@
 <!--Sidebar-->
 <div class="mb-4">
     <h4 class="title-divider">
-        <span>Tags</span>
+        <span>Recent News</span>
     </h4>
-    <div class="tag-cloud">
-        <span class="badge"><a href="#">School District</a> (30)</span>
-        <span class="badge"><a href="#">School</a> (15)</span>
-        <span class="badge"><a href="#">COVID-19</a> (20)</span>
-        <span class="badge"><a href="#">Events</a> (12)</span>
-        <span class="badge"><a href="#">Important</a> (19)</span>
-        <span class="badge"><a href="#">Board of Education</a> (5)</span>
-        <span class="badge"><a href="#">Health</a> (20)</span>
-    </div>
+    <ul class="list-unstyled">
+        @foreach($sitedata->posts as $post)
+            <li>
+                <a href="/news/{{ $post->slug }}}" class="d-flex align-items-center py-1 text-hover-no-underline">{{ $post->title }}</a>
+            </li>
+        @endforeach
+    </ul>
 </div>
 
 <div class="mb-4">

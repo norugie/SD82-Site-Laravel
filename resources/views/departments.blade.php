@@ -3,7 +3,7 @@
 @section ( 'content' )
     <div class="row blog-post">
         <div class="col-md-12">
-            <div class="media-body">
+            <div class="media-body pr-3">
                 <!--Main content of post-->
                 <div class="blog-content">
                     <p class="lead">Accumsan consequat in melior nulla te tincidunt. Defui hendrerit illum odio te typicus valde validus vindico voco. Abico refero tation vulputate.</p>

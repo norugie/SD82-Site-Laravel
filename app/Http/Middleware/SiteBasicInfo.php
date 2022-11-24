@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\View;
 use App\Models\Department;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class SiteBasicInfo
@@ -27,6 +28,7 @@ class SiteBasicInfo
         $siteData['address'] = $cmsd->addr;
         $siteData['email'] = $cmsd->email;
         $siteData['phone'] = $cmsd->phone;
+        $siteData['posts'] = Post::where('status', 'Active')->latest()->with('user')->take(3)->get();
 
         $sitedata = json_decode(json_encode($siteData), FALSE);
 

@@ -37,7 +37,7 @@ return new class extends Migration
                     'title'   => 'Calendar',
                     'type'   => 'Link',
                     'placement'   => 'Primary',
-                    'content'  => '/events/calender',
+                    'content'  => '/events',
                     'status'  => 'Active'
                 ],
                 [
