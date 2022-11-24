@@ -21,11 +21,11 @@ class Post extends Model
 
     public function categories ()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsToMany(Category::class)->where('categories.status', 'Active');
     }
 
     public function media ()
     {
-        return $this->hasMany(Media::class);
+        return $this->hasMany(Media::class)->where('media.status', 'Active');
     }
 }

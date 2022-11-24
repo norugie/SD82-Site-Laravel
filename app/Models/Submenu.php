@@ -11,7 +11,7 @@ class Submenu extends Model
 
     public function menu ()
     {
-        return $this->belongsTo(Menu::class);
+        return $this->belongsTo(Menu::class)->where('menus.status', 'Active');
     }
 
 }

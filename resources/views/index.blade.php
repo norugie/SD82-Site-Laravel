@@ -95,7 +95,7 @@
                                         <div class="col-md-3 push-md-9">
                                             <div class="blog-media">
                                                 <a href="/news/{{ $post->slug }}">
-                                                    <img src="/assets/img/thumbnails/{{ $post->thumbnail }}" alt="Picture of frog by Ben Fredericson" class="img-fluid" />
+                                                    <img src="/assets/img/thumbnails/{{ $post->thumbnail }}" alt="{{ $post->title }}" class="img-fluid" />
                                                 </a>
                                             </div>
                                         </div>

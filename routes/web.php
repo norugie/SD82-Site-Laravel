@@ -48,11 +48,11 @@ Route::controller('AuthController')->group(function(){
 Route::group(['middleware' => ['navbar', 'siteinfo']], function(){
     Route::controller('Site\SiteController')->group(function(){
         Route::get('/', 'indexView');
-        Route::get('/news', 'newsView');
-        Route::get('/news/{slug}', 'newsViewContent');
-        // Route::get('/{page}', 'mainContentPageRouterView');
-        // Route::get('/{page}/{slug}', 'subContentPageRouterView');
-        // Route::get('/{page}/{category}/{slug}', 'subContentInCategoryPageRouterView');
+        // Route::get('/news', 'newsView');
+        // Route::get('/news/{slug}', 'newsViewContent');
+        Route::get('/{page}', 'mainContentPageRouterView');
+        Route::get('/{page}/{slug}', 'subContentPageRouterView');
+        Route::get('/{page}/{category}/{slug}', 'subContentInCategoryPageRouterView');
     });
 });
 

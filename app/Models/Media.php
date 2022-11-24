@@ -11,6 +11,6 @@ class Media extends Model
 
     public function post ()
     {
-        return $this->belongsTo(Post::class);
+        return $this->belongsTo(Post::class)->where('posts.status', 'Active');
     }
 }

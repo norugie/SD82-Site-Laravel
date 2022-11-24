@@ -30,7 +30,7 @@ class CreatePostsTable extends Migration
         DB::table('posts')->insert(
             array(
                 [
-                    'slug'   => 'news-sample-news-post-lorem-ipsum-dolor-sit-amet',
+                    'slug'   => 'sample-news-post-lorem-ipsum-dolor-sit-amet',
                     'title'   => 'Sample News Post: Lorem ipsum dolor sit amet',
                     'type'  => 'Post',
                     'user_id'  => 1,
@@ -41,7 +41,7 @@ class CreatePostsTable extends Migration
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'news-sample-news-post-quisque-ullamcorper',
+                    'slug'   => 'sample-news-post-quisque-ullamcorper',
                     'title'   => 'Sample News Post: Quisque ullamcorper',
                     'type'  => 'Post',
                     'user_id'  => 2,
@@ -52,7 +52,7 @@ class CreatePostsTable extends Migration
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'news-sample-news-post-nunc-porta-tempor-suscipit',
+                    'slug'   => 'sample-news-post-nunc-porta-tempor-suscipit',
                     'title'   => 'Sample News Post: Nunc porta tempor suscipit',
                     'type'  => 'Post',
                     'user_id'  => 1,

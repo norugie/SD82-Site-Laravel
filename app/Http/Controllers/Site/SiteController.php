@@ -26,18 +26,12 @@ class SiteController extends Controller
 
     public function newsView ()
     {
-        // return Post::where('status', 'Active')->latest()->with('user')->take(3)->get();
-        return view('news', [
-            'page' => 'news',
-        ]);
+        return Post::where('status', 'Active')->latest()->with('user')->with('categories')->get();
     }
 
     public function newsViewContent (String $slug)
     {
-        // return "future specific content here";
-        return view('news-read', [
-            'page' => 'news',
-        ]);
+        return "future specific content here";
     }
 
     public function careersView (String $category)
@@ -74,11 +68,11 @@ class SiteController extends Controller
     {
         if (\View::exists($page)) {
             $function = $page . 'View';
-            $content = $this->$function();
-            // dd($pageobject);
+            $contents = $this->$function();
+            
             return view($page, [
                 'page' => $page,
-                'content' => $content
+                'contents' => $contents
             ]);
         } else return view ('404');
     }
@@ -89,14 +83,14 @@ class SiteController extends Controller
             if($page === 'careers') $function = $page . 'View';
             else {
                 $function = $page . 'ViewContent';
-                $pagefile = $page . '-read';
+                $page = $page . '-read';
             }
 
-            $content = $this->$function($slug);
-            dd($content);
-            return view($pagefile, [
-                'page' => $page,
-                'content' => $content
+            $contents = $this->$function($slug);
+            
+            return view($page, [
+                'page' => str_replace('-read', '', $page),
+                'contents' => $contents
             ]);
         } else return view ('404');
     }
@@ -105,11 +99,11 @@ class SiteController extends Controller
     {
         if (\View::exists($page)) {
             $function = $page . 'ViewContent';
-            $content = $this->$function($slug);
+            $contents = $this->$function($slug);
 
             return view($page . '-read', [
                 'page' => $page,
-                'content' => $content
+                'contents' => $contents
             ]);
         } else return view ('404');
     }
