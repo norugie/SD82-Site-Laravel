@@ -135,6 +135,9 @@
     .owl-carousel .item img {
         height: 250px!important;
     }
+    .resource-container {
+        column-count: 2!important;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -272,6 +275,15 @@
 }
 
 .link-list {
+    /* margin-bottom: 1rem; */
+    break-inside: avoid-column;
+}
+
+.resource-container {
+    column-count: 3;
+}
+
+.resource-list {
     /* margin-bottom: 1rem; */
     break-inside: avoid-column;
 }

@@ -2,6 +2,16 @@
 
 @section('custom-css')
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" type="text/css">
+    <style>
+        .fc-prev-button,
+        .fc-next-button {
+            background-color: #55A79A!important;
+            border: #55A79A!important;
+        }
+        .fc-daygrid-day-number {
+            color: #212529!important;
+        }
+    </style>
 @endsection
 
 @section('custom-js')
@@ -9,11 +19,11 @@
     <script>
 
         document.addEventListener('DOMContentLoaded', function() {
-          var calendarEl = document.getElementById('calendar');
-          var calendar = new FullCalendar.Calendar(calendarEl, {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth'
-          });
-          calendar.render();
+            });
+            calendar.render();
         });
   
     </script>
