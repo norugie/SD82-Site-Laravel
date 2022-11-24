@@ -79,7 +79,7 @@
                         Stay current!
                     </h5>
                     <hr class="mb-5 w-50 mx-auto" />
-                    @foreach($news as $post)
+                    @foreach($sitedata->posts as $post)
                         <div class="row blog-post">
                             <div class="col-md-12">
                                 <div class="container-fluid">
@@ -88,7 +88,7 @@
                                     </h4>
                                     <!-- Meta details mobile -->
                                     <ul class="list-inline text-white">
-                                        <li class="list-inline-item"><i class="fa fa-calendar"></i> {{ $post->created_at->format( 'M d, Y' ) }}</li>
+                                        <li class="list-inline-item"><i class="fa fa-calendar"></i> {{ date( 'M d, Y',strtotime( $post->created_at ) ) }}</li>
                                         <li class="list-inline-item"><i class="fa fa-user"></i> {{ $post->user->firstname }} {{ $post->user->lastname }}</li>
                                     </ul>
                                     <div class="row">
@@ -103,7 +103,7 @@
                                             <p class="text-white text-justify">{{ $post->desc }}</p>
                                             <ul class="list-inline links">
                                                 <li class="list-inline-item">
-                                                    <a href="/news/{{ $post->slug }}" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
+                                                    <a href="/news/{{ $post->slug }}" class="btn btn-primary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
                                                 </li>
                                             </ul>
                                         </div>

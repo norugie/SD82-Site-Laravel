@@ -28,163 +28,163 @@ return new class extends Migration
                 [
                     'title'   => 'Teacher (CMTF) Job Postings',
                     'menu_id'   => 4,
-                    'content'   => '/careers/cmtf',
+                    'content'   => '/jobs/cmtf',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Support Staff (CUPE) Job Postings',
                     'menu_id'   => 4,
-                    'content'   => '/careers/cupe',
+                    'content'   => '/jobs/cupe',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Administrative and Exempt Job Postings',
                     'menu_id'   => 4,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 6,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 6,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 6,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 6,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 6,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 7,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 7,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 7,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 7,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'School Administration',
                     'menu_id'   => 8,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'All Schools',
                     'menu_id'   => 8,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'School Growth Plan',
                     'menu_id'   => 8,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 9,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 9,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 9,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 9,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 9,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 9,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 10,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 10,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 10,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 10,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 10,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ],
                 [
                     'title'   => 'Link Sample',
                     'menu_id'   => 10,
-                    'content'   => '/careers/exempt',
+                    'content'   => '/jobs/exempt',
                     'status'  => 'Active'
                 ]
             )

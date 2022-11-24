@@ -13,14 +13,11 @@ class SiteController extends Controller
     {
         $about = Content::where('type', 'Snippet')->where('location', 'about')->where('status', 'Active')->first();
         $slides = Content::where('type', 'Slider')->where('location', 'slider')->where('status', 'Active')->get();
-        $news = Post::where('status', 'Active')->latest()->with('user')->take(3)->get();
-        // $posts = Post::where('status', 'Active')->get();
-        // dd($news);
+
         return view ('index', 
         [
             'about' => $about,
-            'slides' => $slides,
-            'news' => $news
+            'slides' => $slides
         ]);
     }
 
@@ -31,15 +28,16 @@ class SiteController extends Controller
 
     public function newsViewContent (String $slug)
     {
-        return "future specific content here";
+        return Post::where('slug', $slug)->with('user')->with('categories')->first();
     }
 
-    public function careersView (String $category)
+    public function jobsView (String $category)
     {
-        
+        $info = Content::where('type', 'Snippet')->where('location', $category)->where('status', 'Active')->first();
+        return $info;
     }
 
-    public function careersViewContent (String $slug)
+    public function jobsViewContent (String $slug)
     {
 
     }
@@ -80,16 +78,18 @@ class SiteController extends Controller
     public function subContentPageRouterView (String $page, String $slug)
     {
         if (\View::exists($page)) {
-            if($page === 'careers') $function = $page . 'View';
+            if($page === 'jobs') $function = $page . 'View';
             else {
                 $function = $page . 'ViewContent';
                 $page = $page . '-read';
             }
 
             $contents = $this->$function($slug);
-            
+
+            if($page === 'jobs' ? $title = $contents->title: $title = str_replace('-read', '', $page));
+
             return view($page, [
-                'page' => str_replace('-read', '', $page),
+                'page' => $title,
                 'contents' => $contents
             ]);
         } else return view ('404');

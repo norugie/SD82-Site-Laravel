@@ -8,6 +8,7 @@
                 <h4 class="title media-heading">
                     <a href="/news/{{ $post->slug }}">{{ $post->title }}</a>
                 </h4>
+
                 <!-- Meta details mobile -->
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item"><i class="fa fa-calendar"></i> {{ $post->created_at->format( 'M d, Y' ) }}</li>
@@ -17,9 +18,11 @@
                 <!-- Post tags -->
                 <div class="tag-cloud post-tag-cloud mt-0 mb-3">
                     @foreach($post->categories as $category)
-                        <a href="#" class="badge badge-secondary">{{ $category->name }}</a>&nbsp;
+                        <a href="/news/category/{{ $category->slug }}" class="badge badge-secondary">{{ $category->name }}</a>&nbsp;
                     @endforeach
                 </div>
+
+                <!-- Post details -->
                 <div class="row">
                     <div class="col-md-3 push-md-9">
                         <div class="blog-media">
@@ -32,7 +35,7 @@
                         <p class="text-justify">{{ $post->desc }}</p>
                         <ul class="list-inline links">
                             <li class="list-inline-item">
-                                <a href="/news/{{ $post->slug }}" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
+                                <a href="/news/{{ $post->slug }}" class="btn btn-primary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
                             </li>
                         </ul>
                     </div>

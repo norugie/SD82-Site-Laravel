@@ -19,7 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->enum('type', ['Media', 'Post'])->default('Post');
             $table->foreignId('user_id')->constrained();
-            $table->string('thumbnail')->default('thumbnail.jpg');
+            $table->string('thumbnail')->default('default_thumbnail.jpg');
             $table->mediumText('desc')->nullable();
             $table->longText('content')->nullable();
             $table->enum('status', ['Active', 'Archived']);
