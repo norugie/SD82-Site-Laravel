@@ -1,93 +1,59 @@
 @extends ( 'layout.layout' )
 
 @section ( 'content' )
-    <!--District News Content-->
-    <div class="row blog-post">
-        <div class="col-md-12">
-            <h4 class="title media-heading">
-                <a href="#">Aliquam Immitto Importunus Pala Suscipere</a>
-            </h4>
-            <!-- Meta details mobile -->
-            <ul class="list-inline">
-                <li class="list-inline-item"><i class="fa fa-calendar"></i> Tue 13 Oct 2022</li>
-                <li class="list-inline-item"><i class="fa fa-user"></i> <a href="#">John Doe</a></li>
-            </ul>
-            <div class="row">
-                <div class="col-md-3 push-md-9">
-                    <div class="blog-media">
-                        <a href="#">
-                            <img src="assets/img/blog/frog.jpg" alt="Picture of frog by Ben Fredericson" class="img-fluid" />
-                        </a>
-                    </div>
+    @foreach($contents as $post)
+        <!--District News Content-->
+        <div class="row blog-post">
+            <div class="col-md-12">
+                <h4 class="title media-heading">
+                    <a href="/news/{{ $post->slug }}">{{ $post->title }}</a>
+                </h4>
+                <!-- Meta details mobile -->
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><i class="fa fa-calendar"></i> {{ $post->created_at->format( 'M d, Y' ) }}</li>
+                    <li class="list-inline-item"><i class="fa fa-user"></i> {{ $post->user->firstname }} {{ $post->user->lastname }}</li>
+                </ul>
+
+                <!-- Post tags -->
+                <div class="tag-cloud post-tag-cloud mt-0 mb-3">
+                    @foreach($post->categories as $category)
+                        <a href="#" class="badge badge-secondary">{{ $category->name }}</a>&nbsp;
+                    @endforeach
                 </div>
-                <div class="col-md-9 pull-md-3">
-                    <p class="text-justify">Consectetuer diam dignissim et loquor velit voco. Mos paulatim similis suscipere ulciscor utinam validus virtus.</p>
-                    <ul class="list-inline links">
-                        <li class="list-inline-item">
-                            <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="col-md-3 push-md-9">
+                        <div class="blog-media">
+                            <a href="/news/{{ $post->slug }}">
+                                <img src="/assets/img/thumbnails/{{ $post->thumbnail }}" alt="{{ $post->title }}" class="img-fluid" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 pull-md-3">
+                        <p class="text-justify">{{ $post->desc }}</p>
+                        <ul class="list-inline links">
+                            <li class="list-inline-item">
+                                <a href="/news/{{ $post->slug }}" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row blog-post">
-        <div class="col-md-12">
-            <h4 class="title media-heading">
-                <a href="#">Cras pretium venenatis turpis eget posuere</a>
-            </h4>
-            <ul class="list-inline">
-                <li class="list-inline-item"><i class="fa fa-calendar"></i> Tue 10 Oct 2022</li>
-                <li class="list-inline-item"><i class="fa fa-user"></i> <a href="#">John Smith</a></li>
-            </ul>
-            <div class="row">
-                <div class="col-md-3 push-md-9">
-                    <div class="blog-media">
-                        <a href="#">
-                            <img src="assets/img/blog/water-pump.jpg" alt="Picture of frog by Ben Fredericson" class="img-fluid" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-9 pull-md-3">
-                    <p class="text-justify">Suspendisse potenti. Mauris molestie eros in orci pellentesque aliquet. Curabitur a metus at nisl tincidunt cursus. Donec bibendum leo in tortor posuere posuere.</p>
-                    <ul class="list-inline links">
-                        <li class="list-inline-item">
-                            <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row blog-post">
-        <div class="col-md-12">
-            <h4 class="title media-heading">
-                <a href="#">Phasellus egestas maximus mi, vitae congue nulla</a>
-            </h4>
-            <ul class="list-inline">
-                <li class="list-inline-item"><i class="fa fa-calendar"></i> 7 Oct 2022</li>
-                <li class="list-inline-item"><i class="fa fa-user"></i> <a href="#">Mary Sue</a></li>
-            </ul>
-            <div class="row">
-                <div class="col-md-3 push-md-9">
-                    <div class="blog-media">
-                        <a href="#">
-                            <img src="assets/img/blog/bee.jpg" alt="Picture of frog by Ben Fredericson" class="img-fluid" />
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-9 pull-md-3">
-                    <p class="text-justify">Vestibulum eget rhoncus sem, nec vulputate diam. Sed mattis lacus sodales, aliquam nunc sit amet, interdum quam.</p>
-                    <ul class="list-inline links">
-                        <li class="list-inline-item">
-                            <a href="#" class="btn btn-secondary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="pagination">
-        <button type="button" class="btn btn-secondary btn-lg btn-block">Load More</button>
-    </div>
+    @endforeach
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">«</span> <span class="sr-only">Previous</span> </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">»</span> <span class="sr-only">Next</span> </a>
+            </li>
+        </ul>
+    </nav>
 @endsection

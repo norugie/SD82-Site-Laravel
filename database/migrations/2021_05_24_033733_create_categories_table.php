@@ -25,42 +25,42 @@ class CreateCategoriesTable extends Migration
         DB::table('categories')->insert(
             array(
                 [
-                    'slug'   => 'cat-school-district',
+                    'slug'   => 'school-district',
                     'name'   => 'School District',
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'cat-school',
+                    'slug'   => 'school',
                     'name'   => 'School',
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'cat-education',
+                    'slug'   => 'education',
                     'name'   => 'Education',
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'cat-events',
+                    'slug'   => 'events',
                     'name'   => 'Events',
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'cat-announcements',
+                    'slug'   => 'announcements',
                     'name'   => 'Announcements',
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'cat-board-of-education',
+                    'slug'   => 'board-of-education',
                     'name'   => 'Board of Education',
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'cat-language-and-culture',
+                    'slug'   => 'language-and-culture',
                     'name'   => 'Language and Culture',
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'cat-celebration',
+                    'slug'   => 'celebration',
                     'name'   => 'Celebration',
                     'status'  => 'Active'
                 ]

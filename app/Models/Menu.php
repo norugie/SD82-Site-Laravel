@@ -11,6 +11,6 @@ class Menu extends Model
 
     public function submenu ()
     {
-        return $this->hasMany(Submenu::class);
+        return $this->hasMany(Submenu::class)->where('submenus.status', 'Active');
     }
 }
