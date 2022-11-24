@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use App\Models\Content;
 use App\Models\Post;
+use App\Models\Resource;
 use Illuminate\Http\Request;
 
 class SiteController extends Controller
@@ -52,6 +53,14 @@ class SiteController extends Controller
 
     }
 
+    public function staffView ()
+    {
+        $contents['about'] = Content::where('type', 'Snippet')->where('location', 'staff')->where('status', 'Active')->first();
+        $contents['info'] = Resource::where('location', 'staff')->where('status', 'Active')->get();
+
+        return $contents;
+    }
+
     public function pageView ()
     {
 
@@ -67,7 +76,7 @@ class SiteController extends Controller
         if (\View::exists($page)) {
             $function = $page . 'View';
             $contents = $this->$function();
-            
+
             return view($page, [
                 'page' => $page,
                 'contents' => $contents

@@ -110,7 +110,15 @@ return new class extends Migration
                     <p><a href="https://www.youtube.com/watch?v=IRC7zFCf6EU">CMSD82 Recruitment Video &ndash; April 2021 &ndash; YouTube</a></p>
                     <p><label for="jobPostApplyForm:module-jobpost-applicant-only-canada">Only persons who are legally allowed to work in Canada can apply for this job. If you are not currently authorized to work in Canada, do not apply as the employer will not consider your job application</label></p>',
                     'status' => 'Active'
-                ]
+                ],
+                [
+                    'title'   => 'Staff Resource Page',
+                    'type'   => 'Snippet',
+                    'location'   => 'staff',
+                    'banner'    => NULL,
+                    'content'  => '<p>Welcome to the Coast Moutains School District 82 (CMSD82) Staff Resource page. You can access this section from the top of every page. We welcome feedback so if you would like to recommend a feature to be added to this section or have any other questions, you can contact us through the contact information means available in the top bar.</p>',
+                    'status' => 'Active'
+                ],
             )
         );
     }
