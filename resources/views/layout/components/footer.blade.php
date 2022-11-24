@@ -55,13 +55,13 @@
     </div>
 </footer>
 
-<!-- Jquery Core Js -->
+<!-- Jquery Core JS -->
 <script src="/assets/plugins/jquery/jquery.min.js"></script>
 
-<!-- Popper Plugin Js -->
+<!-- Popper Plugin JS -->
 <script src="/assets/plugins/popper/popper.js"></script>
 
-<!-- Bootstrap v4.5.0 JS via CDN -->
+<!-- Bootstrap Core JS -->
 <script src="/assets/plugins/bootstrap/js/bootstrap.js"></script>
 
 
