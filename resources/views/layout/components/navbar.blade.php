@@ -8,7 +8,7 @@
     <!--Header upper region-->
     <div class="header-upper py-1">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-6 col-sm-12">
                     <!--contact-->
                     <div class="header-block-flex order-1 mr-auto">

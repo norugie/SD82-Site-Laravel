@@ -50,7 +50,7 @@ return new class extends Migration
                     'type'   => 'Slider',
                     'location'   => 'slider',
                     'banner'    => 'matbanner2.png',
-                    'content'  => 'We acknowledge that we are in the traditional territories of the Gitxsan, Haisla, Nisga’a and Tsimshian people.',
+                    'content'  => 'Acknowledging with respect the lands on which we live, work, play and learn as the traditional & unceded territories of the Gitxsan, Haisla, Nisga’a & Ts’msyen Peoples',
                     'status' => 'Active'
                 ],
                 [
@@ -58,7 +58,7 @@ return new class extends Migration
                     'type'   => 'Slider',
                     'location'   => 'slider',
                     'banner'    => 'matbanner3.png',
-                    'content'  => 'The Schoold District\'s pledge.',
+                    'content'  => 'Coast Mountains School District is committed to walking side by side with local Nations to meet the needs of Indigenous learners and their families.',
                     'status' => 'Active'
                 ],
                 [
@@ -66,7 +66,7 @@ return new class extends Migration
                     'type'   => 'Slider',
                     'location'   => 'slider',
                     'banner'    => 'matbanner4.png',
-                    'content'  => 'The Board of Education\'s strategic plan for the 2022-2027 academic cycle.',
+                    'content'  => 'The Board of Education’s Strategic Plan... charting the course for student success.',
                     'status' => 'Active'
                 ],
                 [
@@ -74,7 +74,7 @@ return new class extends Migration
                     'type'   => 'Slider',
                     'location'   => 'slider',
                     'banner'    => 'matbanner5.png',
-                    'content'  => 'Short message relating to the monthly theme.',
+                    'content'  => NULL,
                     'status' => 'Active'
                 ],
                 [
