@@ -1,6 +1,6 @@
 <!--Sidebar-->
 <div class="mb-4">
-    <h4 class="title-divider">
+    <h4 class="title-divider text-grey-dark">
         <span>Recent News</span>
     </h4>
     <ul class="list-unstyled">
@@ -13,7 +13,7 @@
 </div>
 
 <div class="mb-4">
-    <h4 class="title-divider">
+    <h4 class="title-divider text-grey-dark">
         <span>Upcoming Events</span>
     </h4>
     <ul class="list-unstyled">
