@@ -87,7 +87,7 @@
                                     <a href="/news/{{ $post->slug }}">{{ $post->title }}</a>
                                     </h4>
                                     <!-- Meta details mobile -->
-                                    <ul class="list-inline">
+                                    <ul class="list-inline text-grey-dark">
                                         <li class="list-inline-item"><i class="fa fa-calendar"></i> {{ date( 'M d, Y',strtotime( $post->created_at ) ) }}</li>
                                         <li class="list-inline-item"><i class="fa fa-user"></i> {{ $post->user->firstname }} {{ $post->user->lastname }}</li>
                                     </ul>
@@ -100,7 +100,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-9 pull-md-3">
-                                            <p class="text-justify">{{ $post->desc }}</p>
+                                            <p class="text-justify text-grey-dark">{{ $post->desc }}</p>
                                             <ul class="list-inline links">
                                                 <li class="list-inline-item">
                                                     <a href="/news/{{ $post->slug }}" class="btn btn-primary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>
@@ -139,7 +139,7 @@
                                         </div>
                                     </li>
                                     <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-                                        <div class="row d-md-flex align-items-md-center">
+                                        <div class="row d-md-flex align-items-md-center text-grey-dark">
                                             <div class="col-md-3 p-md-2 d-flex align-items-center justify-content-md-center">
                                                 <span class="display-4 no-resize font-weight-bold mr-1">16</span>
                                                 <span>DEC<br />2022</span>
@@ -151,7 +151,7 @@
                                         </div>
                                     </li>
                                     <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-                                        <div class="row d-md-flex align-items-md-center">
+                                        <div class="row d-md-flex align-items-md-center text-grey-dark">
                                             <div class="col-md-3 p-md-2 d-flex align-items-center justify-content-md-center">
                                                 <span class="display-4 no-resize font-weight-bold mr-1">25</span>
                                                 <span>DEC<br />2022</span>
@@ -176,7 +176,7 @@
             <div class="col-lg-6 overlay overlay-gradient overlay-op-6 d-none d-lg-block" data-bg-img="assets/img/banners/matbanner6.png"></div>
             <div class="col-lg-6 p-5 p-lg-7">
                 <hr class="hr-lg mt-0 mb-3 w-10 ml-0 hr-primary" />
-                <h2 class="display-4 text-uppercase font-weight-bold mt-0 mb-4">{{ $about->title }}</h2>
+                <h2 class="display-4 text-uppercase text-grey-dark font-weight-bold mt-0 mb-4">{{ $about->title }}</h2>
                 {!! $about->content !!}
             </div>
         </div>

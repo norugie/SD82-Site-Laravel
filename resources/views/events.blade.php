@@ -8,8 +8,9 @@
             background-color: #55A79A!important;
             border: #55A79A!important;
         }
+        .fc-toolbar-title,
         .fc-daygrid-day-number {
-            color: #212529!important;
+            color: #464646!important;
         }
     </style>
 @endsection
@@ -32,7 +33,7 @@
 @section ( 'content' )
     <div class="row pr-3">
         <div class="col-md-3 col-sm-12">
-            <h4 class="title-divider">
+            <h4 class="title-divider text-grey-dark">
                 <span>All Upcoming Events</span>
             </h4>
             <ul class="list-unstyled">

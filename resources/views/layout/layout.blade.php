@@ -14,7 +14,7 @@
 
         <div id="content">
             <div class="container">
-                <h2 class="title-divider text-uppercase font-weight-bold">
+                <h2 class="title-divider text-uppercase text-grey-dark font-weight-bold">
                     <span>{{ $page }} Page</span>
                 </h2>
                 <div class="row">
