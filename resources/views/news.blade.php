@@ -10,7 +10,7 @@
                 </h4>
 
                 <!-- Meta details mobile -->
-                <ul class="list-inline mb-0">
+                <ul class="list-inline mb-0 text-grey-dark">
                     <li class="list-inline-item"><i class="fa fa-calendar"></i> {{ $post->created_at->format( 'M d, Y' ) }}</li>
                     <li class="list-inline-item"><i class="fa fa-user"></i> {{ $post->user->firstname }} {{ $post->user->lastname }}</li>
                 </ul>
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="col-md-9 pull-md-3">
-                        <p class="text-justify">{{ $post->desc }}</p>
+                        <p class="text-justify text-grey-dark">{{ $post->desc }}</p>
                         <ul class="list-inline links">
                             <li class="list-inline-item">
                                 <a href="/news/{{ $post->slug }}" class="btn btn-primary btn-sm"><i class="fa fa-arrow-circle-right"></i> Read more</a>

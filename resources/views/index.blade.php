@@ -6,25 +6,25 @@
     <div class="container">
         <ul class="nav nav-steps nav-steps-square flex-column flex-lg-row justify-content-around mx-auto">
             <li class="nav-item">
-                <a href="/" class="nav-link"> <i class="fas fa-school icon-2x mb-05"></i> <span class="font-weight-bold d-block">Schools & Registration</span> </a>
+                <a href="/" class="nav-link text-grey-dark"> <i class="fas fa-school icon-2x mb-05"></i> <span class="font-weight-bold d-block">Schools & Registration</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"> <i class="fas fa-heartbeat icon-2x mb-05"></i> <span class="font-weight-bold d-block">Health & Wellness</span> </a>
+                <a href="#" class="nav-link text-grey-dark"> <i class="fas fa-heartbeat icon-2x mb-05"></i> <span class="font-weight-bold d-block">Health & Wellness</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"> <i class="fas fa-book icon-2x mb-05"></i> <span class="font-weight-bold d-block">Learner Programs</span> </a>
+                <a href="#" class="nav-link text-grey-dark"> <i class="fas fa-book icon-2x mb-05"></i> <span class="font-weight-bold d-block">Learner Programs</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"> <i class="fas fa-book-reader icon-2x mb-05"></i> <span class="font-weight-bold d-block">Indigenous Education</span> </a>
+                <a href="#" class="nav-link text-grey-dark"> <i class="fas fa-book-reader icon-2x mb-05"></i> <span class="font-weight-bold d-block">Indigenous Education</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"> <i class="fas fa-bus icon-2x mb-05"></i> <span class="font-weight-bold d-block">Transportation Services</span> </a>
+                <a href="#" class="nav-link text-grey-dark"> <i class="fas fa-bus icon-2x mb-05"></i> <span class="font-weight-bold d-block">Transportation Services</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"> <i class="fas fa-file-signature icon-2x mb-05"></i> <span class="font-weight-bold d-block">Strategic Plans</span> </a>
+                <a href="#" class="nav-link text-grey-dark"> <i class="fas fa-file-signature icon-2x mb-05"></i> <span class="font-weight-bold d-block">Strategic Plans</span> </a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link"> <i class="fas fa-utensils icon-2x mb-05"></i> <span class="font-weight-bold d-block">Food & Nutrition</span> </a>
+                <a href="/" class="nav-link text-grey-dark"> <i class="fas fa-utensils icon-2x mb-05"></i> <span class="font-weight-bold d-block">Food & Nutrition</span> </a>
             </li>
         </ul>
     </div>
@@ -34,10 +34,10 @@
             <div class="row">
                 <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
                     <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
-                    <h3 class="text-center text-uppercase font-weight-bold my-0">
+                    <h3 class="text-center text-uppercase text-grey-dark font-weight-bold my-0">
                         Socials and Stories of Impact
                     </h3>
-                    <h5 class="text-center font-weight-light mt-2 mb-0">
+                    <h5 class="text-center text-grey-dark font-weight-light mt-2 mb-0">
                         Stay connected!
                     </h5>
                     <hr class="mb-5 w-50 mx-auto hr-primary" />
@@ -72,10 +72,10 @@
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-12 col-xs-12">
                     <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
-                    <h3 class="text-center text-uppercase font-weight-bold my-0">
+                    <h3 class="text-center text-uppercase text-grey-dark font-weight-bold my-0">
                         Our News Feed
                     </h3>
-                    <h5 class="text-center font-weight-light mt-2 mb-0">
+                    <h5 class="text-center text-grey-dark font-weight-light mt-2 mb-0">
                         Stay current!
                     </h5>
                     <hr class="mb-5 w-50 mx-auto hr-primary" />
@@ -115,54 +115,46 @@
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                     <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
-                    <h3 class="text-center text-uppercase font-weight-bold my-0">
+                    <h3 class="text-center text-uppercase text-grey-dark font-weight-bold my-0">
                         Events
                     </h3>
-                    <h5 class="text-center font-weight-light mt-2 mb-0">
+                    <h5 class="text-center text-grey-dark font-weight-light mt-2 mb-0">
                         See what's upcoming!
                     </h5>
                     <hr class="mb-5 w-50 mx-auto hr-primary" />
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-12 mb-3">
-                                <ul class="list-timeline list-timeline-primary">
-                                    <li class="list-timeline-item show p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-                                        <div class="row d-md-flex align-items-md-center text-primary">
-                                            <div class="col-md-3 p-md-2 d-flex align-items-center justify-content-md-center">
-                                                <span class="display-4 no-resize font-weight-bold mr-1">01</span>
-                                                <span>DEC<br />2022</span>
-                                            </div>
-                                            <div class="col-md-7 p-md-2 text-left my-auto">
-                                                <p class="mb-0 font-weight-bold">Event Name</p>
-                                                <p class="mb-0 op-8">10:00 AM - 1:00PM | Event Place</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-                                        <div class="row d-md-flex align-items-md-center text-grey-dark">
-                                            <div class="col-md-3 p-md-2 d-flex align-items-center justify-content-md-center">
-                                                <span class="display-4 no-resize font-weight-bold mr-1">16</span>
-                                                <span>DEC<br />2022</span>
-                                            </div>
-                                            <div class="col-md-7 p-md-2 text-left my-auto">
-                                                <p class="mb-0 font-weight-bold">Event Name</p>
-                                                <p class="mb-0 op-8">9:00 AM - 11:00AM | Event Place</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-timeline-item p-0 pb-3 pb-lg-4 d-flex flex-wrap flex-column">
-                                        <div class="row d-md-flex align-items-md-center text-grey-dark">
-                                            <div class="col-md-3 p-md-2 d-flex align-items-center justify-content-md-center">
-                                                <span class="display-4 no-resize font-weight-bold mr-1">25</span>
-                                                <span>DEC<br />2022</span>
-                                            </div>
-                                            <div class="col-md-7 p-md-2 text-left my-auto">
-                                                <p class="mb-0 font-weight-bold">Event Name</p>
-                                                <p class="mb-0 op-8">All Day | Event Place</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                <div class="row d-md-flex mb-3 align-items-md-center text-primary">
+                                    <div class="col-md-3 pr-2 d-flex align-items-center justify-content-md-center">
+                                        <span class="display-4 no-resize font-weight-bold mr-1">01</span>
+                                        <span class="text-sm">DEC<br />2022</span>
+                                    </div>
+                                    <div class="col-md-9 text-left my-auto">
+                                        <p class="mb-0 font-weight-bold">Event Name</p>
+                                        <p class="mb-0 op-8">10:00 AM - 1:00PM | Event Place</p>
+                                    </div>
+                                </div>
+                                <div class="row d-md-flex mb-3 align-items-md-center text-grey-dark">
+                                    <div class="col-md-3 pr-2 d-flex align-items-center justify-content-md-center">
+                                        <span class="display-4 no-resize font-weight-bold mr-1">16</span>
+                                        <span class="text-sm">DEC<br />2022</span>
+                                    </div>
+                                    <div class="col-md-9 text-left my-auto">
+                                        <p class="mb-0 font-weight-bold">Event Name</p>
+                                        <p class="mb-0 op-8">9:00 AM - 11:00AM | Event Place</p>
+                                    </div>
+                                </div>
+                                <div class="row d-md-flex mb-3 align-items-md-center text-grey-dark">
+                                    <div class="col-md-3 pr-2 d-flex align-items-center justify-content-md-center">
+                                        <span class="display-4 no-resize font-weight-bold mr-1">25</span>
+                                        <span class="text-sm">DEC<br />2022</span>
+                                    </div>
+                                    <div class="col-md-9 text-left my-auto">
+                                        <p class="mb-0 font-weight-bold">Event Name</p>
+                                        <p class="mb-0 op-8">All Day | Event Place</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -9,7 +9,7 @@
                     {!! $contents->content !!}
                 </div>
                 <div class="table-responsive">
-                    <table class="table">
+                    <table class="table text-grey-dark">
                         <thead>
                             <tr>
                                 <th>Job ID</th>
