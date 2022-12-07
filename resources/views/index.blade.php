@@ -6,25 +6,25 @@
     <div class="container">
         <ul class="nav nav-steps nav-steps-square flex-column flex-lg-row justify-content-around mx-auto">
             <li class="nav-item">
-                <a href="/" class="nav-link text-grey-dark"> <i class="fas fa-school icon-2x mb-05"></i> <span class="font-weight-bold d-block">Schools & Registration</span> </a>
+                <a href="/" class="nav-link"> <i class="fas fa-school icon-2x mb-05"></i> <span class="font-weight-bold d-block">Schools & Registration</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link text-grey-dark"> <i class="fas fa-heartbeat icon-2x mb-05"></i> <span class="font-weight-bold d-block">Health & Wellness</span> </a>
+                <a href="#" class="nav-link"> <i class="fas fa-heartbeat icon-2x mb-05"></i> <span class="font-weight-bold d-block">Health & Wellness</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link text-grey-dark"> <i class="fas fa-book icon-2x mb-05"></i> <span class="font-weight-bold d-block">Learner Programs</span> </a>
+                <a href="#" class="nav-link"> <i class="fas fa-book icon-2x mb-05"></i> <span class="font-weight-bold d-block">Learner Programs</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link text-grey-dark"> <i class="fas fa-book-reader icon-2x mb-05"></i> <span class="font-weight-bold d-block">Indigenous Education</span> </a>
+                <a href="#" class="nav-link"> <i class="fas fa-book-reader icon-2x mb-05"></i> <span class="font-weight-bold d-block">Indigenous Education</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link text-grey-dark"> <i class="fas fa-bus icon-2x mb-05"></i> <span class="font-weight-bold d-block">Transportation Services</span> </a>
+                <a href="#" class="nav-link"> <i class="fas fa-bus icon-2x mb-05"></i> <span class="font-weight-bold d-block">Transportation Services</span> </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link text-grey-dark"> <i class="fas fa-file-signature icon-2x mb-05"></i> <span class="font-weight-bold d-block">Strategic Plans</span> </a>
+                <a href="#" class="nav-link"> <i class="fas fa-file-signature icon-2x mb-05"></i> <span class="font-weight-bold d-block">Strategic Plans</span> </a>
             </li>
             <li class="nav-item">
-                <a href="/" class="nav-link text-grey-dark"> <i class="fas fa-utensils icon-2x mb-05"></i> <span class="font-weight-bold d-block">Food & Nutrition</span> </a>
+                <a href="/" class="nav-link"> <i class="fas fa-utensils icon-2x mb-05"></i> <span class="font-weight-bold d-block">Food & Nutrition</span> </a>
             </li>
         </ul>
     </div>

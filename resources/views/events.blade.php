@@ -32,29 +32,7 @@
 
 @section ( 'content' )
     <div class="row pr-3">
-        <div class="col-md-3 col-sm-12">
-            <h4 class="title-divider text-grey-dark">
-                <span>All Upcoming Events</span>
-            </h4>
-            <ul class="list-unstyled">
-                <li>
-                    <a href="#" class="d-flex align-items-center py-1 text-hover-no-underline">Nulla aliquam diam id lacus malesuada bibendum</a>
-                </li>
-                <li>
-                    <a href="#" class="d-flex align-items-center py-1 text-hover-no-underline">Nam consectetur fringilla dapibus</a>
-                </li>
-                <li>
-                    <a href="#" class="d-flex align-items-center py-1 text-hover-no-underline">Etiam nibh ligula, rutrum et purus vitae</a>
-                </li>
-                <li>
-                    <a href="#" class="d-flex align-items-center py-1 text-hover-no-underline">Etiam dignissim, sapien ut dignissim faucibus</a>
-                </li>
-                <li>
-                    <a href="#" class="d-flex align-items-center py-1 text-hover-no-underline">Pellentesque volutpat in nulla sit amet commodo</a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-9 col-sm-12">
+        <div class="col-md-12">
             <div id='calendar'></div>
         </div>
     </div>
