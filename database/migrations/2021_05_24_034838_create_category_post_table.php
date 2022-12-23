@@ -52,6 +52,26 @@ class CreateCategoryPostTable extends Migration
                 [
                     'category_id'   => 7,
                     'post_id'  => 3
+                ],
+                [
+                    'category_id'   => 4,
+                    'post_id'  => 4
+                ],
+                [
+                    'category_id'   => 5,
+                    'post_id'  => 4
+                ],
+                [
+                    'category_id'   => 8,
+                    'post_id'  => 5
+                ],
+                [
+                    'category_id'   => 6,
+                    'post_id'  => 5
+                ],
+                [
+                    'category_id'   => 7,
+                    'post_id'  => 5
                 ]
             )
         );

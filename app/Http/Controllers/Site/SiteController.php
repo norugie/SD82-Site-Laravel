@@ -12,8 +12,8 @@ class SiteController extends Controller
 {
     public function indexView ()
     {
-        $about = Content::where('type', 'Snippet')->where('location', 'about')->where('status', 'Active')->first();
-        $slides = Content::where('type', 'Slider')->where('location', 'slider')->where('status', 'Active')->get();
+        $about = Content::select('title', 'banner', 'content')->where('type', 'Snippet')->where('location', 'about')->where('status', 'Active')->first();
+        $slides = Content::select('title', 'banner', 'content')->where('type', 'Slider')->where('location', 'slider')->where('status', 'Active')->get();
 
         return view ('index', 
         [
@@ -24,7 +24,7 @@ class SiteController extends Controller
 
     public function newsView ()
     {
-        return Post::where('status', 'Active')->latest()->with('user')->with('categories')->get();
+        return Post::select('id', 'user_id', 'slug', 'title', 'thumbnail', 'desc', 'created_at')->where('status', 'Active')->latest()->with('user:id,firstname,lastname')->with('categories:id,slug,name')->get();
     }
 
     public function newsViewContent (String $slug)

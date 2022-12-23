@@ -19,8 +19,8 @@ class NavBarInfo
     public function handle(Request $request, Closure $next)
     {
         $navbardata = [];
-        $navbarprimary = Menu::where('placement', 'Primary')->with('submenu')->get();
-        $navbarsecondary = Menu::where('placement', 'Secondary')->with('submenu')->get();
+        $navbarprimary = Menu::select('id', 'title', 'type', 'placement', 'content')->where('placement', 'Primary')->with('submenu:menu_id,title,content')->get();
+        $navbarsecondary = Menu::select('id', 'title', 'type', 'placement', 'content')->where('placement', 'Secondary')->with('submenu:menu_id,title,content')->get();
 
         $navbardata['primary'] = $navbarprimary;
         $navbardata['secondary'] = $navbarsecondary;

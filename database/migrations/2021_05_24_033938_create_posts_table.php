@@ -63,6 +63,29 @@ class CreatePostsTable extends Migration
                     <p>Fusce egestas vulputate diam non bibendum. Etiam nisi nulla, accumsan non ultricies in, porttitor eget velit. Etiam vitae lacus a leo suscipit lacinia. Phasellus id massa ut erat blandit eleifend. Maecenas consectetur leo vulputate magna varius congue ut dignissim dolor. Donec nec purus vel metus molestie dictum. Nullam pulvinar ultricies eleifend. Fusce id pellentesque dolor. Nulla cursus sem eget lorem ultricies, sed mattis ligula fermentum. Donec in placerat nisi, sagittis fermentum risus. Nulla non tellus neque. Vestibulum in dictum eros, at imperdiet elit. Quisque hendrerit sed lectus sit amet pretium. Etiam eget ipsum metus.</p>
                     <p>Nam sodales gravida elit eu molestie. Cras eget feugiat nisl. Duis iaculis fermentum purus quis aliquam. In hac habitasse platea dictumst. Sed sollicitudin hendrerit magna in vestibulum. Fusce quis posuere tortor, nec mattis lectus. Aliquam varius varius leo ultricies varius. Duis finibus lorem ut lorem convallis, non cursus velit aliquet. Vestibulum ut scelerisque libero.</p>',
                     'status'  => 'Active'
+                ],
+                [
+                    'slug'   => 'sample-news-post-quisque-ullamcorper-placerat-tempor',
+                    'title'   => 'Sample News Post: Quisque ullamcorper placerat tempor',
+                    'type'  => 'Post',
+                    'user_id'  => 2,
+                    'thumbnail' => 'default_thumbnail.png',
+                    'desc' => 'Praesent id libero commodo, laoreet sem in, consectetur libero. Phasellus ut velit eros.',
+                    'content' => '<p>Etiam cursus aliquet nunc, ac placerat lorem condimentum eu. Quisque ullamcorper placerat tempor. Aenean blandit ligula arcu, at suscipit dui tincidunt et. Nunc cursus sem blandit ante facilisis, a condimentum massa tincidunt. Donec a condimentum ipsum, in suscipit augue. Mauris tempor purus eget dui varius ullamcorper. Nulla eget varius augue, sed pellentesque velit. Sed laoreet felis luctus ante finibus faucibus. Donec molestie egestas metus ac elementum.</p>
+                    <p>Fusce egestas vulputate diam non bibendum. Etiam nisi nulla, accumsan non ultricies in, porttitor eget velit. Etiam vitae lacus a leo suscipit lacinia. Phasellus id massa ut erat blandit eleifend. Maecenas consectetur leo vulputate magna varius congue ut dignissim dolor. Donec nec purus vel metus molestie dictum. Nullam pulvinar ultricies eleifend. Fusce id pellentesque dolor. Nulla cursus sem eget lorem ultricies, sed mattis ligula fermentum. Donec in placerat nisi, sagittis fermentum risus. Nulla non tellus neque. Vestibulum in dictum eros, at imperdiet elit. Quisque hendrerit sed lectus sit amet pretium. Etiam eget ipsum metus.</p>
+                    <p>Nam sodales gravida elit eu molestie. Cras eget feugiat nisl. Duis iaculis fermentum purus quis aliquam. In hac habitasse platea dictumst. Sed sollicitudin hendrerit magna in vestibulum. Fusce quis posuere tortor, nec mattis lectus. Aliquam varius varius leo ultricies varius. Duis finibus lorem ut lorem convallis, non cursus velit aliquet. Vestibulum ut scelerisque libero.</p>',
+                    'status'  => 'Active'
+                ],
+                [
+                    'slug'   => 'sample-news-post-vestibulum-in-dictum-eros-at-imperdiet-elit',
+                    'title'   => 'Sample News Post: Vestibulum in dictum eros, at imperdiet elit',
+                    'type'  => 'Post',
+                    'user_id'  => 1,
+                    'thumbnail' => 'default_thumbnail.png',
+                    'desc' => 'Nam sodales gravida elit eu molestie. Cras eget feugiat nisl. Duis iaculis fermentum purus quis aliquam.',
+                    'content' => '<p>Etiam cursus aliquet nunc, ac placerat lorem condimentum eu. Quisque ullamcorper placerat tempor. Aenean blandit ligula arcu, at suscipit dui tincidunt et. Nunc cursus sem blandit ante facilisis, a condimentum massa tincidunt. Donec a condimentum ipsum, in suscipit augue. Mauris tempor purus eget dui varius ullamcorper. Nulla eget varius augue, sed pellentesque velit. Sed laoreet felis luctus ante finibus faucibus. Donec molestie egestas metus ac elementum.</p>
+                    <p>Fusce egestas vulputate diam non bibendum. Etiam nisi nulla, accumsan non ultricies in, porttitor eget velit. Etiam vitae lacus a leo suscipit lacinia. Phasellus id massa ut erat blandit eleifend. Maecenas consectetur leo vulputate magna varius congue ut dignissim dolor. Donec nec purus vel metus molestie dictum. Nullam pulvinar ultricies eleifend. Fusce id pellentesque dolor. Nulla cursus sem eget lorem ultricies, sed mattis ligula fermentum. Donec in placerat nisi, sagittis fermentum risus. Nulla non tellus neque. Vestibulum in dictum eros, at imperdiet elit. Quisque hendrerit sed lectus sit amet pretium. Etiam eget ipsum metus.</p>',
+                    'status'  => 'Active'
                 ]
             )
         );
