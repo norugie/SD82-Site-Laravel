@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
 use App\Models\Content;
+use App\Models\Menu;
 use App\Models\Post;
 use App\Models\Resource;
 use Illuminate\Http\Request;
@@ -14,11 +15,13 @@ class SiteController extends Controller
     {
         $about = Content::select('title', 'banner', 'content')->where('type', 'Snippet')->where('location', 'about')->where('status', 'Active')->first();
         $slides = Content::select('title', 'banner', 'content')->where('type', 'Slider')->where('location', 'slider')->where('status', 'Active')->get();
+        $imenus = Menu::select('title', 'icon', 'content')->where('placement', 'Index')->get();
 
         return view ('index', 
         [
             'about' => $about,
-            'slides' => $slides
+            'slides' => $slides,
+            'imenus' => $imenus
         ]);
     }
 
@@ -29,24 +32,24 @@ class SiteController extends Controller
 
     public function newsViewContent (String $slug)
     {
-        return Post::where('slug', $slug)->with('user')->with('categories')->first();
+        return Post::select('id', 'user_id', 'slug', 'title', 'content', 'created_at')->where('slug', $slug)->where('status', 'Active')->latest()->with('user:id,firstname,lastname')->with('categories:id,slug,name')->first();
     }
 
     public function jobsView (String $category)
     {
-        $info = Content::where('type', 'Snippet')->where('location', $category)->where('status', 'Active')->first();
-        return $info;
+        $contents = Content::select('content')->where('type', 'Snippet')->where('location', $category)->where('status', 'Active')->first();
+        return $contents;
     }
 
-    public function eventsView ()
+public function eventsView ()
     {
 
     }
 
     public function staffView ()
     {
-        $contents['about'] = Content::where('type', 'Snippet')->where('location', 'staff')->where('status', 'Active')->first();
-        $contents['info'] = Resource::where('location', 'staff')->where('status', 'Active')->get();
+        $contents['about'] = Content::select('content')->where('type', 'Snippet')->where('location', 'staff')->where('status', 'Active')->first();
+        $contents['info'] = Resource::select('title', 'desc', 'content', 'thumbnail')->where('location', 'staff')->where('status', 'Active')->get();
 
         return $contents;
     }
@@ -85,10 +88,10 @@ class SiteController extends Controller
 
             $contents = $this->$function($slug);
 
-            if($page === 'news' ? $title = str_replace('-read', '', $page) : $title = $contents->title);
+            // if($page === 'news' ? $title = str_replace('-read', '', $page) : $title = $contents->title);
 
             return view($page, [
-                'page' => $title,
+                'page' => str_replace('-read', '', $page),
                 'contents' => $contents
             ]);
         } else return view ('404');
