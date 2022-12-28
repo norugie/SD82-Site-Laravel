@@ -5,8 +5,12 @@
     </h4>
     <ul class="list-unstyled">
         @foreach($sitedata->posts as $post)
-            <li>
-                <a href="/news/{{ $post->slug }}" class="d-flex align-items-center py-1 text-hover-no-underline">{{ $post->title }}</a>
+            <li class="mb-2">
+                <p class="mb-0"><a href="/news/{{ $post->slug }}" class="d-flex align-items-center py-1 text-hover-no-underline">{{ $post->title }}</a></p>
+                <ul class="list-inline text-grey-dark text-sm">
+                    <li class="list-inline-item"><i class="fa fa-calendar"></i> {{ date( 'M d, Y',strtotime( $post->created_at ) ) }}</li>
+                    <li class="list-inline-item"><i class="fa fa-user"></i> {{ $post->user->firstname }} {{ $post->user->lastname }}</li>
+                </ul>
             </li>
         @endforeach
     </ul>
