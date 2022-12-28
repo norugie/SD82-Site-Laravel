@@ -15,7 +15,7 @@
         @endforeach
     </ul>
 </div>
-
+<hr class="w-50 mx-auto" />
 <div class="mb-4">
     <h4 class="title-divider text-grey-dark">
         <span>Upcoming Events</span>
@@ -57,7 +57,7 @@
         </div>
     </div>
 </div>
-
+<hr class="w-50 mx-auto" />
 <div class="mb-4">
     <a class="weatherwidget-io" href="https://forecast7.com/en/54d52n128d60/terrace/" data-label_1="TERRACE" data-label_2="{{ date('g:i a, d M y') }}" data-days="3" >TERRACE WEATHER</a>
     <script>

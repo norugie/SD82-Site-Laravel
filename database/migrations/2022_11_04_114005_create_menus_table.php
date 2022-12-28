@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->enum('type', ['Dropdown', 'Link', 'Megamenu']);
-            $table->enum('placement', ['Primary', 'Secondary']);
+            $table->enum('placement', ['Index', 'Primary', 'Secondary']);
+            $table->string('icon')->nullable();
             $table->string('content')->nullable();
             $table->enum('status', ['Active', 'Archived']);
             $table->timestamp('created_at')->useCurrent();
@@ -30,6 +31,7 @@ return new class extends Migration
                     'title'   => 'Home',
                     'type'   => 'Link',
                     'placement'   => 'Primary',
+                    'icon'   => NULL,
                     'content'  => '/',
                     'status'  => 'Active'
                 ],
@@ -37,6 +39,7 @@ return new class extends Migration
                     'title'   => 'Calendar',
                     'type'   => 'Link',
                     'placement'   => 'Primary',
+                    'icon'   => NULL,
                     'content'  => '/events',
                     'status'  => 'Active'
                 ],
@@ -44,6 +47,7 @@ return new class extends Migration
                     'title'   => 'News',
                     'type'   => 'Link',
                     'placement'   => 'Primary',
+                    'icon'   => NULL,
                     'content'  => '/news',
                     'status'  => 'Active'
                 ],
@@ -51,6 +55,7 @@ return new class extends Migration
                     'title'   => 'Work With Us',
                     'type'   => 'Dropdown',
                     'placement'   => 'Primary',
+                    'icon'   => NULL,
                     'content'  => NULL,
                     'status'  => 'Active'
                 ],
@@ -58,6 +63,7 @@ return new class extends Migration
                     'title'   => 'Staff',
                     'type'   => 'Link',
                     'placement'   => 'Primary',
+                    'icon'   => NULL,
                     'content'  => '/staff',
                     'status'  => 'Active'
                 ],
@@ -65,6 +71,7 @@ return new class extends Migration
                     'title'   => 'Learner Resources',
                     'type'   => 'Megamenu',
                     'placement'   => 'Secondary',
+                    'icon'   => NULL,
                     'content'  => NULL,
                     'status'  => 'Active'
                 ],
@@ -72,6 +79,7 @@ return new class extends Migration
                     'title'   => 'Parents and Caregivers',
                     'type'   => 'Dropdown',
                     'placement'   => 'Secondary',
+                    'icon'   => NULL,
                     'content'  => NULL,
                     'status'  => 'Active'
                 ],
@@ -79,6 +87,7 @@ return new class extends Migration
                     'title'   => 'Schools',
                     'type'   => 'Dropdown',
                     'placement'   => 'Secondary',
+                    'icon'   => NULL,
                     'content'  => NULL,
                     'status'  => 'Active'
                 ],
@@ -86,6 +95,7 @@ return new class extends Migration
                     'title'   => 'Programs and Services',
                     'type'   => 'Dropdown',
                     'placement'   => 'Secondary',
+                    'icon'   => NULL,
                     'content'  => NULL,
                     'status'  => 'Active'
                 ],
@@ -93,6 +103,63 @@ return new class extends Migration
                     'title'   => 'Board of Education',
                     'type'   => 'Dropdown',
                     'placement'   => 'Secondary',
+                    'icon'   => NULL,
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Schools & Registration',
+                    'type'   => 'Link',
+                    'placement'   => 'Index',
+                    'icon'   => 'fa-school',
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Health & Wellness',
+                    'type'   => 'Link',
+                    'placement'   => 'Index',
+                    'icon'   => 'fa-heartbeat',
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Learner Programs',
+                    'type'   => 'Link',
+                    'placement'   => 'Index',
+                    'icon'   => 'fa-book',
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Indigenous Education',
+                    'type'   => 'Link',
+                    'placement'   => 'Index',
+                    'icon'   => 'fa-book-reader',
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Transportation Services',
+                    'type'   => 'Link',
+                    'placement'   => 'Index',
+                    'icon'   => 'fa-bus',
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Strategic Plans',
+                    'type'   => 'Link',
+                    'placement'   => 'Index',
+                    'icon'   => 'fa-file-signature',
+                    'content'  => NULL,
+                    'status'  => 'Active'
+                ],
+                [
+                    'title'   => 'Food & Nutrition',
+                    'type'   => 'Link',
+                    'placement'   => 'Index',
+                    'icon'   => 'fa-utensils',
                     'content'  => NULL,
                     'status'  => 'Active'
                 ]
