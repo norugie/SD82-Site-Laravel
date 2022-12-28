@@ -10,7 +10,7 @@
                 </h4>
 
                 <!-- Meta details mobile -->
-                <ul class="list-inline mb-0 text-grey-dark">
+                <ul class="list-inline mb-0 text-grey-dark text-sm">
                     <li class="list-inline-item"><i class="fa fa-calendar"></i> {{ $post->created_at->format( 'M d, Y' ) }}</li>
                     <li class="list-inline-item"><i class="fa fa-user"></i> {{ $post->user->firstname }} {{ $post->user->lastname }}</li>
                 </ul>

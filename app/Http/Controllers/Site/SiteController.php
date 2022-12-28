@@ -38,17 +38,7 @@ class SiteController extends Controller
         return $info;
     }
 
-    public function jobsViewContent (String $slug)
-    {
-
-    }
-
     public function eventsView ()
-    {
-
-    }
-
-    public function eventsViewContent (String $slug)
     {
 
     }
@@ -95,7 +85,7 @@ class SiteController extends Controller
 
             $contents = $this->$function($slug);
 
-            if($page === 'jobs' ? $title = $contents->title: $title = str_replace('-read', '', $page));
+            if($page === 'news' ? $title = str_replace('-read', '', $page) : $title = $contents->title);
 
             return view($page, [
                 'page' => $title,

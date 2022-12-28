@@ -87,7 +87,7 @@
                                     <a href="/news/{{ $post->slug }}">{{ $post->title }}</a>
                                     </h4>
                                     <!-- Meta details mobile -->
-                                    <ul class="list-inline text-grey-dark">
+                                    <ul class="list-inline text-grey-dark text-sm">
                                         <li class="list-inline-item"><i class="fa fa-calendar"></i> {{ date( 'M d, Y',strtotime( $post->created_at ) ) }}</li>
                                         <li class="list-inline-item"><i class="fa fa-user"></i> {{ $post->user->firstname }} {{ $post->user->lastname }}</li>
                                     </ul>
