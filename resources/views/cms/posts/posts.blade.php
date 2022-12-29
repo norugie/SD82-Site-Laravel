@@ -24,7 +24,6 @@
                                     <th>Post Title</th>
                                     <th>Post Type</th>
                                     <th>Author</th>
-                                    <th>School</th>
                                     <th>Categories</th>
                                     <th>Published Date</th>
                                     <th></th>
@@ -35,7 +34,6 @@
                                     <th>Post Title</th>
                                     <th>Post Type</th>
                                     <th>Author</th>
-                                    <th>School</th>
                                     <th>Categories</th>
                                     <th>Published Date</th>
                                     <th></th>
@@ -44,13 +42,12 @@
                             <tbody>
                                 @foreach($posts as $post)
                                     <tr>
-                                        <td>{{ $post->post_title }}</td>
-                                        <td>{{ $post->post_type }}</td>
+                                        <td>{{ $post->title }}</td>
+                                        <td>{{ $post->type }}</td>
                                         <td>{{ $post->user->firstname }} {{ $post->user->lastname }}</td>
-                                        <td>{{ $post->department->department_abbv }}</td>
                                         <td>
                                             @foreach($post->categories as $category)
-                                                {{ $category->cat_name }}<br>
+                                                {{ $category->name }}<br>
                                             @endforeach
                                         </td>
                                         <td>{{ $post->created_at->format( 'M d, Y' ) }}</td>
@@ -61,10 +58,10 @@
                                                         <i class="material-icons">more_horiz</i><span>OPTIONS</span> <span class="caret"></span>
                                                     </button>
                                                     <div class="dropdown-menu">
-                                                        <a class="dropdown-item" href="/cms/posts/posts/{{ str_replace('PST', '', $post->post_slug) }}/view">View Post</a>
-                                                        <a class="dropdown-item" href="/cms/posts/posts/{{ str_replace('PST', '', $post->post_slug) }}/update">Update Post Details</a>
+                                                        <a class="dropdown-item" href="/cms/posts/posts/{{ $post->slug }}/view">View Post</a>
+                                                        <a class="dropdown-item" href="/cms/posts/posts/{{ $post->slug }}/update">Update Post Details</a>
                                                         <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="/cms/posts/posts/{{ str_replace('PST', '', $post->post_slug) }}/delete">Delete Post</a>
+                                                        <a class="dropdown-item" href="/cms/posts/posts/{{ $post->slug }}/delete">Delete Post</a>
                                                     </div>
                                                 </div>
                                             </center>
