@@ -39,23 +39,14 @@ use App\Http\Controllers\General\FileUploadController;
 |
 */
 
+// Signin routes
 Route::controller('AuthController')->group(function(){
     Route::get('/signin', 'signin');
     Route::get('/callback', 'callback');
     Route::get('/signout', 'signout');    
 });
 
-Route::group(['middleware' => ['navbar', 'siteinfo']], function(){
-    Route::controller('Site\SiteController')->group(function(){
-        Route::get('/', 'indexView');
-        // Route::get('/news', 'newsView');
-        // Route::get('/news/{slug}', 'newsViewContent');
-        Route::get('/{page}', 'mainContentPageRouterView');
-        Route::get('/{page}/{slug}', 'subContentPageRouterView');
-        Route::get('/{page}/{category}/{slug}', 'subContentInCategoryPageRouterView');
-    });
-});
-
+// Backend routes
 Route::group(['middleware' => 'authAD', 'prefix' => 'cms'], function(){
     Route::get('/dashboard', [DashboardController::class, 'index']);
 
@@ -84,5 +75,17 @@ Route::group(['middleware' => 'authAD', 'prefix' => 'cms'], function(){
     Route::controller('FileUploadController')->group(function(){
         Route::post('/upload/{type}', 'uploadImage');
         Route::post('/delete/{type}', 'deleteImage');
+    });
+});
+
+// Site routes
+Route::group(['middleware' => ['navbar', 'siteinfo']], function(){
+    Route::controller('Site\SiteController')->group(function(){
+        Route::get('/', 'indexView');
+        // Route::get('/news', 'newsView');
+        // Route::get('/news/{slug}', 'newsViewContent');
+        Route::get('/{page}', 'mainContentPageRouterView');
+        Route::get('/{page}/{slug}', 'subContentPageRouterView');
+        Route::get('/{page}/{category}/{slug}', 'subContentInCategoryPageRouterView');
     });
 });

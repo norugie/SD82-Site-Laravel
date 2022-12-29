@@ -5,7 +5,7 @@
         "lengthChange": false,
         "iDisplayLength": 10,
         "columnDefs": [{
-            "targets": [6],
+            "targets": [5],
             "searchable": false,
             "visible": true
         }]
