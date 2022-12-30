@@ -26,7 +26,7 @@ class PostController extends Controller
      */
     public function postsIndex ()
     {
-        $posts = Post::all()->sortByDesc('id');
+        $posts = Post::select('id', 'user_id', 'slug', 'title', 'type', 'created_at')->where('status', 'Active')->latest()->with('user:id,firstname,lastname')->with('categories:id,slug,name')->get();
 
         return view ( 'cms.posts.posts', compact('posts'));
     }
@@ -39,7 +39,7 @@ class PostController extends Controller
      */
     public function postsViewPost (String $slug)
     {
-        $post = Post::where('post_slug', 'PST' . $slug)->first();
+        $post = Post::select('id', 'user_id', 'slug', 'title', 'content', 'created_at')->where('slug', $slug)->where('status', 'Active')->latest()->with('user:id,firstname,lastname')->with('categories:id,slug,name')->first();
         return view ( 'cms.posts.view.posts', compact('post'));
     }
 
@@ -50,7 +50,7 @@ class PostController extends Controller
      */
     public function postsCreateNewPostPage ()
     {
-        $categories = Category::where('cat_status', 'Active')->where('id', '!=', 2)->get();
+        $categories = Category::select('id', 'name')->where('status', 'Active')->get();
         return view ( 'cms.posts.create.posts', compact('categories'));
     }
 

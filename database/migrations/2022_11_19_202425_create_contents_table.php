@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('contents', function (Blueprint $table) {
             $table->id();
+            $table->string('slug')->unique();
             $table->string('title');
             $table->enum('type', ['Page', 'Slider', 'Snippet']);
             $table->string('location');
@@ -29,6 +30,7 @@ return new class extends Migration
             array(
                 [
                     'title'   => 'About CMSD82',
+                    'slug'   => 'about-cmsd82',
                     'type'   => 'Snippet',
                     'location'   => 'about',
                     'banner'    => 'matbanner6.png',
@@ -39,6 +41,7 @@ return new class extends Migration
                 ],
                 [
                     'title'   => 'The Mountains Are Calling...',
+                    'slug'   => 'the-mountains-are-calling',
                     'type'   => 'Slider',
                     'location'   => 'slider',
                     'banner'    => 'matbanner1.png',
@@ -47,6 +50,7 @@ return new class extends Migration
                 ],
                 [
                     'title'   => 'Territory Acknowledgment',
+                    'slug'   => 'territory-acknowledgment',
                     'type'   => 'Slider',
                     'location'   => 'slider',
                     'banner'    => 'matbanner2.png',
@@ -54,7 +58,8 @@ return new class extends Migration
                     'status' => 'Active'
                 ],
                 [
-                    'title'   => 'Truth & Reconciliation',
+                    'title'   => 'Truth and Reconciliation',
+                    'slug'   => 'truth-and-reconciliation',
                     'type'   => 'Slider',
                     'location'   => 'slider',
                     'banner'    => 'matbanner3.png',
@@ -63,6 +68,7 @@ return new class extends Migration
                 ],
                 [
                     'title'   => 'Engage, Ignite, Empower!',
+                    'slug'   => 'engage-ignite-empower',
                     'type'   => 'Slider',
                     'location'   => 'slider',
                     'banner'    => 'matbanner4.png',
@@ -71,6 +77,7 @@ return new class extends Migration
                 ],
                 [
                     'title'   => 'Monthly Theme Goes Here',
+                    'slug'   => 'monthly-theme',
                     'type'   => 'Slider',
                     'location'   => 'slider',
                     'banner'    => 'matbanner5.png',
@@ -79,6 +86,7 @@ return new class extends Migration
                 ],
                 [
                     'title'   => 'CMTF Job Postings',
+                    'slug'   => 'cmtf-job-postings',
                     'type'   => 'Snippet',
                     'location'   => 'cmtf',
                     'banner'    => NULL,
@@ -89,6 +97,7 @@ return new class extends Migration
                 ],
                 [
                     'title'   => 'CUPE Job Postings',
+                    'slug'   => 'cupe-job-postings',
                     'type'   => 'Snippet',
                     'location'   => 'cupe',
                     'banner'    => NULL,
@@ -102,6 +111,7 @@ return new class extends Migration
                 ],
                 [
                     'title'   => 'Administrative and Exempt Job Postings',
+                    'slug'   => 'administrative-and-exempt-job-postings',
                     'type'   => 'Snippet',
                     'location'   => 'exempt',
                     'banner'    => NULL,
@@ -113,6 +123,7 @@ return new class extends Migration
                 ],
                 [
                     'title'   => 'Staff Resource Page',
+                    'slug'   => 'staff-resource-page',
                     'type'   => 'Snippet',
                     'location'   => 'staff',
                     'banner'    => NULL,

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('logs', function (Blueprint $table) {
             $table->id();
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->mediumText('desc');
             $table->foreignId('user_id')->constrained();
             $table->timestamp('created_at')->useCurrent();

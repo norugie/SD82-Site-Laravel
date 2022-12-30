@@ -4,11 +4,11 @@
     {{-- Additional header tags for page: /create --}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="stylesheet" type="text/css" href="/assets/plugins/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/plugins/bootstrap-tokenfield/dist/css/tokenfield-typeahead.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/plugins/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.min.css">
+    <link rel="stylesheet" type="text/css" id="u0" href="/assets/plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" id="u0" href="/assets/plugins/bootstrap-tokenfield/dist/css/tokenfield-typeahead.min.css">
+    <link rel="stylesheet" type="text/css" id="u0" href="/assets/plugins/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.min.css">
 
-    <link rel="stylesheet" type="text/css" href="/assets/plugins/dropzone/dropzone.css">
+    <link rel="stylesheet" type="text/css" id="u0" href="/assets/plugins/dropzone/dropzone.css">
 @endsection
 
 @section ( 'custom-js' )
@@ -26,7 +26,7 @@
         var source = [];
 
         $(sources).each(function(){
-            source.push({"id": this.id, "value": this.name});
+            source.push({"id": this.id, "value": this.cat_name});
         });
 
         var engine = new Bloodhound({
@@ -111,7 +111,7 @@
                                         <label for="post_categories">Post Categories</label>
                                         <p class="font-12"><i><b>Note:</b> Leaving this section blank will automatically tag your post to "Uncategorized".</i></p>
                                         <div class="form-group">
-                                            <input type="text" value="" name="post_categories_id">
+                                            <input type="text" value="" name="post_categories_id" hidden>
                                             <div class="form-line">
                                                 <input type="text" class="form-control" id="post_categories" name="post_categories">
                                             </div>
