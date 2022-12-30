@@ -15,7 +15,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->string('title');
             $table->enum('type', ['Media', 'Post'])->default('Post');
             $table->foreignId('user_id')->constrained();
@@ -30,7 +30,7 @@ class CreatePostsTable extends Migration
         DB::table('posts')->insert(
             array(
                 [
-                    'slug'   => 'sample-news-post-lorem-ipsum-dolor-sit-amet',
+                    'slug'   => 'sample-news-post-lorem-ipsum-dolor-sit-amet-2022-12-29-15-07-40',
                     'title'   => 'Sample News Post: Lorem ipsum dolor sit amet',
                     'type'  => 'Post',
                     'user_id'  => 1,
@@ -41,7 +41,7 @@ class CreatePostsTable extends Migration
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'sample-news-post-quisque-ullamcorper',
+                    'slug'   => 'sample-news-post-quisque-ullamcorper-2022-12-29-15-07-42',
                     'title'   => 'Sample News Post: Quisque ullamcorper',
                     'type'  => 'Post',
                     'user_id'  => 2,
@@ -52,7 +52,7 @@ class CreatePostsTable extends Migration
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'sample-news-post-nunc-porta-tempor-suscipit',
+                    'slug'   => 'sample-news-post-nunc-porta-tempor-suscipit-2022-12-29-15-07-44',
                     'title'   => 'Sample News Post: Nunc porta tempor suscipit',
                     'type'  => 'Post',
                     'user_id'  => 1,
@@ -65,7 +65,7 @@ class CreatePostsTable extends Migration
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'sample-news-post-quisque-ullamcorper-placerat-tempor',
+                    'slug'   => 'sample-news-post-quisque-ullamcorper-placerat-tempor-2022-12-29-15-07-46',
                     'title'   => 'Sample News Post: Quisque ullamcorper placerat tempor',
                     'type'  => 'Post',
                     'user_id'  => 2,
@@ -77,7 +77,7 @@ class CreatePostsTable extends Migration
                     'status'  => 'Active'
                 ],
                 [
-                    'slug'   => 'sample-news-post-vestibulum-in-dictum-eros-at-imperdiet-elit',
+                    'slug'   => 'sample-news-post-vestibulum-in-dictum-eros-at-imperdiet-elit-2022-12-29-15-07-48',
                     'title'   => 'Sample News Post: Vestibulum in dictum eros, at imperdiet elit',
                     'type'  => 'Post',
                     'user_id'  => 1,

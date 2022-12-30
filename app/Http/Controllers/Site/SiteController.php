@@ -32,7 +32,7 @@ class SiteController extends Controller
 
     public function newsViewContent (String $slug)
     {
-        return Post::select('id', 'user_id', 'slug', 'title', 'content', 'created_at')->where('slug', $slug)->where('status', 'Active')->latest()->with('user:id,firstname,lastname')->with('categories:id,slug,name')->first();
+        return Post::select('id', 'user_id', 'title', 'content', 'created_at')->where('slug', $slug)->where('status', 'Active')->latest()->with('user:id,firstname,lastname')->with('categories:id,slug,name')->first();
     }
 
     public function jobsView (String $category)
