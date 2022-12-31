@@ -1,6 +1,10 @@
 /node_modules
 /public/hot
 /public/storage
+/public/assets/img/banners/*
+/public/assets/img/media/*
+/public/assets/img/posts/*
+/public/assets/img/thumbnails/*
 /storage/*.key
 /vendor
 .env
@@ -11,6 +15,9 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+# Don't ignore
+!/public/assets/img/thumbnails/default_thumbnail.png
 
 # OS generated files #
 ######################
