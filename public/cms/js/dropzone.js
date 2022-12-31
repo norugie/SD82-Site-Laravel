@@ -2,7 +2,7 @@
     'use strict';
 
     // Dropzone Area
-    $('input[name=post_opt_type]:radio').change(function(ev) {
+    $('input[name=post_type]:radio').change(function(ev) {
         if (ev.currentTarget.value == 'Post') {
             $('.dropzone-area').hide();
         } else if (ev.currentTarget.value == 'Media') {
@@ -27,11 +27,13 @@
         dictRemoveFile: 'Remove image',
         dictRemoveFileConfirmation: null,
         success: function(file) {
-            var imageName = $('#image_name').val();
-            $('#image_name').attr('value', file.name + ',' + imageName);
+            var imageName = $('#post_media_image_name').val();
+            $('#post_media_image_name').attr('value', file.name + ',' + imageName);
         },
         error: function(file, message, xhr) {
             if (xhr == null) this.removeFile(file);
+            console.log(message);
+            console.log(xhr);
             alert(message);
         },
         init: function() {
@@ -39,9 +41,9 @@
                 formData.append('_token', token);
             });
             this.on('removedfile', function(file) {
-                var imageNameList = $('#image_name').val();
+                var imageNameList = $('#post_media_image_name').val();
                 imageNameList = imageNameList.replace(file.name + ',', '');
-                $('#image_name').attr('value', imageNameList);
+                $('#post_media_image_name').attr('value', imageNameList);
 
                 // Remove image from server folder
                 $.ajax({
