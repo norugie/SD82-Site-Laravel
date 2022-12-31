@@ -22,6 +22,7 @@ class CreatePostsTable extends Migration
             $table->string('thumbnail')->default('default_thumbnail.jpg');
             $table->mediumText('desc')->nullable();
             $table->longText('content')->nullable();
+            $table->enum('sm_autopost', ['No', 'Yes'])->default('No');
             $table->enum('status', ['Active', 'Archived']);
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();

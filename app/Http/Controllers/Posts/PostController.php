@@ -73,54 +73,55 @@ class PostController extends Controller
             ]
         );
 
+        // Slug preparation
+        $slug = str_replace(' ', '-', $request->post_title . ' ' . date('Y-m-d h-i-s')); // Replaces all spaces with hyphens, add current date and time to slug
+        $slug = preg_replace('/[^A-Za-z0-9\-]/', '', $slug); // Removes special chars
+        $slug = preg_replace('/-+/', '-', $slug); // Replaces multiple hyphens with single one
+
         // Initialize Post object
         $post = new Post;
 
         // Post content
-        $post->post_slug = 'PST' . date('YmdHis') . '-' . rand(11111111111111,99999999999999);
-        $post->post_title = $request->post_title;
-        $post->post_type = $request->post_opt_type;
-        $post->post_desc = $request->post_desc;
-        $post->post_content = $request->post_content;
-        $post->post_social = $request->post_sm_autopost;
-        $post->post_ssd = $request->post_ssd_autopost;
-        $post->post_ss = $request->post_ss_autopost;
-        $post->post_gcc = $request->post_gcc_autopost;
-        $post->post_nlc = $request->post_nlc_autopost;
+        $post->slug = $slug;
+        $post->title = $request->post_title;
+        $post->type = $request->post_type;
+        $post->desc = $request->post_desc;
+        $post->content = $request->post_content;
+        $post->sm_autopost = $request->post_sm_autopost;
 
-        // Post author and assigned school site
+        // Post author
         $post->user_id = session('userID');
-        $post->department_id = session('schoolToPost');
 
         // Post thumbnail
-        if($request->file('file')) $post->post_thumbnail = $this->file->uploadImage($request, 'thumbnails');
+        if($request->file('file')) $post->thumbnail = $this->file->uploadImage($request, 'thumbnails');
 
         // Post save info
         $post->save();
+        $post->refresh();
     
         // Post categories
-        if($request->post_categories_id ? $categories = explode(',', $request->post_categories_id) : $categories = ['2']);
+        if($request->post_categories_id) $categories = explode(',', $request->post_categories_id);
         $post->categories()->attach($categories);
 
-        // Post media gallery
-        if($request->image_name){
-            $gallery = explode(',', substr($request->image_name, 0, -1));
+        // // Post media gallery
+        // if($request->post_media_image_name){
+        //     $gallery = explode(',', substr($request->image_name, 0, -1));
 
-            foreach($gallery as $image):
-                $media = new Media;
-                $media->media_name = $image;
-                $media->post()->associate($post);
-                $media->save();
-            endforeach;
-        }
+        //     foreach($gallery as $image):
+        //         $media = new Media;
+        //         $media->media_name = $image;
+        //         $media->post()->associate($post);
+        //         $media->save();
+        //     endforeach;
+        // }
 
-        // Log activity
-        $message = 'A new post has been created: <b>' . $post->post_title . '</b>';
-        $this->inputLog(session('userID'), session('schoolToPost'), $message);
+        // // Log activity
+        // $message = 'A new post has been created: <b>' . $post->post_title . '</b>';
+        // $this->inputLog(session('userID'), session('schoolToPost'), $message);
         
-        $this->alertDetails($message, 'success');
+        // $this->alertDetails($message, 'success');
 
-        return redirect('cms/posts/posts');
+        // return redirect('cms/posts/posts');
     }
 
     // ***-- Posts - Update --*** //
