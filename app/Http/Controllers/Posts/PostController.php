@@ -51,7 +51,19 @@ class PostController extends Controller
     public function postsCreateNewPostPage ()
     {
         $categories = Category::select('id', 'name')->where('status', 'Active')->get();
-        return view ( 'cms.posts.create.posts', compact('categories'));
+        return view ('cms.posts.create.posts', compact('categories'));
+    }
+
+    /**
+     * Return form data for /posts/update page
+     * 
+     * @return \Illuminate\View\View
+     */
+    public function postsUpdatePostPage (String $slug)
+    {
+        $post = Post::select('id', 'user_id', 'slug', 'title', 'type', 'desc' ,'content', 'created_at')->where('slug', $slug)->where('status', 'Active')->latest()->with('categories:id,slug,name')->first();
+        $categories = Category::select('id', 'name')->where('status', 'Active')->get();
+        return view ('cms.posts.update.posts', compact('categories', 'post'));
     }
 
     // ***-- Posts - Create --*** //
@@ -103,28 +115,30 @@ class PostController extends Controller
         if($request->post_categories_id) $categories = explode(',', $request->post_categories_id);
         $post->categories()->attach($categories);
 
-        // // Post media gallery
-        // if($request->post_media_image_name){
-        //     $gallery = explode(',', substr($request->image_name, 0, -1));
+        // Post media gallery
+        if($request->post_media_image_name){
+            $gallery = explode(',', substr($request->post_media_image_name, 0, -1));
 
-        //     foreach($gallery as $image):
-        //         $media = new Media;
-        //         $media->media_name = $image;
-        //         $media->post()->associate($post);
-        //         $media->save();
-        //     endforeach;
-        // }
+            foreach($gallery as $image):
+                $media = new Media;
+                $media->name = $image;
+                $media->post()->associate($post);
+                $media->save();
+            endforeach;
+        }
 
-        // // Log activity
-        // $message = 'A new post has been created: <b>' . $post->post_title . '</b>';
-        // $this->inputLog(session('userID'), session('schoolToPost'), $message);
+        // Log activity
+        $message = 'A new post has been created: <b>' . $post->title . '</b>';
+        $this->inputLog(session('userID'), $message);
         
-        // $this->alertDetails($message, 'success');
+        $this->alertDetails($message, 'success');
 
-        // return redirect('cms/posts/posts');
+        return redirect('cms/posts/posts');
     }
 
     // ***-- Posts - Update --*** //
+
+
 
     // ***-- Posts - Archive --*** //
 }

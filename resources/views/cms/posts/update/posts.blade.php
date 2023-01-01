@@ -4,11 +4,11 @@
     {{-- Additional header tags for page: /create --}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="stylesheet" type="text/css" id="u0" href="/assets/plugins/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" id="u0" href="/assets/plugins/bootstrap-tokenfield/dist/css/tokenfield-typeahead.min.css">
-    <link rel="stylesheet" type="text/css" id="u0" href="/assets/plugins/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/bootstrap-tokenfield/dist/css/tokenfield-typeahead.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/bootstrap-tokenfield/dist/css/bootstrap-tokenfield.min.css">
 
-    <link rel="stylesheet" type="text/css" id="u0" href="/assets/plugins/dropzone/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="/assets/plugins/dropzone/dropzone.css">
 @endsection
 
 @section ( 'custom-js' )
@@ -22,15 +22,25 @@
     <script src="/assets/plugins/dropzone/dropzone.js"></script>
     <script src="/cms/js/dropzone.js"></script>
     <script>
+        // Assigned categories for the selected post
+        var values = @json($post->categories->toArray(), JSON_HEX_TAG);
+        var value = [];
+
+        $(values).each(function(){
+            value.push({"id": this.id, "value": this.name});
+        });
+
+        // All active categories
         var sources = @json($categories->toArray(), JSON_HEX_TAG);
         var source = [];
 
         $(sources).each(function(){
-            source.push({"id": this.id, "value": this.cat_name});
+            source.push({"id": this.id, "value": this.name});
         });
 
+        // Initialize Bloodhound engine
         var engine = new Bloodhound({
-            local: source,
+            local: source, // Set categories as source for the token input
             datumTokenizer: function(d) {
                 return Bloodhound.tokenizers.whitespace(d.value);
             },
@@ -39,6 +49,7 @@
 
         engine.initialize();
 
+        // Add id to a hidden input to process on form submit
         function existingTokenIdFunction () {
             var e = $('input[name=post_categories_id]').val();
             e = e.split(',');
@@ -49,24 +60,27 @@
             return e;
         }
 
+        // Initialize tokenfield
         $('#post_categories').tokenfield({
+            tokens: value,
             typeahead: [null, { source: engine.ttAdapter() }]
         });
 
+        // Tokenfield methods
         $('#post_categories')
-        .on('tokenfield:createtoken', function (event) {
+        .on('tokenfield:createtoken', function (event) { // Prevent selected category duplication
             var existingTokens = $(this).tokenfield('getTokens');
             $.each(existingTokens, function(index, token) {
                 if (token.value === event.attrs.value)
                     event.preventDefault();
             });
         })
-        .on('tokenfield:createdtoken', function (event) {
+        .on('tokenfield:createdtoken', function (event) { // Call function that adds id to the hidden input when token is created
             var existingTokenIds = existingTokenIdFunction();
             existingTokenIds.push(JSON.stringify(event.attrs.id));
             $('input[name=post_categories_id]').val(existingTokenIds.join(','));
         })
-        .on('tokenfield:removedtoken', function (event) {
+        .on('tokenfield:removedtoken', function (event) { // Remove category and corresponding id from hidden input when added category is deleted
             var existingTokenIds = existingTokenIdFunction();
             existingTokenIds.splice($.inArray(event.attrs.id + '', existingTokenIds), 1);
             $('input[name=post_categories_id]').val(existingTokenIds.join(','));
@@ -81,7 +95,7 @@
                 <div class="header">
                     <div class="row clearfix">
                         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 text-xs-sm-center">
-                            <h4>NEW POST</h4>      
+                            <h4>UPDATE POST</h4>      
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <center>
@@ -101,7 +115,7 @@
                                         <label for="post_title">Post Title *</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" class="form-control" id="post_title" name="post_title" required>
+                                                <input type="text" class="form-control" id="post_title" name="post_title" value="{{ $post->title }}" required>
                                             </div>
                                         </div>
                                     </div>
@@ -111,74 +125,10 @@
                                         <label for="post_categories">Post Categories</label>
                                         <p class="font-12"><i><b>Note:</b> Leaving this section blank will automatically tag your post to "Uncategorized".</i></p>
                                         <div class="form-group">
-                                            <input type="text" value="" name="post_categories_id" hidden>
+                                            <input type="text" value="@foreach($post->categories as $category){{ $category->id . ',' }}@endforeach" name="post_categories_id">
                                             <div class="form-line">
                                                 <input type="text" class="form-control" id="post_categories" name="post_categories">
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <label for="post_sm_autopost">Post on SD92 Social Media Platforms?</label>
-                                        <p class="font-12"><i><b>Note:</b> Posting on to SD92's social media outlets will take at least 15 minutes to 2 hours after the post's creation.</i></p>
-                                        <div class="demo-radio-button">
-                                            <input type="radio" name="post_sm_autopost" id="sm_opt_1" class="radio-col-blue-grey with-gap" value="No" checked>
-                                            <label for="sm_opt_1">No</label>
-                                            <input type="radio" name="post_sm_autopost" id="sm_opt_2" class="radio-col-blue-grey with-gap" value="Yes">
-                                            <label for="sm_opt_2">Yes</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <label for="post_ssd_autopost">Post on School District Superintendent Page?</label>
-                                        <div class="demo-radio-button">
-                                            <input type="radio" name="post_ssd_autopost" id="ssd_opt_1" class="radio-col-blue-grey with-gap" value="No" checked>
-                                            <label for="ssd_opt_1">No</label>
-                                            <input type="radio" name="post_ssd_autopost" id="ssd_opt_2" class="radio-col-blue-grey with-gap" value="Yes">
-                                            <label for="ssd_opt_2">Yes</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <label for="post_nlc_autopost">Post on Nisga'a Language and Culture?</label>
-                                        <div class="demo-radio-button">
-                                            <input type="radio" name="post_nlc_autopost" id="nlc_opt_1" class="radio-col-blue-grey with-gap" value="No" checked>
-                                            <label for="nlc_opt_1">No</label>
-                                            <input type="radio" name="post_nlc_autopost" id="nlc_opt_2" class="radio-col-blue-grey with-gap" value="Yes">
-                                            <label for="nlc_opt_2">Yes</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <label for="post_gcc_autopost">Post on Gitginsaa Childcare Centre?</label>
-                                        <div class="demo-radio-button">
-                                            <input type="radio" name="post_gcc_autopost" id="gcc_opt_1" class="radio-col-blue-grey with-gap" value="No" checked>
-                                            <label for="gcc_opt_1">No</label>
-                                            <input type="radio" name="post_gcc_autopost" id="gcc_opt_2" class="radio-col-blue-grey with-gap" value="Yes">
-                                            <label for="gcc_opt_2">Yes</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <label for="post_ss_autopost">Post on SD92 Strong Start?</label>
-                                        <div class="demo-radio-button">
-                                            <input type="radio" name="post_ss_autopost" id="ss_opt_1" class="radio-col-blue-grey with-gap" value="No" checked>
-                                            <label for="ss_opt_1">No</label>
-                                            <input type="radio" name="post_ss_autopost" id="ss_opt_2" class="radio-col-blue-grey with-gap" value="Yes">
-                                            <label for="ss_opt_2">Yes</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <label for="post_opt">Set post as News or Media</label>
-                                        <p class="font-12"><i><b>Note:</b> Setting post to Media will let your upload images in gallery sets.</i></p>
-                                        <div class="demo-radio-button">
-                                            <input type="radio" name="post_opt_type" id="post_opt_news" class="radio-col-blue-grey with-gap" value="Post" checked>
-                                            <label for="post_opt_news">News</label>
-                                            <input type="radio" name="post_opt_type" id="post_opt_media" class="radio-col-blue-grey with-gap" value="Media">
-                                            <label for="post_opt_media">Media</label>
                                         </div>
                                     </div>
                                 </div>
@@ -198,7 +148,7 @@
                                         <label for="post_desc">Post Description</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <textarea rows="2" class="form-control no-resize" id="post_desc" name="post_desc"></textarea>
+                                                <textarea rows="2" class="form-control no-resize" id="post_desc" name="post_desc">@if($post->desc){{ $post->desc }}@endif</textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -209,13 +159,13 @@
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <textarea class="tinymce_editor" id="post_content" name="post_content">
-            
+                                                    {{ $post->content }}
                                                 </textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row clearfix dropzone-area" hidden>
+                                <div class="row clearfix dropzone-area" @if($post->type === 'Post') hidden @endif>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <p class="font-12"><i><b>Note:</b> This is an experimental feature. Uploading images over 1.5 MB may take a while. The max image size you can upload is 10 MB.</i></p>
                                         <div id="dropzone-gallery" class="dropzone">
@@ -226,7 +176,7 @@
                                                 <h3>Drop images here or click to upload</h3>
                                             </div>
                                         </div>
-                                        <input type="text" id="image_name" name="image_name" value="">
+                                        <input type="text" id="post_media_image_name" name="post_media_image_name" value="">
                                     </div>
                                 </div>
                                 <div class="row clearfix">
