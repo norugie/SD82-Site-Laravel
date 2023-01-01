@@ -55,10 +55,16 @@ Route::group(['middleware' => 'authAD', 'prefix' => 'cms'], function(){
             Route::group(['prefix' => 'posts'], function(){
                 Route::get('/', 'postsIndex');
                 Route::get('/{slug}/view', 'postsViewPost');
+
+                // Create Post routes
                 Route::get('/create', 'postsCreateNewPostPage');
                 Route::post('/create', 'postsCreateNewPost');
 
-                // View Post Reroute
+                // Update Post routes
+                Route::get('/{slug}/update', 'postsUpdatePostPage');
+                Route::post('/{slug}/update', 'postsUpdatePost');
+
+                // View Post reroute
                 Route::get('/{slug}', function ( String $slug ) { return redirect('/cms/posts/posts/' . $slug . '/view'); });
             });
         });

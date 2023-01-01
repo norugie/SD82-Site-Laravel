@@ -21,13 +21,12 @@ class Controller extends BaseController
      * @param Int $department
      * @param String $description
      */
-    public function inputLog(Int $user, Int $department, String $description)
+    public function inputLog(Int $user, String $description)
     {
         $log = new Log();
-        $log->log_slug = 'LOG' . rand(1111111111,9999999999);
-        $log->log_desc = $description;
+        $log->slug = 'LOG' . rand(1111111111,9999999999);
+        $log->desc = $description;
         $log->user_id = $user;
-        $log->department_id = $department;
         $log->save();
     }
 
