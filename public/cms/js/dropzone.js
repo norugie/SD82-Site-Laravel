@@ -11,6 +11,8 @@
         }
     });
 
+    console.log(images);
+
     // Configuring Dropzone
     Dropzone.autoDiscover = false;
 
@@ -37,6 +39,15 @@
             alert(message);
         },
         init: function() {
+            var thisDropzone = this;
+            if ('images' in window) {
+                $(images).each(function() {
+                    var mockFile = { name: this.name, size: this.size };
+
+                    thisDropzone.options.addedfile.call(thisDropzone, mockFile);
+                    thisDropzone.options.thumbnail.call(thisDropzone, mockFile, "/../../assets/img/media/" + this.name);
+                });
+            }
             this.on('sending', function(file, xhr, formData) {
                 formData.append('_token', token);
             });

@@ -61,8 +61,15 @@ class PostController extends Controller
      */
     public function postsUpdatePostPage (String $slug)
     {
-        $post = Post::select('id', 'user_id', 'slug', 'title', 'type', 'desc' ,'content', 'created_at')->where('slug', $slug)->where('status', 'Active')->latest()->with('categories:id,slug,name')->first();
+        $post = Post::select('id', 'user_id', 'slug', 'title', 'type', 'desc' ,'content', 'created_at')->where('slug', $slug)->where('status', 'Active')->latest()->with('categories:id,slug,name')->with('media:post_id,name')->first();
         $categories = Category::select('id', 'name')->where('status', 'Active')->get();
+        
+        if($post->media){
+            foreach($post->media as $media):
+                $media['size'] = filesize(public_path() . '/assets/img/media/' . $media->name);
+            endforeach;
+        }
+
         return view ('cms.posts.update.posts', compact('categories', 'post'));
     }
 

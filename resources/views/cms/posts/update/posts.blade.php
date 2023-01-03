@@ -20,6 +20,10 @@
     <script src="/assets/plugins/bootstrap-tokenfield/dist/typeahead.bundle.min.js"></script>
 
     <script src="/assets/plugins/dropzone/dropzone.js"></script>
+    <script>
+        // Dropzone prepopulate
+        var images = @json($post->media->toArray(), JSON_HEX_TAG);
+    </script>
     <script src="/cms/js/dropzone.js"></script>
     <script>
         // Assigned categories for the selected post
@@ -165,6 +169,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- 
+                                    Todo: Work on pre-populating the Dropzone area
+                                    Idea: Add an id variable to the ajax function that handles media file deletion on dropzone removal. The id is nullable. Set post_id here if     available.
+                                    Add check for id if it's null. If it is, do normal medial file deletion. If not, do a database deletion with the entries in the media table that corresponds to the id and the media name.
+                                --}}
                                 <div class="row clearfix dropzone-area" @if($post->type === 'Post') hidden @endif>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <p class="font-12"><i><b>Note:</b> This is an experimental feature. Uploading images over 1.5 MB may take a while. The max image size you can upload is 10 MB.</i></p>
