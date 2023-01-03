@@ -46,6 +46,7 @@
 
                     thisDropzone.options.addedfile.call(thisDropzone, mockFile);
                     thisDropzone.options.thumbnail.call(thisDropzone, mockFile, "/../../assets/img/media/" + this.name);
+                    thisDropzone.options.complete.call(thisDropzone, mockFile);
                 });
             }
             this.on('sending', function(file, xhr, formData) {
