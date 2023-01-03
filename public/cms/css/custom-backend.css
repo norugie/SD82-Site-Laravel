@@ -157,3 +157,8 @@ a:hover {
 label {
     font-weight: bold;
 }
+
+.dropzone .dz-preview .dz-image img {
+    height: 120px!important;
+    width: auto!important;
+}

@@ -26,70 +26,20 @@
     </script>
     <script src="/cms/js/dropzone.js"></script>
     <script>
-        // Assigned categories for the selected post
-        var values = @json($post->categories->toArray(), JSON_HEX_TAG);
-        var value = [];
-
-        $(values).each(function(){
-            value.push({"id": this.id, "value": this.name});
-        });
-
         // All active categories
         var sources = @json($categories->toArray(), JSON_HEX_TAG);
         var source = [];
 
-        $(sources).each(function(){
-            source.push({"id": this.id, "value": this.name});
-        });
+        // Assigned categories for the selected post
+        var values = @json($post->categories->toArray(), JSON_HEX_TAG);
+        var value = [];
 
-        // Initialize Bloodhound engine
-        var engine = new Bloodhound({
-            local: source, // Set categories as source for the token input
-            datumTokenizer: function(d) {
-                return Bloodhound.tokenizers.whitespace(d.value);
-            },
-            queryTokenizer: Bloodhound.tokenizers.whitespace
-        });
-
-        engine.initialize();
-
-        // Add id to a hidden input to process on form submit
-        function existingTokenIdFunction () {
-            var e = $('input[name=post_categories_id]').val();
-            e = e.split(',');
-            e = e.filter(function (e) {
-                if(e !== "" && e !== null) return e;
-            });
-
-            return e;
-        }
-
-        // Initialize tokenfield
-        $('#post_categories').tokenfield({
-            tokens: value,
-            typeahead: [null, { source: engine.ttAdapter() }]
-        });
-
-        // Tokenfield methods
-        $('#post_categories')
-        .on('tokenfield:createtoken', function (event) { // Prevent selected category duplication
-            var existingTokens = $(this).tokenfield('getTokens');
-            $.each(existingTokens, function(index, token) {
-                if (token.value === event.attrs.value)
-                    event.preventDefault();
-            });
-        })
-        .on('tokenfield:createdtoken', function (event) { // Call function that adds id to the hidden input when token is created
-            var existingTokenIds = existingTokenIdFunction();
-            existingTokenIds.push(JSON.stringify(event.attrs.id));
-            $('input[name=post_categories_id]').val(existingTokenIds.join(','));
-        })
-        .on('tokenfield:removedtoken', function (event) { // Remove category and corresponding id from hidden input when added category is deleted
-            var existingTokenIds = existingTokenIdFunction();
-            existingTokenIds.splice($.inArray(event.attrs.id + '', existingTokenIds), 1);
-            $('input[name=post_categories_id]').val(existingTokenIds.join(','));
+        // Push assigned categories to value array
+        $(values).each(function(){
+            value.push({"id": this.id, "value": this.name});
         });
     </script>
+    <script src="/cms/js/tokenfield.js"></script>
 @endsection
 
 @section ( 'content' )
@@ -185,7 +135,7 @@
                                                 <h3>Drop images here or click to upload</h3>
                                             </div>
                                         </div>
-                                        <input type="text" id="post_media_image_name" name="post_media_image_name" value="">
+                                        <input type="text" id="post_media_image_name" name="post_media_image_name" value="@foreach($post->media as $media){{ $media->name . ',' }}@endforeach">
                                     </div>
                                 </div>
                                 <div class="row clearfix">

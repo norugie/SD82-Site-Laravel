@@ -20,58 +20,17 @@
     <script src="/assets/plugins/bootstrap-tokenfield/dist/typeahead.bundle.min.js"></script>
 
     <script src="/assets/plugins/dropzone/dropzone.js"></script>
+    <script>
+        // Dropzone prepopulate
+        var images = [];
+    </script>
     <script src="/cms/js/dropzone.js"></script>
     <script>
         var sources = @json($categories->toArray(), JSON_HEX_TAG);
         var source = [];
-
-        $(sources).each(function(){
-            source.push({"id": this.id, "value": this.name});
-        });
-
-        var engine = new Bloodhound({
-            local: source,
-            datumTokenizer: function(d) {
-                return Bloodhound.tokenizers.whitespace(d.value);
-            },
-            queryTokenizer: Bloodhound.tokenizers.whitespace
-        });
-
-        engine.initialize();
-
-        function existingTokenIdFunction () {
-            var e = $('input[name=post_categories_id]').val();
-            e = e.split(',');
-            e = e.filter(function (e) {
-                if(e !== "" && e !== null) return e;
-            });
-
-            return e;
-        }
-
-        $('#post_categories').tokenfield({
-            typeahead: [null, { source: engine.ttAdapter() }]
-        });
-
-        $('#post_categories')
-        .on('tokenfield:createtoken', function (event) {
-            var existingTokens = $(this).tokenfield('getTokens');
-            $.each(existingTokens, function(index, token) {
-                if (token.value === event.attrs.value)
-                    event.preventDefault();
-            });
-        })
-        .on('tokenfield:createdtoken', function (event) {
-            var existingTokenIds = existingTokenIdFunction();
-            existingTokenIds.push(JSON.stringify(event.attrs.id));
-            $('input[name=post_categories_id]').val(existingTokenIds.join(','));
-        })
-        .on('tokenfield:removedtoken', function (event) {
-            var existingTokenIds = existingTokenIdFunction();
-            existingTokenIds.splice($.inArray(event.attrs.id + '', existingTokenIds), 1);
-            $('input[name=post_categories_id]').val(existingTokenIds.join(','));
-        });
+        var value = [];
     </script>
+    <script src="/cms/js/tokenfield.js"></script>
 @endsection
 
 @section ( 'content' )
