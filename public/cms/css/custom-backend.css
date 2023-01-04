@@ -162,3 +162,7 @@ label {
     height: 120px!important;
     width: auto!important;
 }
+
+.dropzone.dz-started .dz-message {
+    display: block!important;
+}

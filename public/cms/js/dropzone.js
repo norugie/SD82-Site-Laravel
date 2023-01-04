@@ -11,11 +11,10 @@
         }
     });
 
-    console.log(images);
-
     // Configuring Dropzone
     Dropzone.autoDiscover = false;
 
+    var filename;
     var token = $('meta[name="csrf-token"]').attr('content');
     $('#dropzone-gallery').dropzone({
         url: '/cms/upload/media',
@@ -29,14 +28,18 @@
         dictRemoveFile: 'Remove image',
         dictRemoveFileConfirmation: null,
         success: function(file) {
+            if (file.hasOwnProperty('upload') ? filename = file.upload.filename : filename = file.name);
             var imageName = $('#post_media_image_name').val();
-            $('#post_media_image_name').attr('value', file.name + ',' + imageName);
+            $('#post_media_image_name').attr('value', filename + ',' + imageName);
         },
         error: function(file, message, xhr) {
             if (xhr == null) this.removeFile(file);
             console.log(message);
             console.log(xhr);
             alert(message);
+        },
+        renameFile: function(file) {
+            return Date.now() + '_' + file.name;
         },
         init: function() {
             var thisDropzone = this;
@@ -49,12 +52,16 @@
                     thisDropzone.options.complete.call(thisDropzone, mockFile);
                 });
             }
-            this.on('sending', function(file, xhr, formData) {
+            thisDropzone.on('sending', function(file, xhr, formData) {
                 formData.append('_token', token);
             });
-            this.on('removedfile', function(file) {
+            thisDropzone.on("addedfile", function(file) {
+                file.previewElement.querySelector('[data-dz-name]').textContent = file.upload.filename;
+            });
+            thisDropzone.on('removedfile', function(file) {
+                if (file.hasOwnProperty('upload') ? filename = file.upload.filename : filename = file.name);
                 var imageNameList = $('#post_media_image_name').val();
-                imageNameList = imageNameList.replace(file.name + ',', '');
+                imageNameList = imageNameList.replace(filename + ',', '');
                 $('#post_media_image_name').attr('value', imageNameList);
 
                 // Remove image from server folder
@@ -63,7 +70,7 @@
                     type: 'POST',
                     data: {
                         '_token': token,
-                        'filename': file.name
+                        'filename': filename
                     },
                     dataType: 'json'
                 });
