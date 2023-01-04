@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\General;
 
 use App\Http\Controllers\Controller;
+use App\Models\Media;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File; 
 
@@ -28,6 +29,7 @@ class FileUploadController extends Controller
     public function deleteImage (Request $request)
     {
         $filename = $request->filename;
+        Media::where('name', $filename)->delete();
         $path = public_path() . '/assets/img/media/' . $filename;
         if(File::exists( $path )) File::delete($path);
     }
