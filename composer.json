@@ -26,6 +26,7 @@
         "microsoft/microsoft-graph": "dev-dev",
         "realrashid/sweet-alert": "^5.1",
         "snapappointments/bootstrap-select": "^1.13",
+        "timegridio/icalreader": "1.0.x-dev",
         "twbs/bootstrap": "4.6.1"
     },
     "require-dev": {

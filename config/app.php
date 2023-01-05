@@ -162,6 +162,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+        Timegridio\ICalReader\ICalReaderServiceProvider::class,
 
         /*
          * Package Service Providers...

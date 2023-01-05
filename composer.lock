@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9806c783d983d6620a1bace2789b3bbd",
+    "content-hash": "3dce55f39aaad1680559013eedb24748",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5955,6 +5955,78 @@
             "time": "2022-09-12T13:28:28+00:00"
         },
         {
+            "name": "timegridio/icalreader",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timegridio/icalreader.git",
+                "reference": "950c9c21bea13f57d9fe3b89bd07778b4823b318"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timegridio/icalreader/zipball/950c9c21bea13f57d9fe3b89bd07778b4823b318",
+                "reference": "950c9c21bea13f57d9fe3b89bd07778b4823b318",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "laracasts/testdummy": "~2.3",
+                "nesbot/carbon": "~1.21",
+                "orchestra/testbench": "~3.2.0",
+                "phpunit/phpunit": "~4.0||~5.0",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Timegridio\\ICalReader\\": "src"
+                },
+                "classmap": [
+                    "tests/PackageTestCase.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ariel Vallese",
+                    "email": "alariva@timegrid.io",
+                    "homepage": "http://alariva.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "iCal reader wrapper for Laravel 5",
+            "homepage": "https://github.com/timegridio/icalreader",
+            "keywords": [
+                "api",
+                "calendar",
+                "date",
+                "events",
+                "ical",
+                "icalreader",
+                "parser",
+                "time",
+                "timegrid",
+                "timegridio"
+            ],
+            "support": {
+                "issues": "https://github.com/timegridio/icalreader/issues",
+                "source": "https://github.com/timegridio/icalreader/tree/master"
+            },
+            "time": "2022-08-02T11:55:42+00:00"
+        },
+        {
             "name": "twbs/bootstrap",
             "version": "v4.6.1",
             "source": {
@@ -8765,7 +8837,8 @@
         "datatables.net/datatables.net-buttons": 20,
         "datatables.net/datatables.net-responsive": 20,
         "datatables.net/datatables.net-responsive-bs4": 20,
-        "microsoft/microsoft-graph": 20
+        "microsoft/microsoft-graph": 20,
+        "timegridio/icalreader": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
