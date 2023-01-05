@@ -7,9 +7,24 @@ use Illuminate\Support\Facades\View;
 use App\Models\Department;
 use App\Models\Post;
 use Illuminate\Http\Request;
+use Timegridio\ICalReader\ICalParser;
+use Carbon\Carbon;
 
 class SiteBasicInfo
 {
+    // Calendar Parser
+    /**
+     * @var ICalEvents
+     */
+    protected $icalevents;
+
+    protected function getStub()
+    {
+        $contents = file_get_contents('assets/calendar/calendar.ics');
+
+        return $contents;
+    }
+
     /**
      * Handle an incoming request.
      *
@@ -30,7 +45,15 @@ class SiteBasicInfo
         $siteData['phone'] = $cmsd->phone;
         $siteData['posts'] = Post::select('user_id', 'slug', 'title', 'thumbnail', 'desc', 'created_at')->where('status', 'Active')->latest()->with('user:id,firstname,lastname')->take(3)->get();
 
+        $this->parser = new ICalParser();
+        $stub = $this->getStub();
+        $this->parser->initString($stub);
+        $events = $this->parser->events();
+        $siteData['events'] = $events;
+
         $sitedata = json_decode(json_encode($siteData), FALSE);
+
+        // dd($siteData);
 
         View::share('sitedata', $sitedata);
 

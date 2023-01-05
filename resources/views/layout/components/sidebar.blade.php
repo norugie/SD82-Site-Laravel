@@ -23,36 +23,18 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <div class="row d-md-flex mb-2 align-items-md-center text-primary">
-                    <div class="col-md-3 d-flex align-items-center justify-content-md-center">
-                        <span class="display-4 no-resize font-weight-bold mr-1">01</span>
-                        <span class="text-sm">DEC<br />2022</span>
+                @foreach($sitedata->events as $event)
+                    <div class="row d-md-flex mb-2 align-items-md-center text-primary">
+                        <div class="col-md-3 d-flex align-items-center justify-content-md-center">
+                            <span class="display-4 no-resize font-weight-bold mr-1">{{ Carbon\Carbon::parse($event->DTSTART)->format('d') }}</span>
+                            <span class="text-sm text-uppercase">{{ Carbon\Carbon::parse($event->DTSTART)->format('M') }}<br />{{ Carbon\Carbon::parse($event->DTSTART)->format('Y') }}</span>
+                        </div>
+                        <div class="col-md-9 text-left my-auto">
+                            <p class="mb-0 font-weight-bold">{{ $event->SUMMARY }}</p>
+                            {{-- <p class="mb-0 op-8">10:00 AM - 1:00PM | Event Place</p> --}}
+                        </div>
                     </div>
-                    <div class="col-md-9 text-left my-auto">
-                        <p class="mb-0 font-weight-bold">Event Name</p>
-                        <p class="mb-0 op-8">10:00 AM - 1:00PM | Event Place</p>
-                    </div>
-                </div>
-                <div class="row d-md-flex mb-2 align-items-md-center text-grey-dark">
-                    <div class="col-md-3 d-flex align-items-center justify-content-md-center">
-                        <span class="display-4 no-resize font-weight-bold mr-1">16</span>
-                        <span class="text-sm">DEC<br />2022</span>
-                    </div>
-                    <div class="col-md-9 text-left my-auto">
-                        <p class="mb-0 font-weight-bold">Event Name</p>
-                        <p class="mb-0 op-8">9:00 AM - 11:00AM | Event Place</p>
-                    </div>
-                </div>
-                <div class="row d-md-flex mb-2 align-items-md-center text-grey-dark">
-                    <div class="col-md-3 d-flex align-items-center justify-content-md-center">
-                        <span class="display-4 no-resize font-weight-bold mr-1">25</span>
-                        <span class="text-sm">DEC<br />2022</span>
-                    </div>
-                    <div class="col-md-9 text-left my-auto">
-                        <p class="mb-0 font-weight-bold">Event Name</p>
-                        <p class="mb-0 op-8">All Day | Event Place</p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
