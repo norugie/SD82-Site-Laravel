@@ -54,23 +54,24 @@ public function eventsView ()
         return $contents;
     }
 
-    public function pageView ()
+    public function pageView (String $page)
     {
-
-    }
-
-    public function pageViewContent (String $slug)
-    {
-
+        $contents['page'] = Content::select('content')->where('type', 'Page')->where('slug', $page)->where('status', 'Active')->first();
     }
 
     public function mainContentPageRouterView (String $page)
     {
-        if (\View::exists($page)) {
-            $function = $page . 'View';
-            $contents = $this->$function();
+        if (\View::exists($page) || Content::where('type', 'Page')->where('slug', $page)->where('status', 'Active')->count() > 0) {
+            if(in_array($page, ['events', 'news', 'jobs', 'staff'])) {
+                $function = $page . 'View';
+                $view = $page;
+            } else {
+                $function = 'pageView';
+                $view = 'page';
+            }
+            if($function === 'pageView' ? $contents = $this->$function($page) : $contents = $this->$function());
 
-            return view($page, [
+            return view($view, [
                 'page' => $page,
                 'contents' => $contents
             ]);

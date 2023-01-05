@@ -112,7 +112,7 @@ return new class extends Migration
                     'type'   => 'Link',
                     'placement'   => 'Index',
                     'icon'   => 'fa-school',
-                    'content'  => NULL,
+                    'content'  => '/schools-and-registration',
                     'status'  => 'Active'
                 ],
                 [
@@ -120,7 +120,7 @@ return new class extends Migration
                     'type'   => 'Link',
                     'placement'   => 'Index',
                     'icon'   => 'fa-heartbeat',
-                    'content'  => NULL,
+                    'content'  => '/health-and-wellness',
                     'status'  => 'Active'
                 ],
                 [
@@ -128,7 +128,7 @@ return new class extends Migration
                     'type'   => 'Link',
                     'placement'   => 'Index',
                     'icon'   => 'fa-book',
-                    'content'  => NULL,
+                    'content'  => '/learner-programs',
                     'status'  => 'Active'
                 ],
                 [
@@ -136,7 +136,7 @@ return new class extends Migration
                     'type'   => 'Link',
                     'placement'   => 'Index',
                     'icon'   => 'fa-book-reader',
-                    'content'  => NULL,
+                    'content'  => '/indigenous-education',
                     'status'  => 'Active'
                 ],
                 [
@@ -144,7 +144,7 @@ return new class extends Migration
                     'type'   => 'Link',
                     'placement'   => 'Index',
                     'icon'   => 'fa-bus',
-                    'content'  => NULL,
+                    'content'  => '/transportation-services',
                     'status'  => 'Active'
                 ],
                 [
@@ -152,7 +152,7 @@ return new class extends Migration
                     'type'   => 'Link',
                     'placement'   => 'Index',
                     'icon'   => 'fa-file-signature',
-                    'content'  => NULL,
+                    'content'  => '/strategic-plans',
                     'status'  => 'Active'
                 ],
                 [
@@ -160,7 +160,7 @@ return new class extends Migration
                     'type'   => 'Link',
                     'placement'   => 'Index',
                     'icon'   => 'fa-utensils',
-                    'content'  => NULL,
+                    'content'  => '/food-and-nutrition',
                     'status'  => 'Active'
                 ]
             )

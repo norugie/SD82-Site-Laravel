@@ -15,7 +15,7 @@
         <div id="content">
             <div class="container">
                 <h2 class="title-divider text-uppercase text-grey-dark font-weight-bold">
-                    <span>{{ $page }} Page</span>
+                    <span>{{ str_replace('-', ' ', $page) }}</span>
                 </h2>
                 <div class="row">
                     <div class="col-md-9">
