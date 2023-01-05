@@ -130,6 +130,69 @@ return new class extends Migration
                     'content'  => '<p>Welcome to the Coast Moutains School District 82 (CMSD82) Staff Resource page. You can access this section from the top of every page. We welcome feedback so if you would like to recommend a feature to be added to this section or have any other questions, you can contact us through the contact information means available in the top bar.</p>',
                     'status' => 'Active'
                 ],
+                [
+                    'title'   => 'Schools & Registration',
+                    'slug'   => 'schools-and-registration',
+                    'type'   => 'Page',
+                    'location'   => 'page',
+                    'banner'    => NULL,
+                    'content'  => NULL,
+                    'status' => 'Active'
+                ],
+                [
+                    'title'   => 'Health & Wellness',
+                    'slug'   => 'health-and-wellness',
+                    'type'   => 'Page',
+                    'location'   => 'page',
+                    'banner'    => NULL,
+                    'content'  => NULL,
+                    'status' => 'Active'
+                ],
+                [
+                    'title'   => 'Learner Programs',
+                    'slug'   => 'learner-programs',
+                    'type'   => 'Page',
+                    'location'   => 'page',
+                    'banner'    => NULL,
+                    'content'  => NULL,
+                    'status' => 'Active'
+                ],
+                [
+                    'title'   => 'Indigenous Education',
+                    'slug'   => 'indigenous-education',
+                    'type'   => 'Page',
+                    'location'   => 'page',
+                    'banner'    => NULL,
+                    'content'  => NULL,
+                    'status' => 'Active'
+                ],
+                [
+                    'title'   => 'Transportation Services',
+                    'slug'   => 'transportation-services',
+                    'type'   => 'Page',
+                    'location'   => 'page',
+                    'banner'    => NULL,
+                    'content'  => NULL,
+                    'status' => 'Active'
+                ],
+                [
+                    'title'   => 'Strategic Plans',
+                    'slug'   => 'strategic-plans',
+                    'type'   => 'Page',
+                    'location'   => 'page',
+                    'banner'    => NULL,
+                    'content'  => NULL,
+                    'status' => 'Active'
+                ],
+                [
+                    'title'   => 'Food & Nutrition',
+                    'slug'   => 'food-and-nutrition',
+                    'type'   => 'Page',
+                    'location'   => 'page',
+                    'banner'    => NULL,
+                    'content'  => NULL,
+                    'status' => 'Active'
+                ]
             )
         );
     }
