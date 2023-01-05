@@ -104,7 +104,7 @@ return new class extends Migration
                     'status'  => 'Active'
                 ],
                 [
-                    'title'   => 'All Schools',
+                    'title'   => 'Schools and Registration',
                     'menu_id'   => 8,
                     'content'   => '/jobs/exempt',
                     'status'  => 'Active'
