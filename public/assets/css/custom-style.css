@@ -317,3 +317,13 @@
     width: auto!important;
     margin-right: 8px;
 }
+
+.fc-daygrid-dot-event {
+    flex-flow: row wrap;
+}
+
+.fc-event-time,
+.fc-event-title {
+    padding: 0 1px;
+    white-space: normal;
+}
