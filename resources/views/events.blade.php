@@ -18,12 +18,18 @@
 @section('custom-js')
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
     <script>
-
+        var ics = @json($sitedata->events, JSON_HEX_TAG);
+        var events = [];
+        console.log(ics);
         document.addEventListener('DOMContentLoaded', function() {
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth'
+            // initialView: 'dayGridMonth',
+            events: {
+
+            }
             });
+            // console.log()
             calendar.render();
         });
   
