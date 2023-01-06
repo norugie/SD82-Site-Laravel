@@ -20,16 +20,24 @@
     <script>
         var ics = @json($sitedata->events, JSON_HEX_TAG);
         var events = [];
-        console.log(ics);
+
+        $(ics).each(function(){
+            events.push({
+                'id': this.UID, 
+                'title': this.SUMMARY,
+                'start': this.DTSTART,
+                'end': this.DTEND
+            });
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
-            // initialView: 'dayGridMonth',
-            events: {
-
-            }
+                initialView: 'dayGridMonth',
+                timeZone: 'PST',
+                events: events
             });
-            // console.log()
+
             calendar.render();
         });
   
