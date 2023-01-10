@@ -44,9 +44,12 @@
         </div>
     @endforeach
 
+
+
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
-            <li class="page-item">
+            {{ $contents->onEachSide(5)->links() }}
+            {{-- <li class="page-item">
                 <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">«</span> <span class="sr-only">Previous</span> </a>
             </li>
             <li class="page-item active"><a class="page-link" href="#">1</a></li>
@@ -56,7 +59,7 @@
             <li class="page-item"><a class="page-link" href="#">5</a></li>
             <li class="page-item">
                 <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">»</span> <span class="sr-only">Next</span> </a>
-            </li>
+            </li> --}}
         </ul>
     </nav>
 @endsection

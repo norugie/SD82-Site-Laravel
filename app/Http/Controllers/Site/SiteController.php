@@ -27,7 +27,7 @@ class SiteController extends Controller
 
     public function newsView ()
     {
-        return Post::select('id', 'user_id', 'slug', 'title', 'thumbnail', 'desc', 'created_at')->where('status', 'Active')->latest()->with('user:id,firstname,lastname')->with('categories:id,slug,name')->get();
+        return Post::select('id', 'user_id', 'slug', 'title', 'thumbnail', 'desc', 'created_at')->where('status', 'Active')->latest()->with('user:id,firstname,lastname')->with('categories:id,slug,name')->paginate(3);
     }
 
     public function newsViewContent (String $slug)
@@ -98,16 +98,16 @@ public function eventsView ()
         } else return view ('404');
     }
 
-    public function subContentInCategoryPageRouterView (String $page, String $category, String $slug)
-    {
-        if (\View::exists($page)) {
-            $function = $page . 'ViewContent';
-            $contents = $this->$function($slug);
+    // public function subContentInCategoryPageRouterView (String $page, String $category, String $slug)
+    // {
+    //     if (\View::exists($page)) {
+    //         $function = $page . 'ViewContent';
+    //         $contents = $this->$function($slug);
 
-            return view($page . '-read', [
-                'page' => $page,
-                'contents' => $contents
-            ]);
-        } else return view ('404');
-    }
+    //         return view($page . '-read', [
+    //             'page' => $page,
+    //             'contents' => $contents
+    //         ]);
+    //     } else return view ('404');
+    // }
 }
